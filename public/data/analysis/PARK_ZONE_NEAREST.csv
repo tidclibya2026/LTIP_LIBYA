@@ -1,0 +1,220 @@
+﻿park_layer,park_part_id,park_id,park_name,nearest_zone_id,nearest_zone_name,minimum_distance_km_projected,spatial_relation,overlapping_zone_count,within_1km,within_5km,within_10km
+national,LY-PARK-001-P01,LY-PARK-001,المنتزه الوطني طريق المطار,36,حي الأندلس-2,5.1148,منفصل,0,False,False,True
+national,LY-PARK-002-P01,LY-PARK-002,المنتزه الوطني سيدي المصري,61,الشعاب,3.4527,منفصل,0,False,True,True
+national,LY-PARK-003-P01,LY-PARK-003,المنتزه الوطني قرجي,35,الغيران,1.0418,منفصل,0,False,True,True
+national,LY-PARK-004-P01,LY-PARK-004,المنتزه الوطني غابة بئر الأسطى ميلاد,48,مصيف تاجوراء,3.66,منفصل,0,False,True,True
+national,LY-PARK-005-P01,LY-PARK-005,المنتزه الوطني الأحياء البرية,35,الغيران,15.1494,منفصل,0,False,False,False
+national,LY-PARK-006-P01,LY-PARK-006,المنتزه الوطني الغيران الجنوبى,35,الغيران,0.0665,منفصل,0,True,True,True
+national,LY-PARK-007-P01,LY-PARK-007,المنتزه الوطني الشرشارة,60,المثلث الرملي,33.9681,منفصل,0,False,False,False
+national,LY-PARK-008-P01,LY-PARK-008,المنتزه الوطني براك الشاطئ,3,القبيبة,453.4846,منفصل,0,False,False,False
+national,LY-PARK-009-P01,LY-PARK-009,مشروع حديقة - مستشفى الرازي بقرقارش,36,حي الأندلس-2,0.5768,منفصل,0,True,True,True
+national,LY-PARK-010-P01,LY-PARK-010,المنتزه الوطني مرزق,3,القبيبة,643.1568,منفصل,0,False,False,False
+national,LY-PARK-011-P01,LY-PARK-011,المنتزه الوطني أوباري,3,القبيبة,618.543,منفصل,0,False,False,False
+national,LY-PARK-012-P01,LY-PARK-012,منتزه القوارشة - بنغازي,72,قاريونس,3.5824,منفصل,0,False,True,True
+national,LY-PARK-013-P01,LY-PARK-013,المنتزه الوطني الحرشة,19,المطرد,6.954,منفصل,0,False,False,True
+national,LY-PARK-014-P01,LY-PARK-014,المنتزه الوطني سرت,2,زعفران,9.8531,منفصل,0,False,False,True
+national,LY-PARK-015-P01,LY-PARK-015,المنتزه الوطني زليتن,10,الطويبية,13.6924,منفصل,0,False,False,False
+national,LY-PARK-015-P02,LY-PARK-015,المنتزه الوطني زليتن,10,الطويبية,12.751,منفصل,0,False,False,False
+national,LY-PARK-002-P02,LY-PARK-002,المنتزه الوطني سيدي المصري,61,الشعاب,4.3674,منفصل,0,False,True,True
+national,LY-PARK-016-P01,LY-PARK-016,غابة النصر,37,حي الأندلس-1,2.9905,منفصل,0,False,True,True
+national,LY-PARK-002-P03,LY-PARK-002,المنتزه الوطني سيدي المصري,61,الشعاب,3.396,منفصل,0,False,True,True
+national,LY-PARK-002-P04,LY-PARK-002,المنتزه الوطني سيدي المصري,61,الشعاب,3.8274,منفصل,0,False,True,True
+national,LY-PARK-001-P02,LY-PARK-001,المنتزه الوطني طريق المطار,36,حي الأندلس-2,5.2042,منفصل,0,False,False,True
+national,LY-PARK-017-P01,LY-PARK-017,منتزه غابة أبو صرة,19,المطرد,16.6548,منفصل,0,False,False,False
+national,LY-PARK-018-P01,LY-PARK-018,منتزه بلغرة,97,نوطة سوسة,18.619,منفصل,0,False,False,False
+national,LY-PARK-019-P01,LY-PARK-019,منتزه تاجوراء,52,غوط الرمان,0.561,منفصل,0,True,True,True
+national,LY-PARK-020-P01,LY-PARK-020,منتزه وادى الكوف,78,جرجارامه,14.1066,منفصل,0,False,False,False
+national,LY-PARK-021-P01,LY-PARK-021,مقترح منتزه طريق المطار,36,حي الأندلس-2,5.2042,منفصل,0,False,False,True
+national,LY-PARK-022-P01,LY-PARK-022,محمية أبو غيلان الطبيعية,31,محطة غرب طرابلس,55.3477,منفصل,0,False,False,False
+national,LY-PARK-023-P01,LY-PARK-023,منتزه ابو روية,137,الدافنية,3.8702,منفصل,0,False,True,True
+national,LY-PARK-024-P01,LY-PARK-024,منتزه القويعة,54,العطايا,6.2513,منفصل,0,False,False,True
+national,LY-PARK-007-P02,LY-PARK-007,المنتزه الوطني الشرشارة,60,المثلث الرملي,35.4027,منفصل,0,False,False,False
+national,LY-PARK-025-P01,LY-PARK-025,منتزه أوباري الجديد,3,القبيبة,617.502,منفصل,0,False,False,False
+national,LY-PARK-026-P01,LY-PARK-026,غير مسمى - يحتاج مراجعة,31,محطة غرب طرابلس,55.8989,منفصل,0,False,False,False
+national,LY-PARK-027-P01,LY-PARK-027,مسلاتة,56,الكراوة-1,16.0937,منفصل,0,False,False,False
+public,,,,61,الشعاب,5.6926,منفصل,0,False,False,True
+public,,,,61,الشعاب,2.2069,منفصل,0,False,True,True
+public,,,,72,قاريونس,4.9005,منفصل,0,False,True,True
+public,,,,72,قاريونس,3.8974,منفصل,0,False,True,True
+public,,,,72,قاريونس,5.2879,منفصل,0,False,False,True
+public,,,,72,قاريونس,7.4589,منفصل,0,False,False,True
+public,,,,72,قاريونس,4.8386,منفصل,0,False,True,True
+public,,,,72,قاريونس,4.461,منفصل,0,False,True,True
+public,,,,72,قاريونس,3.8972,منفصل,0,False,True,True
+public,,,,61,الشعاب,2.2366,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,2.2554,منفصل,0,False,True,True
+public,,,,61,الشعاب,2.1683,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,2.3063,منفصل,0,False,True,True
+public,,,,61,الشعاب,2.3121,منفصل,0,False,True,True
+public,,,,61,الشعاب,5.0777,منفصل,0,False,False,True
+public,,,,61,الشعاب,2.8854,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,2.8238,منفصل,0,False,True,True
+public,,,,72,قاريونس,6.0951,منفصل,0,False,False,True
+public,,,,72,قاريونس,3.2385,منفصل,0,False,True,True
+public,,,,72,قاريونس,3.8506,منفصل,0,False,True,True
+public,,,,72,قاريونس,4.2832,منفصل,0,False,True,True
+public,,,,72,قاريونس,4.4723,منفصل,0,False,True,True
+public,,,,72,قاريونس,4.2909,منفصل,0,False,True,True
+public,,,,72,قاريونس,4.513,منفصل,0,False,True,True
+public,,,,61,الشعاب,2.1394,منفصل,0,False,True,True
+public,,,,61,الشعاب,0.4807,منفصل,0,True,True,True
+public,,,,61,الشعاب,0.7958,منفصل,0,True,True,True
+public,,,,19,المطرد,9.1778,منفصل,0,False,False,True
+public,,,,61,الشعاب,1.1688,منفصل,0,False,True,True
+public,,,,61,الشعاب,1.2755,منفصل,0,False,True,True
+public,,,,61,الشعاب,1.157,منفصل,0,False,True,True
+public,,,,61,الشعاب,3.4325,منفصل,0,False,True,True
+public,,,,61,الشعاب,3.012,منفصل,0,False,True,True
+public,,,,61,الشعاب,3.1892,منفصل,0,False,True,True
+public,,,,61,الشعاب,2.8088,منفصل,0,False,True,True
+public,,,,61,الشعاب,3.3547,منفصل,0,False,True,True
+public,,,,73,عين زيانة,16.9923,منفصل,0,False,False,False
+public,,,,72,قاريونس,4.1979,منفصل,0,False,True,True
+public,,,,72,قاريونس,4.1029,منفصل,0,False,True,True
+public,,,,72,قاريونس,4.246,منفصل,0,False,True,True
+public,,,,72,قاريونس,4.3057,منفصل,0,False,True,True
+public,,,,72,قاريونس,7.2989,منفصل,0,False,False,True
+public,,,,72,قاريونس,7.7436,منفصل,0,False,False,True
+public,,,,61,الشعاب,3.56,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,2.9093,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,0.1816,منفصل,0,True,True,True
+public,,,,37,حي الأندلس-1,2.5888,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,0.3138,منفصل,0,True,True,True
+public,,,,37,حي الأندلس-1,1.7873,منفصل,0,False,True,True
+public,,,,97,نوطة سوسة,15.6686,منفصل,0,False,False,False
+public,,,,97,نوطة سوسة,16.6413,منفصل,0,False,False,False
+public,,,,97,نوطة سوسة,16.8565,منفصل,0,False,False,False
+public,,,,64,البريقاء,384.5791,منفصل,0,False,False,False
+public,,,,64,البريقاء,384.3717,منفصل,0,False,False,False
+public,,,,12,ماتشوك,5.8994,منفصل,0,False,False,True
+public,,,,61,الشعاب,0.3992,منفصل,0,True,True,True
+public,,,,61,الشعاب,0.0,يتقاطع,1,True,True,True
+public,,,,137,الدافنية,11.1447,منفصل,0,False,False,False
+public,,,,137,الدافنية,11.1007,منفصل,0,False,False,False
+public,,,,137,الدافنية,10.7784,منفصل,0,False,False,False
+public,,,,3,القبيبة,598.7389,منفصل,0,False,False,False
+public,,,,3,القبيبة,613.3257,منفصل,0,False,False,False
+public,,,,61,الشعاب,2.2377,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,2.8279,منفصل,0,False,True,True
+public,,,,116,العودا,4.4832,منفصل,0,False,True,True
+public,,,,116,العودا,4.3284,منفصل,0,False,True,True
+public,,,,72,قاريونس,3.4403,منفصل,0,False,True,True
+public,,,,72,قاريونس,4.3422,منفصل,0,False,True,True
+public,,,,72,قاريونس,5.1191,منفصل,0,False,False,True
+public,,,,3,القبيبة,500.0182,منفصل,0,False,False,False
+public,,,,3,القبيبة,499.9506,منفصل,0,False,False,False
+public,,,,126,الزويتينة الجنوبي,21.4124,منفصل,0,False,False,False
+public,,,,126,الزويتينة الجنوبي,21.8604,منفصل,0,False,False,False
+public,,,,126,الزويتينة الجنوبي,21.2475,منفصل,0,False,False,False
+public,,,,37,حي الأندلس-1,5.0755,منفصل,0,False,False,True
+public,,,,31,محطة غرب طرابلس,71.3426,منفصل,0,False,False,False
+public,,,,31,محطة غرب طرابلس,71.1702,منفصل,0,False,False,False
+public,,,,31,محطة غرب طرابلس,71.0565,منفصل,0,False,False,False
+public,,,,72,قاريونس,4.1161,منفصل,0,False,True,True
+public,,,,31,محطة غرب طرابلس,70.7814,منفصل,0,False,False,False
+public,,,,72,قاريونس,8.0116,منفصل,0,False,False,True
+public,,,,14,ملليتة-1,94.6453,منفصل,0,False,False,False
+public,,,,48,مصيف تاجوراء,9.5837,منفصل,0,False,False,True
+public,,,,60,المثلث الرملي,4.205,منفصل,0,False,True,True
+public,,,,19,المطرد,3.7686,منفصل,0,False,True,True
+public,,,,19,المطرد,3.1083,منفصل,0,False,True,True
+public,,,,17,الجرف,5.5676,منفصل,0,False,False,True
+public,,,,17,الجرف,4.895,منفصل,0,False,True,True
+public,,,,17,الجرف,5.7506,منفصل,0,False,False,True
+public,,,,17,الجرف,5.5907,منفصل,0,False,False,True
+public,,,,17,الجرف,5.9374,منفصل,0,False,False,True
+public,,,,17,الجرف,5.8953,منفصل,0,False,False,True
+public,,,,17,الجرف,6.1207,منفصل,0,False,False,True
+public,,,,65,أبوكشفة,10.6017,منفصل,0,False,False,False
+public,,,,65,أبوكشفة,10.5426,منفصل,0,False,False,False
+public,,,,17,الجرف,3.1212,منفصل,0,False,True,True
+public,,,,43,الفوار,0.8592,منفصل,0,True,True,True
+public,,,,37,حي الأندلس-1,3.4549,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,3.4684,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,3.6666,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,5.0124,منفصل,0,False,False,True
+public,,,,37,حي الأندلس-1,3.2876,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,3.9008,منفصل,0,False,True,True
+public,,,,36,حي الأندلس-2,1.8037,منفصل,0,False,True,True
+public,,,,61,الشعاب,3.3149,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,0.7738,منفصل,0,True,True,True
+public,,,,36,حي الأندلس-2,4.7019,منفصل,0,False,True,True
+public,,,,36,حي الأندلس-2,4.2157,منفصل,0,False,True,True
+public,,,,21,أوياء,0.8914,منفصل,0,True,True,True
+public,,,,61,الشعاب,5.1826,منفصل,0,False,False,True
+public,,,,61,الشعاب,4.5219,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,4.2825,منفصل,0,False,True,True
+public,,,,45,الحرية,1.3994,منفصل,0,False,True,True
+public,,,,45,الحرية,1.2646,منفصل,0,False,True,True
+public,,,,61,الشعاب,4.9709,منفصل,0,False,True,True
+public,,,,37,حي الأندلس-1,3.5856,منفصل,0,False,True,True
+public,,,,61,الشعاب,6.7604,منفصل,0,False,False,True
+public,,,,61,الشعاب,8.2463,منفصل,0,False,False,True
+public,,,,37,حي الأندلس-1,6.6724,منفصل,0,False,False,True
+public,,,,40,شاطيء النخيل,1.1716,منفصل,0,False,True,True
+public,,,,137,الدافنية,11.3471,منفصل,0,False,False,False
+public,,,,137,الدافنية,11.4657,منفصل,0,False,False,False
+public,,,,137,الدافنية,11.632,منفصل,0,False,False,False
+public,,,,136,قصر أحمد,14.8145,منفصل,0,False,False,False
+public,,,,31,محطة غرب طرابلس,71.2957,منفصل,0,False,False,False
+public,,,,35,الغيران,4.9658,منفصل,0,False,True,True
+public,,,,36,حي الأندلس-2,2.3503,منفصل,0,False,True,True
+public,,,,36,حي الأندلس-2,2.368,منفصل,0,False,True,True
+public,,,,36,حي الأندلس-2,1.904,منفصل,0,False,True,True
+public,,,,11,هانيبال,1.9527,منفصل,0,False,True,True
+public,,,,61,الشعاب,0.07,منفصل,0,True,True,True
+public,,,,2,زعفران,12.3685,منفصل,0,False,False,False
+public,,,,2,زعفران,13.0738,منفصل,0,False,False,False
+public,,,,2,زعفران,13.3933,منفصل,0,False,False,False
+public,,,,2,زعفران,13.3766,منفصل,0,False,False,False
+public,,,,2,زعفران,13.3014,منفصل,0,False,False,False
+public,,,,2,زعفران,11.0333,منفصل,0,False,False,False
+public,,,,2,زعفران,11.79,منفصل,0,False,False,False
+public,,,,2,زعفران,12.4999,منفصل,0,False,False,False
+public,,,,2,زعفران,12.5147,منفصل,0,False,False,False
+public,,,,2,زعفران,12.5094,منفصل,0,False,False,False
+public,,,,2,زعفران,12.1531,منفصل,0,False,False,False
+public,,,,2,زعفران,13.1487,منفصل,0,False,False,False
+public,,,,2,زعفران,12.8636,منفصل,0,False,False,False
+public,,,,2,زعفران,12.5788,منفصل,0,False,False,False
+public,,,,2,زعفران,12.5407,منفصل,0,False,False,False
+public,,,,2,زعفران,13.1059,منفصل,0,False,False,False
+public,,,,2,زعفران,13.5605,منفصل,0,False,False,False
+public,,,,3,القبيبة,619.2551,منفصل,0,False,False,False
+public,,,,3,القبيبة,619.447,منفصل,0,False,False,False
+public,,,,14,ملليتة-1,899.2273,منفصل,0,False,False,False
+public,,,,14,ملليتة-1,901.2509,منفصل,0,False,False,False
+public,,,,14,ملليتة-1,901.2358,منفصل,0,False,False,False
+public,,,,3,القبيبة,501.0199,منفصل,0,False,False,False
+public,,,,3,القبيبة,500.6985,منفصل,0,False,False,False
+public,,,,3,القبيبة,500.8457,منفصل,0,False,False,False
+public,,,,2,زعفران,11.9712,منفصل,0,False,False,False
+public,,,,137,الدافنية,12.0604,منفصل,0,False,False,False
+public,,,,2,زعفران,12.9812,منفصل,0,False,False,False
+public,,,,2,زعفران,13.3439,منفصل,0,False,False,False
+public,,,,2,زعفران,12.8313,منفصل,0,False,False,False
+public,,,,116,العودا,4.4134,منفصل,0,False,True,True
+public,,,,14,ملليتة-1,900.3198,منفصل,0,False,False,False
+public,,,,11,هانيبال,1.8545,منفصل,0,False,True,True
+public,,,,11,هانيبال,1.7922,منفصل,0,False,True,True
+public,,,,11,هانيبال,1.0801,منفصل,0,False,True,True
+public,,,,3,القبيبة,613.8598,منفصل,0,False,False,False
+public,,,,137,الدافنية,11.2752,منفصل,0,False,False,False
+public,,,,137,الدافنية,11.3387,منفصل,0,False,False,False
+public,,,,137,الدافنية,11.8899,منفصل,0,False,False,False
+public,,,,61,الشعاب,0.7702,منفصل,0,True,True,True
+public,,,,61,الشعاب,0.4899,منفصل,0,True,True,True
+public,,,,61,الشعاب,0.5097,منفصل,0,True,True,True
+public,,,,61,الشعاب,0.4065,منفصل,0,True,True,True
+public,,,,61,الشعاب,0.4968,منفصل,0,True,True,True
+public,,,,97,نوطة سوسة,11.1252,منفصل,0,False,False,False
+public,,,,64,البريقاء,383.8784,منفصل,0,False,False,False
+public,,,,64,البريقاء,383.9469,منفصل,0,False,False,False
+public,,,,64,البريقاء,384.2899,منفصل,0,False,False,False
+public,,,,64,البريقاء,383.9879,منفصل,0,False,False,False
+public,,,,64,البريقاء,385.006,منفصل,0,False,False,False
+public,,,,17,الجرف,5.7495,منفصل,0,False,False,True
+public,,,,17,الجرف,6.1958,منفصل,0,False,False,True
+public,,,,17,الجرف,5.1374,منفصل,0,False,False,True
+public,,,,17,الجرف,6.1907,منفصل,0,False,False,True
+theme,,,,73,عين زيانة,4.8018,منفصل,0,False,True,True
