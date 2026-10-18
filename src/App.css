@@ -105,3 +105,67 @@
         height: 230px;
     }
 }
+/* Official government header */
+.official-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 24px;
+  direction: rtl;
+  min-height: 100px;
+}
+
+.official-header .brand {
+  justify-content: center;
+  text-align: center;
+}
+
+.gov-header-right,
+.gov-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  line-height: 1.5;
+}
+
+.gov-header-right {
+  text-align: right;
+}
+
+.gov-header-left {
+  text-align: left;
+}
+
+.gov-header-right strong,
+.gov-header-left strong {
+  color: #e8c580;
+  font-size: 16px;
+}
+
+.gov-header-right span,
+.gov-header-left span {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .official-header {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .official-header .brand {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .gov-header-right,
+  .gov-header-left {
+    grid-row: 2;
+  }
+
+  .gov-header-right strong,
+  .gov-header-left strong {
+    font-size: 12px;
+  }
+}

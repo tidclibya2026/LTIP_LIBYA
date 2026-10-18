@@ -237,7 +237,23 @@ export default function App() {
   const selectedParkLayer = PARK_LAYERS.find(layer => layer.id === selectedPark?.layerId);
   const parkCount = PARK_LAYERS.reduce((sum, layer) => sum + (parkData[layer.id]?.features?.length || 0), 0);
   return <div className="app" dir="rtl">
-    <header className="header"><div className="brand"><span className="brand-icon"><MapPinned size={24}/></span><div><h1>المنصة الوطنية للاستثمار السياحي</h1><p>ليبيا | الخارطة الاستثمارية الجغرافية</p></div></div><span className="tag">نسخة تجريبية · LTIP</span></header>
+    <header className="header official-header">
+  <div className="gov-header-right">
+    <strong>دولة ليبيا</strong>
+    <span>حكومة الوحدة الوطنية</span>
+  </div>
+  <div className="brand">
+    <span className="brand-icon"><MapPinned size={24}/></span>
+    <div>
+      <h1>المنصة الوطنية للاستثمار السياحي</h1>
+      <p>ليبيا | الخارطة الاستثمارية الجغرافية</p>
+    </div>
+  </div>
+  <div className="gov-header-left">
+    <strong>وزارة السياحة والصناعات التقليدية</strong>
+    <span>مركز المعلومات والتوثيق السياحي</span>
+  </div>
+</header>
     <main><section className="intro"><div><span className="eyebrow">مركز المعلومات والتوثيق السياحي · مشروع تجريبي</span><h2>خارطة فرص التنمية والاستثمار السياحي في ليبيا</h2><p>استكشاف الحدود الجغرافية الحقيقية للمناطق المستهدفة للاستثمار، تمهيدًا لربطها بالمدن والمطارات والموانئ وشبكات النقل.</p></div><div className="big-count"><strong>{zones.length || '—'}</strong><span>منطقة استثمارية</span></div></section>
     <section className="metrics"><article><Layers3/><div><strong>{zones.length || '—'}</strong><span>مناطق التنمية السياحية</span></div></article><article><Building2/><div><strong>{cities.length || "—"}</strong><span>المدن المرتبطة مكانيًا</span></div></article><article><Plane/><div><strong>{accessData.airports?.length ?? '—'}</strong><span>المطارات المسجلة</span></div></article><article><Ship/><div><strong>قيد الربط</strong><span>الموانئ</span></div></article><article><Route/><div><strong>قيد التحليل</strong><span>شبكات النقل</span></div></article></section>
     <section className="park-controls" aria-label="إدارة طبقات نظم المعلومات الجغرافية">
@@ -331,4 +347,5 @@ export default function App() {
     </main><footer>LTIP · المرحلة الأولى من الربط المكاني · لا تُعرض درجات استثمارية قبل التحقق من البيانات</footer>
   </div>;
 }
+
 
