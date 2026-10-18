@@ -82,9 +82,9 @@ function accessId(feature) {
   return p.AIRPORT_ID || p.NTG_ID || p.SITE_ID || p.TIDC_ENTITY_ID || 'غير متوفر';
 }
 const PARK_LAYERS = [
-  { id: 'national', title: 'المنتزهات الوطنية', url: '/data/parks/FD_PARK_NATIONAL_33.geojson', color: '#21836e' },
-  { id: 'public', title: 'الحدائق والمنتزهات العامة', url: '/data/parks/FD_PARK_PUBLIC_185.geojson', color: '#3a8cb5' },
-  { id: 'theme', title: 'المنتزهات الترفيهية', url: '/data/parks/FD_THEME_PARK_1.geojson', color: '#a36fb5' },
+  { id: 'national', title: 'المنتزهات الوطنية', url: import.meta.env.BASE_URL + 'data/parks/FD_PARK_NATIONAL_33.geojson', color: '#21836e' },
+  { id: 'public', title: 'الحدائق والمنتزهات العامة', url: import.meta.env.BASE_URL + 'data/parks/FD_PARK_PUBLIC_185.geojson', color: '#3a8cb5' },
+  { id: 'theme', title: 'المنتزهات الترفيهية', url: import.meta.env.BASE_URL + 'data/parks/FD_THEME_PARK_1.geojson', color: '#a36fb5' },
 ];
 function parkTitle(feature, index) {
   const p = feature?.properties || {};
@@ -121,14 +121,14 @@ export default function App() {
   const [photoManifest, setPhotoManifest] = useState({});
   const [activePhoto, setActivePhoto] = useState(0);
   useEffect(() => {
-    fetch('/data/zone_photos.json').then(r => {
+    fetch(import.meta.env.BASE_URL + 'data/zone_photos.json').then(r => {
       if (!r.ok) throw Error('Photo manifest missing');
       return r.json();
     }).then(setPhotoManifest).catch(() => setPhotoManifest({}));
   }, []);
   useEffect(() => { setActivePhoto(0); }, [selected]);
   useEffect(() => {
-    fetch('/data/zones_141.geojson').then(r => { if (!r.ok) throw Error(`HTTP ${r.status}`); return r.json(); })
+    fetch(import.meta.env.BASE_URL + 'data/zones_141.geojson').then(r => { if (!r.ok) throw Error(`HTTP ${r.status}`); return r.json(); })
       .then(d => setZones(d.features || [])).catch(e => setError(`تعذر تحميل طبقة المضلعات: ${e.message}`));
   }, []);
   useEffect(() => {
@@ -149,7 +149,7 @@ export default function App() {
     return () => { cancelled = true; };
   }, []);
   useEffect(() => {
-    fetch('/data/accessibility/cities_57.geojson')
+    fetch(import.meta.env.BASE_URL + 'data/accessibility/cities_57.geojson')
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(data => {
         if (data.type !== 'FeatureCollection' || !Array.isArray(data.features)) throw new Error('GeoJSON غير صالح');
@@ -161,14 +161,14 @@ export default function App() {
     let cancelled = false;
     ACCESS_LAYERS.forEach(async layer => {
       try {
-        const response = await fetch(`/data/accessibility/${layer.file}`);
+        const response = await fetch(import.meta.env.BASE_URL + `data/accessibility/${layer.file}`);
         if (!response.ok) throw Error(`HTTP ${response.status}`);
         const json = await response.json();
         if (json.type !== 'FeatureCollection' || !Array.isArray(json.features)) throw Error('GeoJSON غير صالح');
         if (!cancelled) setAccessData(prev => ({...prev,[layer.id]:json.features}));
       } catch(e) { if (!cancelled) setAccessErrors(prev => ({...prev,[layer.id]:e.message})); }
     });
-    fetch('/data/analysis/zone_airport_heritage_nearest.json')
+    fetch(import.meta.env.BASE_URL + 'data/analysis/zone_airport_heritage_nearest.json')
       .then(r => {if(!r.ok) throw Error(`HTTP ${r.status}`); return r.json();})
       .then(d => {if(!cancelled) setNearestLinks(d.zones || {});})
       .catch(e => {if(!cancelled) setAccessErrors(prev => ({...prev,analysis:e.message}));});
@@ -327,7 +327,8 @@ export default function App() {
   data={selectedParkFeature}
   style={{color:'#e3a02d',weight:4,fillColor:'#f1c26a',fillOpacity:.46}}/>
   <FitZone feature={selectedParkFeature}/></>}
-{showZones && selectedFeature && <><GeoJSON key={`selected-${selected}`} data={selectedFeature} style={{color:'#d69c36',weight:4,fillColor:'#e7b95a',fillOpacity:.45}} eventHandlers={{click:()=>setSelected(selected)}} /><FitZone feature={selectedFeature}/></>}</MapContainer>{selectedFeature && photos.length > 0 && (<section className="zone-gallery gallery-panel" aria-label="صور المنطقة الاستثمارية"><div className="gallery-title"><Images size={17}/><strong>صور الموقع</strong><span>{photos.length} صورة</span></div>{photos.length ? <><figure><img src={photos[Math.min(activePhoto,photos.length-1)].src} alt={photos[Math.min(activePhoto,photos.length-1)].alt || `صورة موثقة لمنطقة ${selectedName}`} loading="lazy" onError={e=>{e.currentTarget.style.display='none'}}/><figcaption>{photos[Math.min(activePhoto,photos.length-1)].caption || 'صورة مرفقة بالموقع'}{photos[Math.min(activePhoto,photos.length-1)].source ? ` — المصدر: ${photos[Math.min(activePhoto,photos.length-1)].source}` : ''}</figcaption></figure><div className="gallery-thumbs">{photos.map((photo,i)=><button key={`${photo.src}-${i}`} type="button" className={i===activePhoto?'active':''} onClick={()=>setActivePhoto(i)} aria-label={`عرض الصورة ${i+1}`}><img src={photo.src} alt={photo.alt || `صورة ${i+1}`} loading="lazy"/></button>)}</div></> : <div className="no-photos">لم تُرفق صور موثقة لهذه المنطقة بعد. لا نعرض صورًا افتراضية قد توحي بأنها للموقع الفعلي.</div>}</section>)}<div className="map-foot"><Info size={16}/> الحدود مستوردة من ملف GIS، ولم تُعتمد مساحيًا أو قانونيًا بعد. تتطلب الخلفية الخرائطية اتصالًا بالإنترنت.</div></div></section>
+{showZones && selectedFeature && <><GeoJSON key={`selected-${selected}`} data={selectedFeature} style={{color:'#d69c36',weight:4,fillColor:'#e7b95a',fillOpacity:.45}} eventHandlers={{click:()=>setSelected(selected)}} /><FitZone feature={selectedFeature}/></>}</MapContainer>{selectedFeature && photos.length > 0 && (<section className="zone-gallery gallery-panel" aria-label="صور المنطقة الاستثمارية"><div className="gallery-title"><Images size={17}/><strong>صور الموقع</strong><span>{photos.length} صورة</span></div>{photos.length ? <><figure><img src={import.meta.env.BASE_URL + photos[Math.min(activePhoto,photos.length-1)].src.replace(/^\/+/, '')} alt={photos[Math.min(activePhoto,photos.length-1)].alt || `صورة موثقة لمنطقة ${selectedName}`} loading="lazy" onError={e=>{e.currentTarget.style.display='none'}}/><figcaption>{photos[Math.min(activePhoto,photos.length-1)].caption || 'صورة مرفقة بالموقع'}{photos[Math.min(activePhoto,photos.length-1)].source ? ` — المصدر: ${photos[Math.min(activePhoto,photos.length-1)].source}` : ''}</figcaption></figure><div className="gallery-thumbs">{photos.map((photo,i)=><button key={`${photo.src}-${i}`} type="button" className={i===activePhoto?'active':''} onClick={()=>setActivePhoto(i)} aria-label={`عرض الصورة ${i+1}`}><img src={import.meta.env.BASE_URL + photo.src.replace(/^\/+/, '')} alt={photo.alt || `صورة ${i+1}`} loading="lazy"/></button>)}</div></> : <div className="no-photos">لم تُرفق صور موثقة لهذه المنطقة بعد. لا نعرض صورًا افتراضية قد توحي بأنها للموقع الفعلي.</div>}</section>)}<div className="map-foot"><Info size={16}/> الحدود مستوردة من ملف GIS، ولم تُعتمد مساحيًا أو قانونيًا بعد. تتطلب الخلفية الخرائطية اتصالًا بالإنترنت.</div></div></section>
     </main><footer>LTIP · المرحلة الأولى من الربط المكاني · لا تُعرض درجات استثمارية قبل التحقق من البيانات</footer>
   </div>;
 }
+
