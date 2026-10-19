@@ -108,6 +108,10 @@ export default function App() {
   const [accessQuery, setAccessQuery] = useState('');
   const [nearestLinks, setNearestLinks] = useState({});
   const [nearestTransport, setNearestTransport] = useState({});
+  // LTIP_ACCESS_CLASSIFICATION_V1
+  const [accessReadiness, setAccessReadiness] = useState({});
+  const [readinessFilter, setReadinessFilter] = useState('all');
+  const [readinessError, setReadinessError] = useState('');
   const [transportError, setTransportError] = useState('');
   const [cities, setCities] = useState([]);
   const [cityError, setCityError] = useState('');
@@ -144,6 +148,20 @@ export default function App() {
         setNearestTransport(data.zones);
       })
       .catch(e => setTransportError(e.message));
+  }, []);
+  useEffect(() => {
+    fetch(import.meta.env.BASE_URL +
+      'data/analysis/zone_access_readiness_141.json')
+      .then(r => {
+        if (!r.ok) throw Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(d => {
+        if (Object.keys(d.zones || {}).length !== 141)
+          throw Error('Incomplete classification');
+        setAccessReadiness(d.zones);
+      })
+      .catch(e => setReadinessError(e.message));
   }, []);
   useEffect(() => { setActivePhoto(0); }, [selected]);
   useEffect(() => {
@@ -229,13 +247,43 @@ export default function App() {
     })));
     return needle ? items.filter(item => `${item.title} ${item.id} ${item.feature.properties?.PARK_ID || ''}`.toLocaleLowerCase().includes(needle)) : items;
   }, [parkData, parkQuery]);
-  const filtered = useMemo(() => zones.map((f, i) => ({ f, i, name: label(f, i) })).filter(x => x.name.toLowerCase().includes(query.trim().toLowerCase())), [zones, query]);
+  const readinessFor = (f, i) =>
+    accessReadiness[String(f?.properties?.id ?? i + 1)];
+
+  const filtered = useMemo(() =>
+    zones.map((f, i) => ({ f, i, name: label(f, i) }))
+      .filter(x =>
+        x.name.toLowerCase().includes(query.trim().toLowerCase()) &&
+        (readinessFilter === 'all' ||
+          accessReadiness[String(x.f?.properties?.id ?? x.i + 1)]
+            ?.geographic_access?.grade === readinessFilter)
+      ),
+    [zones, query, readinessFilter, accessReadiness]
+  );
+
+  const mapZones = useMemo(() =>
+    zones.filter((f, i) =>
+      readinessFilter === 'all' ||
+      accessReadiness[String(f?.properties?.id ?? i + 1)]
+        ?.geographic_access?.grade === readinessFilter
+    ),
+    [zones, readinessFilter, accessReadiness]
+  );
+
+  const readinessColors = {
+    'مرتفع': '#21865b',
+    'متوسط': '#e0a32e',
+    'منخفض': '#e47737',
+    'منخفض جدًا': '#c93c43'
+  };
   const selectedFeature = selected === null ? null : zones[selected];
   const selectedName = selectedFeature ? label(selectedFeature, selected) : '';
   const selectedArea = selectedFeature?.properties?.area_ha_geodesic;
   const nearestCity = selected === null ? null : nearestCityByZone[selected];
   const selectedZoneKey = selectedFeature?.properties?.id ?? (selected === null ? null : selected + 1);
   const nearestAccess = selectedZoneKey === null ? null : nearestLinks[String(selectedZoneKey)];
+  const selectedReadiness = selectedZoneKey === null
+    ? null : accessReadiness[String(selectedZoneKey)];
   const transportResult = selectedZoneKey === null
     ? null : nearestTransport[String(selectedZoneKey)];
   const selectedAccessFeature = selectedAccess ? accessData[selectedAccess.layerId]?.[selectedAccess.index] : null;
@@ -314,7 +362,15 @@ export default function App() {
       {Object.keys(accessErrors).length > 0 && <div className="park-error">{Object.entries(accessErrors).map(([id,msg]) => <div key={id}>تعذر تحميل {id}: {msg}</div>)}</div>}
       {cityError && <div className="park-error">{cityError}</div>}{roadError && <div className="park-error">{roadError}</div>}
       {Object.keys(parkErrors).length > 0 && <div className="park-error">{PARK_LAYERS.filter(layer=>parkErrors[layer.id]).map(layer=><div key={layer.id}>تعذر تحميل {layer.title}: {parkErrors[layer.id]}</div>)}</div>}
-    </section><section className="workspace"><aside className="sidebar"><div className="sidebar-tabs"><button type="button" className={sidebarMode==='zones'?'active':''} onClick={()=>setSidebarMode('zones')}>مناطق الاستثمار ({zones.length})</button><button type="button" className={sidebarMode==='parks'?'active':''} onClick={()=>setSidebarMode('parks')}>المنتزهات والحدائق ({parkCount})</button><button type="button" className={sidebarMode==='cities'?'active':''} onClick={()=>setSidebarMode('cities')}>المدن ({cities.length})</button><button type="button" className={sidebarMode==='access'?'active':''} onClick={()=>setSidebarMode('access')}>المطارات والموانئ والآثار</button></div><div className="search"><Search size={18}/>{sidebarMode==='zones' ? <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="ابحث باسم المنطقة..." aria-label="البحث عن منطقة"/> : sidebarMode==='parks' ? <input value={parkQuery} onChange={e=>setParkQuery(e.target.value)} placeholder="ابحث باسم المنتزه أو معرفه..." aria-label="البحث عن منتزه بالاسم أو المعرف"/> : sidebarMode==='cities' ? <input value={cityQuery} onChange={e=>setCityQuery(e.target.value)} placeholder="ابحث باسم المدينة..." aria-label="البحث عن مدينة"/> : <input value={accessQuery} onChange={e=>setAccessQuery(e.target.value)} placeholder="ابحث عن مطار أو ميناء أو موقع أثري..." aria-label="البحث عن مطار أو موقع أثري"/>}</div>{sidebarMode==='zones' && selectedFeature && <div className="zone-detail"><div className="detail-title"><strong>بطاقة المنطقة الاستثمارية</strong><button type="button" onClick={()=>setSelected(null)} aria-label="إغلاق البطاقة">×</button></div><h4>{selectedName}</h4><dl><dt>الرقم التعريفي</dt><dd>{selectedFeature.properties?.id ?? selected + 1}</dd><dt>المساحة المحسوبة</dt><dd>{typeof selectedArea === 'number' ? `${selectedArea.toLocaleString('ar-LY')} هكتار` : 'قيد الحساب'}</dd><dt>حالة التحقق</dt><dd>{selectedFeature.properties?.status || 'غير مدقق'}</dd><dt>أقرب مدينة من قاعدة GIS</dt><dd>{nearestCity ? <button type="button" className="city-link" onClick={() => chooseCity(nearestCity.index)}>{nearestCity.name} — {nearestCity.distanceKm.toFixed(2)} كم ↗</button> : 'قيد تحميل بيانات المدن'}</dd>{accessLink('airports','أقرب مطار (بصرف النظر عن حالة التشغيل)')}{accessLink('archPoints','أقرب موقع أثري نقطي')}{accessLink('archPolygons','أقرب موقع أثري مضلعي')}{accessLink('unesco','أقرب نقطة مرجعية للتراث العالمي')}<dt>أقرب ميناء بحري</dt>
+    </section><section className="workspace"><aside className="sidebar"><div className="sidebar-tabs"><button type="button" className={sidebarMode==='zones'?'active':''} onClick={()=>setSidebarMode('zones')}>مناطق الاستثمار ({zones.length})</button><button type="button" className={sidebarMode==='parks'?'active':''} onClick={()=>setSidebarMode('parks')}>المنتزهات والحدائق ({parkCount})</button><button type="button" className={sidebarMode==='cities'?'active':''} onClick={()=>setSidebarMode('cities')}>المدن ({cities.length})</button><button type="button" className={sidebarMode==='access'?'active':''} onClick={()=>setSidebarMode('access')}>المطارات والموانئ والآثار</button></div><div className="search"><Search size={18}/>{sidebarMode==='zones' ? <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="ابحث باسم المنطقة..." aria-label="البحث عن منطقة"/> : sidebarMode==='parks' ? <input value={parkQuery} onChange={e=>setParkQuery(e.target.value)} placeholder="ابحث باسم المنتزه أو معرفه..." aria-label="البحث عن منتزه بالاسم أو المعرف"/> : sidebarMode==='cities' ? <input value={cityQuery} onChange={e=>setCityQuery(e.target.value)} placeholder="ابحث باسم المدينة..." aria-label="البحث عن مدينة"/> : <input value={accessQuery} onChange={e=>setAccessQuery(e.target.value)} placeholder="ابحث عن مطار أو ميناء أو موقع أثري..." aria-label="البحث عن مطار أو موقع أثري"/>}</div>{sidebarMode==='zones' && selectedFeature && <div className="zone-detail"><div className="detail-title"><strong>بطاقة المنطقة الاستثمارية</strong><button type="button" onClick={()=>setSelected(null)} aria-label="إغلاق البطاقة">×</button></div><h4>{selectedName}</h4><dl><dt>الرقم التعريفي</dt><dd>{selectedFeature.properties?.id ?? selected + 1}</dd><dt>المساحة المحسوبة</dt><dd>{typeof selectedArea === 'number' ? `${selectedArea.toLocaleString('ar-LY')} هكتار` : 'قيد الحساب'}</dd><dt>حالة التحقق</dt><dd>{selectedFeature.properties?.status || 'غير مدقق'}</dd><dt>أقرب مدينة من قاعدة GIS</dt><dd>{nearestCity ? <button type="button" className="city-link" onClick={() => chooseCity(nearestCity.index)}>{nearestCity.name} — {nearestCity.distanceKm.toFixed(2)} كم ↗</button> : 'قيد تحميل بيانات المدن'}</dd>{accessLink('airports','أقرب مطار (بصرف النظر عن حالة التشغيل)')}{accessLink('archPoints','أقرب موقع أثري نقطي')}{accessLink('archPolygons','أقرب موقع أثري مضلعي')}{accessLink('unesco','أقرب نقطة مرجعية للتراث العالمي')}<dt>مؤشر القرب الجغرافي</dt>
+  <dd>{selectedReadiness?.geographic_access
+    ? `${selectedReadiness.geographic_access.score} / 100 — ${selectedReadiness.geographic_access.grade}`
+    : 'قيد تحميل التصنيف'}</dd>
+  <dt>الجاهزية التشغيلية الفعلية</dt>
+  <dd>{selectedReadiness
+    ? 'غير متحققة — تحتاج إلى تقييم فني وميداني'
+    : 'قيد تحميل البيانات'}</dd>
+  <dt>أقرب ميناء بحري</dt>
 <dd>{transportResult?.nearest_port
   ? `${transportResult.nearest_port.name} — ${transportResult.nearest_port.distance_km.toLocaleString('ar-LY')} كم`
   : transportError ? 'تعذر تحميل التحليل' : 'جار تحميل التحليل'}</dd>
@@ -362,7 +418,46 @@ export default function App() {
       onClick={()=>chooseAccess(item.layerId,item.index)}>
       <span className="park-result-dot" style={{background:ACCESS_LAYERS.find(l=>l.id===item.layerId)?.color}}/>
       <span className="park-result-name">{item.name}<small>{item.id} · {ACCESS_LAYERS.find(l=>l.id===item.layerId)?.title}</small></span><span className="arrow">←</span>
-    </button>)}{sidebarMode==='parks' && parkMatches.length===0 && <p className="empty-results">لا توجد نتائج مطابقة للبحث.</p>}{sidebarMode==='cities' && cityMatches.length===0 && <p className="empty-results">لا توجد مدن مطابقة.</p>}{sidebarMode==='access' && accessMatches.length===0 && <p className="empty-results">لا توجد نتائج مطابقة.</p>}</div></aside><div className="map-panel"><div className="map-heading"><h3>الخارطة التفاعلية للمناطق الاستثمارية</h3><span>WGS 84 · EPSG:4326</span></div>{error && <div className="error">{error}</div>}<MapContainer center={[27.3, 17.0]} zoom={5} className="map" scrollWheelZoom={true}><TileLayer attribution='&copy; OpenStreetMap contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>{showZones && zones.length > 0 && <GeoJSON key={`all-${zones.length}`} data={{type:'FeatureCollection',features:zones}} style={{color:'#b9914b',weight:1.7,fillColor:'#183e69',fillOpacity:.25}} onEachFeature={(f,layer)=>{ layer.on('click',()=>chooseFeature(f)); }} />}{showCities && cities.map((city, index) => <CircleMarker key={`city-${index}`} center={[city.geometry.coordinates[1],city.geometry.coordinates[0]]} radius={selectedCity===index?9:5} pathOptions={{color:'#8c3b21',weight:1.5,fillColor:'#d97645',fillOpacity:.85}} eventHandlers={{click:()=>chooseCity(index)}}><Tooltip direction="top">{cityName(city,index)}</Tooltip></CircleMarker>)}
+    </button>)}{sidebarMode==='parks' && parkMatches.length===0 && <p className="empty-results">لا توجد نتائج مطابقة للبحث.</p>}{sidebarMode==='cities' && cityMatches.length===0 && <p className="empty-results">لا توجد مدن مطابقة.</p>}{sidebarMode==='access' && accessMatches.length===0 && <p className="empty-results">لا توجد نتائج مطابقة.</p>}</div></aside><div className="map-panel"><div className="map-heading">
+    <h3>الخارطة التفاعلية للمناطق الاستثمارية</h3>
+    <span>WGS 84 · EPSG:4326</span>
+  </div>
+  <div style={{padding:12,display:'flex',gap:12,
+    flexWrap:'wrap',alignItems:'center'}}>
+    <label htmlFor="access-grade">تصنيف القرب الجغرافي:</label>
+    <select id="access-grade"
+      value={readinessFilter}
+      onChange={e=>setReadinessFilter(e.target.value)}>
+      <option value="all">جميع المناطق (141)</option>
+      <option value="مرتفع">مرتفع (97)</option>
+      <option value="متوسط">متوسط (35)</option>
+      <option value="منخفض">منخفض (6)</option>
+      <option value="منخفض جدًا">منخفض جدًا (3)</option>
+    </select>
+    <strong>المناطق المعروضة: {mapZones.length}</strong>
+    {Object.entries(readinessColors).map(([grade,color])=>
+      <span key={grade} style={{display:'inline-flex',
+        alignItems:'center',gap:5}}>
+        <span style={{width:12,height:12,
+          background:color,borderRadius:3}}/>
+        {grade}
+      </span>
+    )}
+    {readinessError &&
+      <span role="alert">خطأ تحميل التصنيف: {readinessError}</span>}
+    <small>التصنيف جغرافي ولا يثبت الجاهزية التشغيلية.</small>
+  </div>{error && <div className="error">{error}</div>}<MapContainer center={[27.3, 17.0]} zoom={5} className="map" scrollWheelZoom={true}><TileLayer attribution='&copy; OpenStreetMap contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>{showZones && zones.length > 0 && <GeoJSON key={`access-${readinessFilter}-${Object.keys(accessReadiness).length}`}
+    data={{type:'FeatureCollection',features:mapZones}}
+    style={f=>{
+      const grade=accessReadiness[String(f.properties?.id)]
+        ?.geographic_access?.grade;
+      return {
+        color:'#6d7885',
+        weight:1.5,
+        fillColor:readinessColors[grade] || '#183e69',
+        fillOpacity:.48
+      };
+    }} onEachFeature={(f,layer)=>{ layer.on('click',()=>chooseFeature(f)); }} />}{showCities && cities.map((city, index) => <CircleMarker key={`city-${index}`} center={[city.geometry.coordinates[1],city.geometry.coordinates[0]]} radius={selectedCity===index?9:5} pathOptions={{color:'#8c3b21',weight:1.5,fillColor:'#d97645',fillOpacity:.85}} eventHandlers={{click:()=>chooseCity(index)}}><Tooltip direction="top">{cityName(city,index)}</Tooltip></CircleMarker>)}
 {ACCESS_LAYERS.map(layer => accessVisible[layer.id] && (accessData[layer.id] || []).map((feature,index) =>
   layer.type === 'point' ? <CircleMarker key={`${layer.id}-${index}`} center={[feature.geometry.coordinates[1],feature.geometry.coordinates[0]]}
     radius={selectedAccess?.layerId===layer.id && selectedAccess?.index===index?9:5}
