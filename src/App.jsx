@@ -1,4 +1,4 @@
-﻿import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { MapContainer, TileLayer, GeoJSON, CircleMarker, Tooltip, useMap } from 'react-leaflet';
 import { MapPinned, Search, Layers3, Building2, Plane, Ship, Route, Info, Images } from 'lucide-react';
 import 'leaflet/dist/leaflet.css';
@@ -69,6 +69,7 @@ function FitCity({ coordinates }) {
 }
 const ACCESS_LAYERS = [
   { id: 'airports', title: 'المطارات', file: 'airports_54.geojson', color: '#2879bd', type: 'point' },
+  { id: 'ports', title: 'الموانئ البحرية', file: 'ports_33.geojson', color: '#0b8395', type: 'point' },
   { id: 'archPoints', title: 'المواقع الأثرية (نقاط)', file: 'archaeology_points_60.geojson', color: '#98522e', type: 'point' },
   { id: 'archPolygons', title: 'المواقع الأثرية (مضلعات)', file: 'archaeology_polygons_35.geojson', color: '#ad6e39', type: 'polygon' },
   { id: 'unesco', title: 'مواقع التراث العالمي (نقاط)', file: 'unesco_points_5.geojson', color: '#8063aa', type: 'point' },
@@ -79,7 +80,7 @@ function accessName(feature, index, type) {
 }
 function accessId(feature) {
   const p = feature?.properties || {};
-  return p.AIRPORT_ID || p.NTG_ID || p.SITE_ID || p.TIDC_ENTITY_ID || 'غير متوفر';
+  return p.AIRPORT_ID || p.PORT_ID || p.NTG_ID || p.SITE_ID || p.TIDC_ENTITY_ID || 'غير متوفر';
 }
 const PARK_LAYERS = [
   { id: 'national', title: 'المنتزهات الوطنية', url: import.meta.env.BASE_URL + 'data/parks/FD_PARK_NATIONAL_33.geojson', color: '#21836e' },
@@ -99,7 +100,10 @@ export default function App() {
   const [zones, setZones] = useState([]);
   const [accessData, setAccessData] = useState({});
   const [accessErrors, setAccessErrors] = useState({});
-  const [accessVisible, setAccessVisible] = useState({airports:true,archPoints:false,archPolygons:false,unesco:false});
+  const [accessVisible, setAccessVisible] = useState({airports:true,ports:false,archPoints:false,archPolygons:false,unesco:false});
+  const [roads, setRoads] = useState(null);
+  const [showRoads, setShowRoads] = useState(false);
+  const [roadError, setRoadError] = useState('');
   const [selectedAccess, setSelectedAccess] = useState(null);
   const [accessQuery, setAccessQuery] = useState('');
   const [nearestLinks, setNearestLinks] = useState({});
@@ -174,6 +178,19 @@ export default function App() {
       .catch(e => {if(!cancelled) setAccessErrors(prev => ({...prev,analysis:e.message}));});
     return () => { cancelled=true; };
   }, []);
+  useEffect(() => {
+    if (!showRoads || roads) return;
+    const controller = new AbortController();
+    fetch(import.meta.env.BASE_URL + 'data/accessibility/roads_6272.geojson', {signal:controller.signal})
+      .then(r => { if (!r.ok) throw Error(`HTTP ${r.status}`); return r.json(); })
+      .then(d => {
+        if (d.type !== 'FeatureCollection' || !Array.isArray(d.features)) throw Error('GeoJSON غير صالح');
+        setRoads(d);
+        setRoadError('');
+      })
+      .catch(e => { if (e.name !== 'AbortError') setRoadError(`تعذر تحميل شبكة الطرق: ${e.message}`); });
+    return () => controller.abort();
+  }, [showRoads, roads]);
   const accessMatches = useMemo(() => ACCESS_LAYERS.flatMap(layer =>
     (accessData[layer.id] || []).map((feature,index) => ({layerId:layer.id,index,feature,name:accessName(feature,index),id:accessId(feature)})))
     .filter(item => `${item.name} ${item.id}`.toLocaleLowerCase().includes(accessQuery.trim().toLocaleLowerCase())),[accessData,accessQuery]);
@@ -255,7 +272,7 @@ export default function App() {
   </div>
 </header>
     <main><section className="intro"><div><span className="eyebrow">مركز المعلومات والتوثيق السياحي · مشروع تجريبي</span><h2>خارطة فرص التنمية والاستثمار السياحي في ليبيا</h2><p>استكشاف الحدود الجغرافية الحقيقية للمناطق المستهدفة للاستثمار، تمهيدًا لربطها بالمدن والمطارات والموانئ وشبكات النقل.</p></div><div className="big-count"><strong>{zones.length || '—'}</strong><span>منطقة استثمارية</span></div></section>
-    <section className="metrics"><article><Layers3/><div><strong>{zones.length || '—'}</strong><span>مناطق التنمية السياحية</span></div></article><article><Building2/><div><strong>{cities.length || "—"}</strong><span>المدن المرتبطة مكانيًا</span></div></article><article><Plane/><div><strong>{accessData.airports?.length ?? '—'}</strong><span>المطارات المسجلة</span></div></article><article><Ship/><div><strong>قيد الربط</strong><span>الموانئ</span></div></article><article><Route/><div><strong>قيد التحليل</strong><span>شبكات النقل</span></div></article></section>
+    <section className="metrics"><article><Layers3/><div><strong>{zones.length || '—'}</strong><span>مناطق التنمية السياحية</span></div></article><article><Building2/><div><strong>{cities.length || "—"}</strong><span>المدن المرتبطة مكانيًا</span></div></article><article><Plane/><div><strong>{accessData.airports?.length ?? '—'}</strong><span>المطارات المسجلة</span></div></article><article><Ship/><div><strong>{accessData.ports?.length ?? "—"}</strong><span>الموانئ المسجلة</span></div></article><article><Route/><div><strong>{roads?.features?.length ?? "6,272"}</strong><span>مقاطع شبكة الطرق المسجلة</span></div></article></section>
     <section className="park-controls" aria-label="إدارة طبقات نظم المعلومات الجغرافية">
       <div className="park-controls-heading"><strong><Layers3 size={19}/> مدير الطبقات الجغرافية | GIS Layer Manager</strong><span>طبقات مستقلة · الهندسة الجغرافية هي الأساس</span></div>
       <div className="park-toggles">
@@ -264,6 +281,11 @@ export default function App() {
           <span className="park-swatch" style={{background:layer.color}}/><span>{layer.title}</span>
           <b>{accessData[layer.id]?.length ?? '—'}</b>
         </label>)}
+        <label className="park-toggle">
+          <input type="checkbox" checked={showRoads} onChange={e => setShowRoads(e.target.checked)}/>
+          <span className="park-swatch" style={{background:'#66788b'}}/><span>شبكة الطرق البرية</span>
+          <b>{roads?.features?.length ?? '6,272'}</b>
+        </label>
         <label className="park-toggle"><input type="checkbox" checked={showCities} onChange={e => setShowCities(e.target.checked)}/><span className="park-swatch" style={{background:'#c65d35'}}/><span>المدن</span><b>{cities.length || '—'}</b></label>
         <label className="park-toggle"><input type="checkbox" checked={showZones} onChange={e=>setShowZones(e.target.checked)}/><span className="park-swatch" style={{background:'#b9914b'}}/><span>مناطق الاستثمار السياحي</span><b>{zones.length || '—'}</b></label>
         {PARK_LAYERS.map(layer => <label key={layer.id} className="park-toggle">
@@ -273,9 +295,9 @@ export default function App() {
       </div>
       <div className="manager-summary">{zones.length} منطقة استثمارية · {parkCount} مضلع منتزهات وحدائق محمّل · إخفاء الطبقة لا يحذف بياناتها</div>
       {Object.keys(accessErrors).length > 0 && <div className="park-error">{Object.entries(accessErrors).map(([id,msg]) => <div key={id}>تعذر تحميل {id}: {msg}</div>)}</div>}
-      {cityError && <div className="park-error">{cityError}</div>}
+      {cityError && <div className="park-error">{cityError}</div>}{roadError && <div className="park-error">{roadError}</div>}
       {Object.keys(parkErrors).length > 0 && <div className="park-error">{PARK_LAYERS.filter(layer=>parkErrors[layer.id]).map(layer=><div key={layer.id}>تعذر تحميل {layer.title}: {parkErrors[layer.id]}</div>)}</div>}
-    </section><section className="workspace"><aside className="sidebar"><div className="sidebar-tabs"><button type="button" className={sidebarMode==='zones'?'active':''} onClick={()=>setSidebarMode('zones')}>مناطق الاستثمار ({zones.length})</button><button type="button" className={sidebarMode==='parks'?'active':''} onClick={()=>setSidebarMode('parks')}>المنتزهات والحدائق ({parkCount})</button><button type="button" className={sidebarMode==='cities'?'active':''} onClick={()=>setSidebarMode('cities')}>المدن ({cities.length})</button><button type="button" className={sidebarMode==='access'?'active':''} onClick={()=>setSidebarMode('access')}>المطارات والآثار</button></div><div className="search"><Search size={18}/>{sidebarMode==='zones' ? <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="ابحث باسم المنطقة..." aria-label="البحث عن منطقة"/> : sidebarMode==='parks' ? <input value={parkQuery} onChange={e=>setParkQuery(e.target.value)} placeholder="ابحث باسم المنتزه أو معرفه..." aria-label="البحث عن منتزه بالاسم أو المعرف"/> : sidebarMode==='cities' ? <input value={cityQuery} onChange={e=>setCityQuery(e.target.value)} placeholder="ابحث باسم المدينة..." aria-label="البحث عن مدينة"/> : <input value={accessQuery} onChange={e=>setAccessQuery(e.target.value)} placeholder="ابحث عن مطار أو موقع أثري بالاسم أو المعرف..." aria-label="البحث عن مطار أو موقع أثري"/>}</div>{sidebarMode==='zones' && selectedFeature && <div className="zone-detail"><div className="detail-title"><strong>بطاقة المنطقة الاستثمارية</strong><button type="button" onClick={()=>setSelected(null)} aria-label="إغلاق البطاقة">×</button></div><h4>{selectedName}</h4><dl><dt>الرقم التعريفي</dt><dd>{selectedFeature.properties?.id ?? selected + 1}</dd><dt>المساحة المحسوبة</dt><dd>{typeof selectedArea === 'number' ? `${selectedArea.toLocaleString('ar-LY')} هكتار` : 'قيد الحساب'}</dd><dt>حالة التحقق</dt><dd>{selectedFeature.properties?.status || 'غير مدقق'}</dd><dt>أقرب مدينة من قاعدة GIS</dt><dd>{nearestCity ? <button type="button" className="city-link" onClick={() => chooseCity(nearestCity.index)}>{nearestCity.name} — {nearestCity.distanceKm.toFixed(2)} كم ↗</button> : 'قيد تحميل بيانات المدن'}</dd>{accessLink('airports','أقرب مطار (بصرف النظر عن حالة التشغيل)')}{accessLink('archPoints','أقرب موقع أثري نقطي')}{accessLink('archPolygons','أقرب موقع أثري مضلعي')}{accessLink('unesco','أقرب نقطة مرجعية للتراث العالمي')}<dt>الميناء</dt><dd>قيد الربط الجيومكاني</dd></dl><small>المساحة جيوديسية تقريبية، وليست مساحة قانونية معتمدة.</small></div>}{sidebarMode==='parks' && selectedParkFeature && <div className="zone-detail park-detail">
+    </section><section className="workspace"><aside className="sidebar"><div className="sidebar-tabs"><button type="button" className={sidebarMode==='zones'?'active':''} onClick={()=>setSidebarMode('zones')}>مناطق الاستثمار ({zones.length})</button><button type="button" className={sidebarMode==='parks'?'active':''} onClick={()=>setSidebarMode('parks')}>المنتزهات والحدائق ({parkCount})</button><button type="button" className={sidebarMode==='cities'?'active':''} onClick={()=>setSidebarMode('cities')}>المدن ({cities.length})</button><button type="button" className={sidebarMode==='access'?'active':''} onClick={()=>setSidebarMode('access')}>المطارات والموانئ والآثار</button></div><div className="search"><Search size={18}/>{sidebarMode==='zones' ? <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="ابحث باسم المنطقة..." aria-label="البحث عن منطقة"/> : sidebarMode==='parks' ? <input value={parkQuery} onChange={e=>setParkQuery(e.target.value)} placeholder="ابحث باسم المنتزه أو معرفه..." aria-label="البحث عن منتزه بالاسم أو المعرف"/> : sidebarMode==='cities' ? <input value={cityQuery} onChange={e=>setCityQuery(e.target.value)} placeholder="ابحث باسم المدينة..." aria-label="البحث عن مدينة"/> : <input value={accessQuery} onChange={e=>setAccessQuery(e.target.value)} placeholder="ابحث عن مطار أو ميناء أو موقع أثري..." aria-label="البحث عن مطار أو موقع أثري"/>}</div>{sidebarMode==='zones' && selectedFeature && <div className="zone-detail"><div className="detail-title"><strong>بطاقة المنطقة الاستثمارية</strong><button type="button" onClick={()=>setSelected(null)} aria-label="إغلاق البطاقة">×</button></div><h4>{selectedName}</h4><dl><dt>الرقم التعريفي</dt><dd>{selectedFeature.properties?.id ?? selected + 1}</dd><dt>المساحة المحسوبة</dt><dd>{typeof selectedArea === 'number' ? `${selectedArea.toLocaleString('ar-LY')} هكتار` : 'قيد الحساب'}</dd><dt>حالة التحقق</dt><dd>{selectedFeature.properties?.status || 'غير مدقق'}</dd><dt>أقرب مدينة من قاعدة GIS</dt><dd>{nearestCity ? <button type="button" className="city-link" onClick={() => chooseCity(nearestCity.index)}>{nearestCity.name} — {nearestCity.distanceKm.toFixed(2)} كم ↗</button> : 'قيد تحميل بيانات المدن'}</dd>{accessLink('airports','أقرب مطار (بصرف النظر عن حالة التشغيل)')}{accessLink('archPoints','أقرب موقع أثري نقطي')}{accessLink('archPolygons','أقرب موقع أثري مضلعي')}{accessLink('unesco','أقرب نقطة مرجعية للتراث العالمي')}<dt>الميناء</dt><dd>قيد الربط الجيومكاني</dd></dl><small>المساحة جيوديسية تقريبية، وليست مساحة قانونية معتمدة.</small></div>}{sidebarMode==='parks' && selectedParkFeature && <div className="zone-detail park-detail">
       <div className="detail-title"><strong>بطاقة المنتزه / الحديقة</strong>
         <button type="button" onClick={() => setSelectedPark(null)} aria-label="إغلاق بطاقة المنتزه">×</button>
       </div>
@@ -325,6 +347,13 @@ export default function App() {
       leafletLayer.bindTooltip(accessName(feature,index),{sticky:true});
     }}/>
 )}
+{showRoads && roads && <GeoJSON key="roads-network" data={roads}
+  style={feature => ({color: feature.properties?.ROAD_TYPE === 'DUAL_CARRIAGEWAY' ? '#3c6e93' : '#8798a7',weight:1.4,opacity:.75})}
+  onEachFeature={(feature,layer) => {
+    const p = feature.properties || {};
+    const name = p.NAME_AR || p.ROAD_CLASS_AR || p.ROAD_ID || 'مقطع طريق';
+    layer.bindTooltip(`${name}${p.ROAD_ID ? ' — ' + p.ROAD_ID : ''}`, {sticky:true});
+  }}/>} 
 {selectedAccessFeature && (selectedAccessFeature.geometry.type==='Point' ?
   <FitCity coordinates={selectedAccessFeature.geometry.coordinates}/> :
   <FitZone feature={selectedAccessFeature}/>)}
