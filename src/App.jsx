@@ -107,6 +107,8 @@ export default function App() {
   const [selectedAccess, setSelectedAccess] = useState(null);
   const [accessQuery, setAccessQuery] = useState('');
   const [nearestLinks, setNearestLinks] = useState({});
+  const [nearestTransport, setNearestTransport] = useState({});
+  const [transportError, setTransportError] = useState('');
   const [cities, setCities] = useState([]);
   const [cityError, setCityError] = useState('');
   const [showCities, setShowCities] = useState(true);
@@ -129,6 +131,19 @@ export default function App() {
       if (!r.ok) throw Error('Photo manifest missing');
       return r.json();
     }).then(setPhotoManifest).catch(() => setPhotoManifest({}));
+  }, []);
+  useEffect(() => {
+    fetch(import.meta.env.BASE_URL + 'data/analysis/zone_ports_roads_nearest.json')
+      .then(r => {
+        if (!r.ok) throw Error(`HTTP ${r.status}`);
+        return r.json();
+      })
+      .then(data => {
+        if (!data.zones || data.metadata?.result_count !== 141)
+          throw Error('نتائج التحليل غير مكتملة');
+        setNearestTransport(data.zones);
+      })
+      .catch(e => setTransportError(e.message));
   }, []);
   useEffect(() => { setActivePhoto(0); }, [selected]);
   useEffect(() => {
@@ -221,6 +236,8 @@ export default function App() {
   const nearestCity = selected === null ? null : nearestCityByZone[selected];
   const selectedZoneKey = selectedFeature?.properties?.id ?? (selected === null ? null : selected + 1);
   const nearestAccess = selectedZoneKey === null ? null : nearestLinks[String(selectedZoneKey)];
+  const transportResult = selectedZoneKey === null
+    ? null : nearestTransport[String(selectedZoneKey)];
   const selectedAccessFeature = selectedAccess ? accessData[selectedAccess.layerId]?.[selectedAccess.index] : null;
   const selectedAccessLayer = ACCESS_LAYERS.find(l => l.id === selectedAccess?.layerId);
   const chooseAccess = (layerId,index) => {
@@ -297,7 +314,22 @@ export default function App() {
       {Object.keys(accessErrors).length > 0 && <div className="park-error">{Object.entries(accessErrors).map(([id,msg]) => <div key={id}>تعذر تحميل {id}: {msg}</div>)}</div>}
       {cityError && <div className="park-error">{cityError}</div>}{roadError && <div className="park-error">{roadError}</div>}
       {Object.keys(parkErrors).length > 0 && <div className="park-error">{PARK_LAYERS.filter(layer=>parkErrors[layer.id]).map(layer=><div key={layer.id}>تعذر تحميل {layer.title}: {parkErrors[layer.id]}</div>)}</div>}
-    </section><section className="workspace"><aside className="sidebar"><div className="sidebar-tabs"><button type="button" className={sidebarMode==='zones'?'active':''} onClick={()=>setSidebarMode('zones')}>مناطق الاستثمار ({zones.length})</button><button type="button" className={sidebarMode==='parks'?'active':''} onClick={()=>setSidebarMode('parks')}>المنتزهات والحدائق ({parkCount})</button><button type="button" className={sidebarMode==='cities'?'active':''} onClick={()=>setSidebarMode('cities')}>المدن ({cities.length})</button><button type="button" className={sidebarMode==='access'?'active':''} onClick={()=>setSidebarMode('access')}>المطارات والموانئ والآثار</button></div><div className="search"><Search size={18}/>{sidebarMode==='zones' ? <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="ابحث باسم المنطقة..." aria-label="البحث عن منطقة"/> : sidebarMode==='parks' ? <input value={parkQuery} onChange={e=>setParkQuery(e.target.value)} placeholder="ابحث باسم المنتزه أو معرفه..." aria-label="البحث عن منتزه بالاسم أو المعرف"/> : sidebarMode==='cities' ? <input value={cityQuery} onChange={e=>setCityQuery(e.target.value)} placeholder="ابحث باسم المدينة..." aria-label="البحث عن مدينة"/> : <input value={accessQuery} onChange={e=>setAccessQuery(e.target.value)} placeholder="ابحث عن مطار أو ميناء أو موقع أثري..." aria-label="البحث عن مطار أو موقع أثري"/>}</div>{sidebarMode==='zones' && selectedFeature && <div className="zone-detail"><div className="detail-title"><strong>بطاقة المنطقة الاستثمارية</strong><button type="button" onClick={()=>setSelected(null)} aria-label="إغلاق البطاقة">×</button></div><h4>{selectedName}</h4><dl><dt>الرقم التعريفي</dt><dd>{selectedFeature.properties?.id ?? selected + 1}</dd><dt>المساحة المحسوبة</dt><dd>{typeof selectedArea === 'number' ? `${selectedArea.toLocaleString('ar-LY')} هكتار` : 'قيد الحساب'}</dd><dt>حالة التحقق</dt><dd>{selectedFeature.properties?.status || 'غير مدقق'}</dd><dt>أقرب مدينة من قاعدة GIS</dt><dd>{nearestCity ? <button type="button" className="city-link" onClick={() => chooseCity(nearestCity.index)}>{nearestCity.name} — {nearestCity.distanceKm.toFixed(2)} كم ↗</button> : 'قيد تحميل بيانات المدن'}</dd>{accessLink('airports','أقرب مطار (بصرف النظر عن حالة التشغيل)')}{accessLink('archPoints','أقرب موقع أثري نقطي')}{accessLink('archPolygons','أقرب موقع أثري مضلعي')}{accessLink('unesco','أقرب نقطة مرجعية للتراث العالمي')}<dt>الميناء</dt><dd>قيد الربط الجيومكاني</dd></dl><small>المساحة جيوديسية تقريبية، وليست مساحة قانونية معتمدة.</small></div>}{sidebarMode==='parks' && selectedParkFeature && <div className="zone-detail park-detail">
+    </section><section className="workspace"><aside className="sidebar"><div className="sidebar-tabs"><button type="button" className={sidebarMode==='zones'?'active':''} onClick={()=>setSidebarMode('zones')}>مناطق الاستثمار ({zones.length})</button><button type="button" className={sidebarMode==='parks'?'active':''} onClick={()=>setSidebarMode('parks')}>المنتزهات والحدائق ({parkCount})</button><button type="button" className={sidebarMode==='cities'?'active':''} onClick={()=>setSidebarMode('cities')}>المدن ({cities.length})</button><button type="button" className={sidebarMode==='access'?'active':''} onClick={()=>setSidebarMode('access')}>المطارات والموانئ والآثار</button></div><div className="search"><Search size={18}/>{sidebarMode==='zones' ? <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="ابحث باسم المنطقة..." aria-label="البحث عن منطقة"/> : sidebarMode==='parks' ? <input value={parkQuery} onChange={e=>setParkQuery(e.target.value)} placeholder="ابحث باسم المنتزه أو معرفه..." aria-label="البحث عن منتزه بالاسم أو المعرف"/> : sidebarMode==='cities' ? <input value={cityQuery} onChange={e=>setCityQuery(e.target.value)} placeholder="ابحث باسم المدينة..." aria-label="البحث عن مدينة"/> : <input value={accessQuery} onChange={e=>setAccessQuery(e.target.value)} placeholder="ابحث عن مطار أو ميناء أو موقع أثري..." aria-label="البحث عن مطار أو موقع أثري"/>}</div>{sidebarMode==='zones' && selectedFeature && <div className="zone-detail"><div className="detail-title"><strong>بطاقة المنطقة الاستثمارية</strong><button type="button" onClick={()=>setSelected(null)} aria-label="إغلاق البطاقة">×</button></div><h4>{selectedName}</h4><dl><dt>الرقم التعريفي</dt><dd>{selectedFeature.properties?.id ?? selected + 1}</dd><dt>المساحة المحسوبة</dt><dd>{typeof selectedArea === 'number' ? `${selectedArea.toLocaleString('ar-LY')} هكتار` : 'قيد الحساب'}</dd><dt>حالة التحقق</dt><dd>{selectedFeature.properties?.status || 'غير مدقق'}</dd><dt>أقرب مدينة من قاعدة GIS</dt><dd>{nearestCity ? <button type="button" className="city-link" onClick={() => chooseCity(nearestCity.index)}>{nearestCity.name} — {nearestCity.distanceKm.toFixed(2)} كم ↗</button> : 'قيد تحميل بيانات المدن'}</dd>{accessLink('airports','أقرب مطار (بصرف النظر عن حالة التشغيل)')}{accessLink('archPoints','أقرب موقع أثري نقطي')}{accessLink('archPolygons','أقرب موقع أثري مضلعي')}{accessLink('unesco','أقرب نقطة مرجعية للتراث العالمي')}<dt>أقرب ميناء بحري</dt>
+<dd>{transportResult?.nearest_port
+  ? `${transportResult.nearest_port.name} — ${transportResult.nearest_port.distance_km.toLocaleString('ar-LY')} كم`
+  : transportError ? 'تعذر تحميل التحليل' : 'جار تحميل التحليل'}</dd>
+<dt>معرف الميناء</dt>
+<dd>{transportResult?.nearest_port?.id || 'غير متوفر'}</dd>
+<dt>أقرب طريق</dt>
+<dd>{transportResult?.nearest_road
+  ? `${transportResult.nearest_road.name} (${transportResult.nearest_road.id})`
+  : transportError ? 'تعذر تحميل التحليل' : 'جار تحميل التحليل'}</dd>
+<dt>المسافة إلى الطريق</dt>
+<dd>{transportResult?.nearest_road
+  ? transportResult.nearest_road.intersects_zone
+    ? '0 كم — يتقاطع مع المنطقة'
+    : `${transportResult.nearest_road.distance_km.toLocaleString('ar-LY')} كم`
+  : 'غير متوفر'}</dd></dl><small>المساحة جيوديسية تقريبية، وليست مساحة قانونية معتمدة.</small></div>}{sidebarMode==='parks' && selectedParkFeature && <div className="zone-detail park-detail">
       <div className="detail-title"><strong>بطاقة المنتزه / الحديقة</strong>
         <button type="button" onClick={() => setSelectedPark(null)} aria-label="إغلاق بطاقة المنتزه">×</button>
       </div>
