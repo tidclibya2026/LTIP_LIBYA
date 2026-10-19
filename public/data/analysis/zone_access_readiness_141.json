@@ -4,10 +4,9 @@
     "generated_at": "2026-10-19T10:27:22.054Z",
     "zone_count": 141,
     "counts": {
-      "مرتفع": 97,
+      "مرتفع": 103,
       "متوسط": 35,
-      "منخفض": 6,
-      "منخفض جدًا": 3
+      "منخفض": 3
     },
     "weights": {
       "road": 0.65,
@@ -15,7 +14,16 @@
     },
     "maritime": "Separate indicator; requires relevance assessment",
     "operational_policy": "Unknown until independently verified",
-    "note": "Geographic distances are not travel times or network distances"
+    "note": "Geographic distances are not travel times or network distances",
+    "classification_levels": 3,
+    "manual_overrides": [
+      "5",
+      "6",
+      "7",
+      "65",
+      "105",
+      "133"
+    ]
   },
   "zones": {
     "1": {
@@ -191,7 +199,7 @@
       "zone_name": "النقازة",
       "geographic_access": {
         "score": 64.5,
-        "grade": "منخفض",
+        "grade": "مرتفع",
         "model": "ROAD_65_AIR_35",
         "road": {
           "id": "ROAD-005546",
@@ -217,7 +225,10 @@
           "score": 75,
           "grade": "متوسط",
           "included_in_base_score": false
-        }
+        },
+        "model_grade": "منخفض",
+        "classification_source": "MANUAL_ADMINISTRATIVE_OVERRIDE",
+        "override_note": "Administrative classification; calculated score unchanged"
       },
       "operational_readiness": {
         "overall_status": "NOT_VERIFIED",
@@ -233,7 +244,7 @@
       "zone_name": "غنيمة",
       "geographic_access": {
         "score": 64.5,
-        "grade": "منخفض",
+        "grade": "مرتفع",
         "model": "ROAD_65_AIR_35",
         "road": {
           "id": "ROAD-005539",
@@ -259,7 +270,10 @@
           "score": 75,
           "grade": "متوسط",
           "included_in_base_score": false
-        }
+        },
+        "model_grade": "منخفض",
+        "classification_source": "MANUAL_ADMINISTRATIVE_OVERRIDE",
+        "override_note": "Administrative classification; calculated score unchanged"
       },
       "operational_readiness": {
         "overall_status": "NOT_VERIFIED",
@@ -275,7 +289,7 @@
       "zone_name": "فلفول",
       "geographic_access": {
         "score": 64.5,
-        "grade": "منخفض",
+        "grade": "مرتفع",
         "model": "ROAD_65_AIR_35",
         "road": {
           "id": "ROAD-005539",
@@ -301,7 +315,10 @@
           "score": 75,
           "grade": "متوسط",
           "included_in_base_score": false
-        }
+        },
+        "model_grade": "منخفض",
+        "classification_source": "MANUAL_ADMINISTRATIVE_OVERRIDE",
+        "override_note": "Administrative classification; calculated score unchanged"
       },
       "operational_readiness": {
         "overall_status": "NOT_VERIFIED",
@@ -2711,7 +2728,7 @@
       "zone_name": "أبوكشفة",
       "geographic_access": {
         "score": 64.25,
-        "grade": "منخفض",
+        "grade": "مرتفع",
         "model": "ROAD_65_AIR_35",
         "road": {
           "id": "ROAD-005427",
@@ -2737,7 +2754,10 @@
           "score": 75,
           "grade": "متوسط",
           "included_in_base_score": false
-        }
+        },
+        "model_grade": "منخفض",
+        "classification_source": "MANUAL_ADMINISTRATIVE_OVERRIDE",
+        "override_note": "Administrative classification; calculated score unchanged"
       },
       "operational_readiness": {
         "overall_status": "NOT_VERIFIED",
@@ -4391,7 +4411,7 @@
       "zone_name": "المقرون",
       "geographic_access": {
         "score": 55.5,
-        "grade": "منخفض",
+        "grade": "مرتفع",
         "model": "ROAD_65_AIR_35",
         "road": {
           "id": "ROAD-000082",
@@ -4417,7 +4437,10 @@
           "score": 75,
           "grade": "متوسط",
           "included_in_base_score": false
-        }
+        },
+        "model_grade": "منخفض",
+        "classification_source": "MANUAL_ADMINISTRATIVE_OVERRIDE",
+        "override_note": "Administrative classification; calculated score unchanged"
       },
       "operational_readiness": {
         "overall_status": "NOT_VERIFIED",
@@ -5315,7 +5338,7 @@
       "zone_name": "مرير قابس",
       "geographic_access": {
         "score": 36,
-        "grade": "منخفض جدًا",
+        "grade": "منخفض",
         "model": "ROAD_65_AIR_35",
         "road": {
           "id": "ROAD-003050",
@@ -5567,7 +5590,7 @@
       "zone_name": "عسيلة الغربي",
       "geographic_access": {
         "score": 64.5,
-        "grade": "منخفض",
+        "grade": "مرتفع",
         "model": "ROAD_65_AIR_35",
         "road": {
           "id": "ROAD-003050",
@@ -5593,7 +5616,10 @@
           "score": 15,
           "grade": "منخفض جدًا",
           "included_in_base_score": false
-        }
+        },
+        "model_grade": "منخفض",
+        "classification_source": "MANUAL_ADMINISTRATIVE_OVERRIDE",
+        "override_note": "Administrative classification; calculated score unchanged"
       },
       "operational_readiness": {
         "overall_status": "NOT_VERIFIED",
@@ -5651,7 +5677,7 @@
       "zone_name": "السميدة",
       "geographic_access": {
         "score": 36,
-        "grade": "منخفض جدًا",
+        "grade": "منخفض",
         "model": "ROAD_65_AIR_35",
         "road": {
           "id": "ROAD-002417",
@@ -5693,7 +5719,7 @@
       "zone_name": "قصر أحمد",
       "geographic_access": {
         "score": 36,
-        "grade": "منخفض جدًا",
+        "grade": "منخفض",
         "model": "ROAD_65_AIR_35",
         "road": {
           "id": "ROAD-002395",

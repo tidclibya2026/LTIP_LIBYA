@@ -273,8 +273,7 @@ export default function App() {
   const readinessColors = {
     'مرتفع': '#21865b',
     'متوسط': '#e0a32e',
-    'منخفض': '#e47737',
-    'منخفض جدًا': '#c93c43'
+    'منخفض': '#e47737'
   };
   const selectedFeature = selected === null ? null : zones[selected];
   const selectedName = selectedFeature ? label(selectedFeature, selected) : '';
@@ -429,10 +428,10 @@ export default function App() {
       value={readinessFilter}
       onChange={e=>setReadinessFilter(e.target.value)}>
       <option value="all">جميع المناطق (141)</option>
-      <option value="مرتفع">مرتفع (97)</option>
+      <option value="مرتفع">مرتفع (103)</option>
       <option value="متوسط">متوسط (35)</option>
-      <option value="منخفض">منخفض (6)</option>
-      <option value="منخفض جدًا">منخفض جدًا (3)</option>
+      <option value="منخفض">منخفض (3)</option>
+      
     </select>
     <strong>المناطق المعروضة: {mapZones.length}</strong>
     {Object.entries(readinessColors).map(([grade,color])=>
