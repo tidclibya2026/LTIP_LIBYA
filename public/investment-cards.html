@@ -1,0 +1,562 @@
+﻿<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>البطاقات الاستثمارية | LTIP LIBYA</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f1f5f9;color:#173754;font-family:Tahoma,Arial,sans-serif}
+main{max-width:1350px;margin:auto;padding:20px}
+header{background:linear-gradient(110deg,#12375d,#20557d);color:white;padding:28px;border-radius:14px;border-bottom:4px solid #d1a65a}
+h1{font-size:26px;margin:0 0 12px}
+header p{margin:0;line-height:1.9}
+header a{color:#ffdfaa}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+.stat,.controls,.card{background:white;border:1px solid #d9e2eb;border-radius:12px}
+.stat{padding:17px}
+.stat b{display:block;font-size:26px;color:#173f66}
+.stat span{font-size:13px;color:#64748b}
+.controls{padding:15px;display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px;align-items:center}
+input,select,button{font:inherit;padding:10px;border:1px solid #cbd5e1;border-radius:8px}
+input{flex:1;min-width:200px}
+button{background:#17476d;color:white;cursor:pointer}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{overflow:hidden;break-inside:avoid}
+.card-head{background:#eaf1f7;border-bottom:2px solid #c6a15d;padding:17px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.card-head h2{margin:4px 0;font-size:19px}
+.card-head small{color:#66788b}
+.grade{background:#dceee5;color:#17623f;border-radius:20px;padding:7px 12px;font-weight:bold}
+.grade.medium{background:#fff0cb;color:#95640c}
+.grade.low{background:#ffe6d9;color:#a94e21}
+.fields{padding:17px;display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.field{border-bottom:1px solid #e8edf2;padding-bottom:9px}
+.field label{display:block;color:#66788b;font-size:12px;margin-bottom:5px}
+.field strong{font-size:14px;overflow-wrap:anywhere}
+.note{margin:0 17px 15px;background:#f4f6f9;border-right:3px solid #c6a15d;padding:12px;font-size:12px;line-height:1.8}
+.actions{padding:0 17px 15px;text-align:left}
+footer{font-size:12px;color:#64748b;line-height:1.8;margin-top:20px}
+@media(max-width:750px){.stats{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr}.fields{grid-template-columns:1fr}}
+@page{size:A4;margin:12mm}
+@media print{
+body{background:white}
+main{padding:0}
+header{background:white;color:#173754;border-radius:0}
+header a,.stats,.controls,.actions,footer{display:none}
+.cards{display:block}
+.card{margin-bottom:12mm;page-break-inside:avoid}
+body.single .card:not(.target){display:none}
+}
+
+/* LTIP Official A4 Print Layout v3 */
+@page {
+  size: A4 portrait;
+  margin: 10mm;
+}
+
+@media print {
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  main {
+    max-width: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  header,
+  .official-header,
+  .stats,
+  .controls,
+  footer,
+  .official-page-footer,
+  .actions {
+    display: none !important;
+  }
+
+  .cards {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .card {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    break-after: page !important;
+    page-break-after: always !important;
+    overflow: visible !important;
+  }
+
+  .card:last-child {
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+
+  .card-official-header {
+    display: block !important;
+    background: #123b63 !important;
+    color: #fff !important;
+    text-align: center !important;
+    padding: 11px !important;
+    line-height: 1.65 !important;
+    border-bottom: 3px solid #c9a45e !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .card-official-header strong {
+    display: block !important;
+    color: #fff !important;
+    font-size: 15px !important;
+  }
+
+  .card-head {
+    padding: 11px !important;
+    background: #eaf1f7 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .card-head h2 {
+    font-size: 17px !important;
+    margin: 3px 0 !important;
+  }
+
+  .fields {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 7px 12px !important;
+    padding: 12px !important;
+  }
+
+  .field {
+    padding-bottom: 5px !important;
+  }
+
+  .field label {
+    font-size: 10px !important;
+  }
+
+  .field strong {
+    font-size: 12px !important;
+  }
+
+  .note {
+    font-size: 10px !important;
+    padding: 7px !important;
+    margin: 5px 12px 10px !important;
+  }
+
+  .card-official-footer {
+    display: block !important;
+    padding: 9px !important;
+    background: #f0f3f7 !important;
+    color: #123b63 !important;
+    text-align: center !important;
+    font-size: 11px !important;
+    border-top: 2px solid #c9a45e !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body.single .card:not(.target) {
+    display: none !important;
+  }
+
+  body.single .card.target {
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+}
+
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>بطاقات المعلومات الاستثمارية للمناطق السياحية</h1>
+<p>الخارطة الاستثمارية السياحية في ليبيا | LTIP LIBYA</p>
+<p><a href="./">العودة إلى الخارطة التفاعلية</a></p>
+</header>
+<section class="stats">
+<div class="stat"><b>141</b><span>إجمالي المناطق</span></div>
+<div class="stat"><b>103</b><span>مرتفع</span></div>
+<div class="stat"><b>35</b><span>متوسط</span></div>
+<div class="stat"><b>3</b><span>منخفض</span></div>
+</section>
+<section class="controls">
+<input id="search" placeholder="ابحث باسم المنطقة أو رقمها">
+<select id="grade">
+<option value="all">جميع المناطق (141)</option>
+<option value="مرتفع">مرتفع (103)</option>
+<option value="متوسط">متوسط (35)</option>
+<option value="منخفض">منخفض (3)</option>
+</select>
+<button id="printAll">طباعة البطاقات المعروضة</button>
+<strong id="counter"></strong>
+</section>
+<section id="cards" class="cards"></section>
+<footer>المسافات الجغرافية والمساحات المحسوبة تقديرية. لا يُعد القرب من المرافق إثباتًا لجاهزيتها التشغيلية، ولا يُعد هذا السجل إثباتًا للملكية أو الموافقات الاستثمارية.</footer>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const esc=v=>String(v??'غير متوفر').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const num=v=>v==null||!Number.isFinite(Number(v))?'غير متوفر':Number(v).toLocaleString('ar-LY',{maximumFractionDigits:3});
+const km=v=>v==null?'غير متوفر':num(v)+' كم';
+const field=(k,v)=>'<div class="field"><label>'+esc(k)+'</label><strong>'+esc(v)+'</strong></div>';
+let records=[];
+
+function render(){
+ const q=$('search').value.trim().toLowerCase();
+ const g=$('grade').value;
+ const visible=records.filter(c=>
+   (g==='all'||c.grade===g)&&
+   (c.name.toLowerCase().includes(q)||c.id.includes(q))
+ );
+ $('cards').innerHTML=visible.map(c=>{
+   const color=c.grade==='متوسط'?'medium':c.grade==='منخفض'?'low':'';
+   return '<article class="card" data-id="'+esc(c.id)+'">'+
+    '<div class="card-head"><div><small>منطقة استثمارية رقم '+esc(c.id)+'</small><h2>'+esc(c.name)+'</h2></div><span class="grade '+color+'">'+esc(c.grade)+'</span></div>'+
+    '<div class="fields">'+
+    field('المساحة الجيوديسية',c.area==null?'غير متوفر':num(c.area)+' هكتار')+
+    field('التصنيف النهائي المعتمد',c.grade)+
+    field('مصدر التصنيف',c.source)+
+    field('درجة القرب المحسوبة',num(c.score)+' / 100')+
+    field('أقرب مدينة',c.city)+
+    field('أقرب طريق',c.road)+
+    field('المسافة إلى الطريق',c.roadIntersects?'يتقاطع مع المنطقة — 0 كم':km(c.roadKm))+
+    field('أقرب مطار',c.airport)+
+    field('المسافة إلى المطار',km(c.airportKm))+
+    field('أقرب ميناء',c.port)+
+    field('المسافة إلى الميناء',km(c.portKm))+
+    field('أقرب موقع أثري نقطي',km(c.heritagePointKm))+
+    field('أقرب موقع أثري مضلعي',km(c.heritagePolygonKm))+
+    field('أقرب مرجع للتراث العالمي',km(c.unescoKm))+
+    field('الجاهزية التشغيلية','غير متحققة ميدانيًا')+
+    field('الوضع القانوني والملكية','يتطلب مستندات تحقق')+
+    '</div><p class="note">المساحة والمسافات مؤشرات GIS تقريبية وليست قياسات قانونية أو مسافات قيادة. التصنيف الإداري لا يغير الدرجة الحسابية الأصلية.</p>'+
+    '<div class="actions"><button data-print="'+esc(c.id)+'">طباعة البطاقة</button></div></article>';
+ }).join('');
+ $('counter').textContent='المعروض: '+visible.length;
+ document.querySelectorAll('[data-print]').forEach(b=>{
+   b.onclick=()=>{
+     document.body.classList.add('single');
+     document.querySelectorAll('.card').forEach(x=>x.classList.toggle('target',x.dataset.id===b.dataset.print));
+     window.print();
+   };
+ });
+}
+
+async function init(){
+ try{
+  const paths=[
+   './data/zones_141.geojson',
+   './data/analysis/zone_access_readiness_141.json',
+   './data/analysis/zone_ports_roads_nearest.json',
+   './data/analysis/zone_airport_heritage_nearest.json'
+  ];
+  const responses=await Promise.all(paths.map(p=>fetch(p,{cache:'no-store'})));
+  for(let i=0;i<responses.length;i++){
+    if(!responses[i].ok)throw Error(paths[i]+': HTTP '+responses[i].status);
+  }
+  const [geo,access,transport,heritage]=await Promise.all(responses.map(r=>r.json()));
+  if(geo.features?.length!==141)throw Error('عدد المضلعات ليس 141');
+  records=geo.features.map((f,i)=>{
+    const id=String(f.properties?.id??i+1);
+    const a=access.zones[id];
+    const t=transport.zones[id];
+    const h=heritage.zones[id];
+    if(!a||!t||!h)throw Error('بيانات ناقصة للمنطقة '+id);
+    return {
+      id,name:a.zone_name||f.properties?.name_ar||'منطقة '+id,
+      area:f.properties?.area_ha_geodesic,
+      grade:a.geographic_access.grade,
+      source:a.geographic_access.classification_source==='MANUAL_ADMINISTRATIVE_OVERRIDE'?'اعتماد إداري':'النموذج الجغرافي',
+      score:a.geographic_access.score,
+      city:'غير متوفر في هذه البطاقة',
+      road:t.nearest_road?.name||t.nearest_road?.id||'غير متوفر',
+      roadKm:t.nearest_road?.distance_km,
+      roadIntersects:t.nearest_road?.intersects_zone===true,
+      airport:a.geographic_access.airport?.name||'غير متوفر',
+      airportKm:a.geographic_access.airport?.distance_km,
+      port:t.nearest_port?.name||'غير متوفر',
+      portKm:t.nearest_port?.distance_km,
+      heritagePointKm:h.archPoints?.km,
+      heritagePolygonKm:h.archPolygons?.km,
+      unescoKm:h.unesco?.km
+    };
+  }).sort((a,b)=>Number(a.id)-Number(b.id));
+  if(new Set(records.map(x=>x.id)).size!==141)throw Error('معرفات مناطق مكررة');
+  const counts=Object.fromEntries(['مرتفع','متوسط','منخفض'].map(g=>[g,records.filter(x=>x.grade===g).length]));
+  if(counts.مرتفع!==103||counts.متوسط!==35||counts.منخفض!==3)throw Error('توزيع التصنيف غير مطابق');
+  render();
+ }catch(e){
+  $('cards').textContent='خطأ في تحميل البطاقات: '+e.message;
+ }
+}
+$('search').oninput=render;
+$('grade').onchange=render;
+$('printAll').onclick=()=>{
+ document.body.classList.remove('single');
+ window.print();
+};
+window.onafterprint=()=>{
+ document.body.classList.remove('single');
+ document.querySelectorAll('.target').forEach(x=>x.classList.remove('target'));
+};
+init();
+</script>
+
+
+
+<script id="LTIP_PRINT_V7">
+(() => {
+  const esc = v => String(v ?? '').replace(/[&<>"']/g,
+    c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  let dataPromise;
+
+  function loadData() {
+    if (!dataPromise) {
+      dataPromise = Promise.all([
+        fetch('./data/zones_141.geojson', {cache:'no-store'}),
+        fetch('./data/zone_photos.json', {cache:'no-store'})
+      ]).then(async responses => {
+        for (const r of responses) {
+          if (!r.ok) throw Error('HTTP ' + r.status + ': ' + r.url);
+        }
+        return Promise.all(responses.map(r => r.json()));
+      }).catch(e => {
+        dataPromise = null;
+        throw e;
+      });
+    }
+    return dataPromise;
+  }
+
+  function centerOf(geometry) {
+    if (!geometry?.coordinates) return null;
+    const points = [];
+
+    function visit(v) {
+      if (!Array.isArray(v)) return;
+      if (typeof v[0] === 'number' &&
+          typeof v[1] === 'number') {
+        if (Number.isFinite(v[0]) && Number.isFinite(v[1])) {
+          points.push(v);
+        }
+      } else {
+        v.forEach(visit);
+      }
+    }
+
+    visit(geometry.coordinates);
+    if (!points.length) return null;
+
+    const xs = points.map(p => p[0]);
+    const ys = points.map(p => p[1]);
+
+    return {
+      lon: (Math.min(...xs) + Math.max(...xs)) / 2,
+      lat: (Math.min(...ys) + Math.max(...ys)) / 2
+    };
+  }
+
+  function project(lat, lon, zoom) {
+    const size = 256 * (2 ** zoom);
+    const rad = Math.max(-85, Math.min(85, lat)) * Math.PI / 180;
+    return {
+      x: (lon + 180) / 360 * size,
+      y: (1 - Math.log(Math.tan(rad) + 1 / Math.cos(rad)) /
+        Math.PI) / 2 * size
+    };
+  }
+
+  function mapHTML(point) {
+    if (!point) {
+      return '<div class="missing">لا تتوفر إحداثيات المنطقة</div>';
+    }
+
+    const zoom = 4, width = 340, height = 220;
+    const center = project(26.3, 17.2, zoom);
+    const position = project(point.lat, point.lon, zoom);
+    const left = center.x - width / 2;
+    const top = center.y - height / 2;
+    let tiles = '';
+
+    for (let x = Math.floor(left / 256);
+         x <= Math.floor((left + width) / 256); x++) {
+      for (let y = Math.floor(top / 256);
+           y <= Math.floor((top + height) / 256); y++) {
+        if (x < 0 || x >= 2 ** zoom ||
+            y < 0 || y >= 2 ** zoom) continue;
+
+        tiles += '<img class="tile" alt="" src="' +
+          'https://tile.openstreetmap.org/' +
+          zoom + '/' + x + '/' + y + '.png" style="' +
+          'left:' + (x * 256 - left) + 'px;' +
+          'top:' + (y * 256 - top) + 'px">';
+      }
+    }
+
+    const px = position.x - left;
+    const py = position.y - top;
+
+    const marker = px >= 0 && px <= width &&
+                   py >= 0 && py <= height
+      ? '<span class="pin" style="left:' + px +
+        'px;top:' + py + 'px"></span>'
+      : '';
+
+    return '<div class="map">' + tiles + marker +
+      '<span class="map-title">ليبيا | الموقع التقريبي</span>' +
+      '<span class="map-credit">© OpenStreetMap contributors</span>' +
+      '</div>';
+  }
+
+  function photoHTML(photos, id) {
+    const list = photos[String(id)] ??
+      photos.zones?.[String(id)] ?? [];
+
+    const photo = Array.isArray(list)
+      ? list.find(p => p?.src)
+      : null;
+
+    if (!photo) {
+      return '<div class="missing">صورة الموقع غير متوفرة</div>';
+    }
+
+    // Correct Vite/GitHub Pages base path.
+    const path = String(photo.src).replace(/^\/+/, '');
+    const url = new URL(path, new URL('./', location.href)).href;
+
+    return '<img class="site-photo" src="' + esc(url) +
+      '" alt="' + esc(photo.alt || 'صورة الموقع') + '">' +
+      '<div class="photo-caption">' +
+      esc(photo.caption || 'صورة من مكتبة الموقع') +
+      '</div>';
+  }
+
+  const styles = "\n    @page { size: A4 portrait; margin: 10mm; }\n\n    * { box-sizing: border-box; }\n\n    html, body {\n      margin: 0;\n      padding: 0;\n      background: #fff;\n      color: #123b63;\n      font-family: Tahoma, Arial, sans-serif;\n    }\n\n    .sheet {\n      width: 100%;\n      border: 1px solid #d6dfe8;\n      break-inside: avoid;\n      page-break-inside: avoid;\n    }\n\n    .sheet:not(:last-child) {\n      break-after: page;\n      page-break-after: always;\n    }\n\n    .official-head {\n      background: #123b63;\n      color: white;\n      text-align: center;\n      padding: 11px;\n      line-height: 1.65;\n      font-size: 13px;\n      border-bottom: 3px solid #c9a45e;\n    }\n\n    .official-head strong {\n      display: block;\n      font-size: 16px;\n    }\n\n    .document-title {\n      text-align: center;\n      font-size: 15px;\n      font-weight: bold;\n      padding: 9px;\n    }\n\n    .card-head {\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      padding: 9px 13px;\n      background: #eaf1f7;\n      border-bottom: 2px solid #c9a45e;\n    }\n\n    .card-head h2 {\n      font-size: 17px;\n      margin: 3px 0;\n    }\n\n    .card-head small {\n      font-size: 10px;\n      color: #64748b;\n    }\n\n    .grade {\n      padding: 6px 11px;\n      border-radius: 16px;\n      background: #dceee5;\n      color: #17623f;\n      font-weight: bold;\n    }\n\n    .grade.medium {\n      background: #fff0cb;\n      color: #95640c;\n    }\n\n    .grade.low {\n      background: #ffe6d9;\n      color: #a94e21;\n    }\n\n    .visuals {\n      display: grid;\n      grid-template-columns: 1fr 1fr;\n      gap: 10px;\n      padding: 10px 13px;\n    }\n\n    .visuals > div { min-width: 0; }\n\n    .visual-title {\n      font-size: 11px;\n      font-weight: bold;\n      margin-bottom: 5px;\n    }\n\n    .map {\n      width: 340px;\n      max-width: 100%;\n      height: 155px;\n      overflow: hidden;\n      position: relative;\n      background: #e4edf1;\n      border: 1px solid #d7e0e9;\n    }\n\n    .tile {\n      position: absolute;\n      width: 256px;\n      height: 256px;\n      max-width: none;\n    }\n\n    .pin {\n      position: absolute;\n      z-index: 3;\n      width: 15px;\n      height: 15px;\n      border: 3px solid white;\n      border-radius: 50%;\n      background: #e3342f;\n      box-shadow: 0 0 0 2px #e3342f;\n      transform: translate(-50%, -50%);\n    }\n\n    .map-title, .map-credit {\n      position: absolute;\n      z-index: 4;\n      right: 3px;\n      padding: 3px;\n      background: #ffffffe8;\n      font-size: 9px;\n    }\n\n    .map-title { top: 3px; }\n    .map-credit { bottom: 3px; }\n\n    .site-photo {\n      display: block;\n      width: 100%;\n      height: 130px;\n      object-fit: cover;\n      border: 1px solid #d7e0e9;\n    }\n\n    .photo-caption {\n      font-size: 9px;\n      color: #526477;\n      line-height: 1.4;\n      padding-top: 4px;\n    }\n\n    .missing {\n      height: 155px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      background: #f1f5f9;\n      font-size: 11px;\n      text-align: center;\n    }\n\n    .fields {\n      display: grid;\n      grid-template-columns: 1fr 1fr;\n      gap: 0 12px;\n      padding: 4px 13px;\n    }\n\n    .field {\n      min-width: 0;\n      padding: 5px 0;\n      border-bottom: 1px solid #e4eaf0;\n    }\n\n    .field label {\n      display: block;\n      font-size: 9px;\n      color: #64748b;\n      margin-bottom: 2px;\n    }\n\n    .field strong {\n      display: block;\n      font-size: 11px;\n      overflow-wrap: anywhere;\n    }\n\n    .note {\n      font-size: 9px;\n      line-height: 1.5;\n      margin: 7px 13px;\n      padding: 7px;\n      background: #f5f7fa;\n      border-right: 3px solid #c9a45e;\n    }\n\n    .official-foot {\n      text-align: center;\n      padding: 9px;\n      background: #edf2f6;\n      border-top: 2px solid #c9a45e;\n      font-size: 11px;\n      font-weight: bold;\n    }\n\n    @media print {\n      body {\n        -webkit-print-color-adjust: exact;\n        print-color-adjust: exact;\n      }\n    }\n  ";
+
+
+  const v8Styles = "\n/* LTIP_PRINT_V8 */\n@page {\n  size: A4 portrait;\n  margin: 10mm;\n}\n\n.sheet {\n  width: 100%;\n  margin: 0;\n  overflow: visible;\n}\n\n.official-head {\n  padding: 15px 12px;\n  font-size: 15px;\n  line-height: 1.75;\n}\n\n.official-head strong {\n  font-size: 18px;\n}\n\n.document-title {\n  font-size: 17px;\n  padding: 12px;\n}\n\n.card-head {\n  padding: 12px 15px;\n}\n\n.card-head h2 {\n  font-size: 20px;\n}\n\n.card-head small {\n  font-size: 12px;\n}\n\n.grade {\n  font-size: 13px;\n  padding: 7px 14px;\n}\n\n.visuals {\n  grid-template-columns: minmax(0,1fr) minmax(0,1fr);\n  gap: 12px;\n  padding: 13px 15px;\n}\n\n.visual-title {\n  font-size: 12px;\n  margin-bottom: 7px;\n}\n\n.map {\n  height: 220px;\n  width: 340px;\n  max-width: 100%;\n}\n\n.site-photo {\n  height: 190px;\n  object-fit: cover;\n  object-position: center;\n}\n\n.photo-caption {\n  font-size: 10px;\n  line-height: 1.5;\n  min-height: 27px;\n}\n\n.pin {\n  width: 20px;\n  height: 20px;\n  border: 4px solid #fff;\n  background: #e11d2e;\n  box-shadow:\n    0 0 0 3px #e11d2e,\n    0 0 0 7px rgba(225,29,46,.18);\n  z-index: 10;\n}\n\n.map-title {\n  font-size: 10px;\n  font-weight: bold;\n}\n\n.fields {\n  gap: 0 15px;\n  padding: 7px 15px;\n}\n\n.field {\n  padding: 8px 0;\n}\n\n.field label {\n  font-size: 10px;\n  margin-bottom: 4px;\n}\n\n.field strong {\n  font-size: 12px;\n}\n\n.note {\n  font-size: 10px;\n  line-height: 1.65;\n  padding: 10px;\n  margin: 9px 15px;\n}\n\n.official-foot {\n  padding: 12px;\n  font-size: 13px;\n}\n\n@media print {\n  html, body {\n    width: auto;\n    height: auto;\n    margin: 0;\n    padding: 0;\n  }\n\n  .sheet {\n    break-inside: avoid;\n    page-break-inside: avoid;\n  }\n\n  .sheet:not(:last-child) {\n    break-after: page;\n    page-break-after: always;\n  }\n\n  .sheet:last-child {\n    break-after: auto;\n    page-break-after: auto;\n  }\n\n  body {\n    -webkit-print-color-adjust: exact;\n    print-color-adjust: exact;\n  }\n}\n";
+
+  function makeDocument(cards, geo, photos) {
+    const sheets = cards.map(card => {
+      const id = card.dataset.id;
+      const feature = geo.features.find(
+        f => String(f.properties?.id) === String(id)
+      );
+
+      const heading = card.querySelector('.card-head')?.innerHTML || '';
+      const fields = card.querySelector('.fields')?.innerHTML || '';
+      const note = card.querySelector('.note')?.innerHTML || '';
+
+      return '<section class="sheet">' +
+        '<div class="official-head">' +
+        '<div>دولة ليبيا</div>' +
+        '<strong>وزارة السياحة والصناعات التقليدية</strong>' +
+        '<div>إدارة التنمية والمشروعات السياحية</div>' +
+        '</div>' +
+        '<div class="document-title">بطاقة المعلومات الاستثمارية السياحية</div>' +
+        '<div class="card-head">' + heading + '</div>' +
+        '<div class="visuals">' +
+        '<div><div class="visual-title">موقع المنطقة على خريطة ليبيا</div>' +
+        mapHTML(centerOf(feature?.geometry)) + '</div>' +
+        '<div><div class="visual-title">صورة الموقع</div>' +
+        photoHTML(photos, id) + '</div>' +
+        '</div>' +
+        '<div class="fields">' + fields + '</div>' +
+        '<div class="note">' + note + '</div>' +
+        '<div class="official-foot">مركز المعلومات والتوثيق السياحي</div>' +
+        '</section>';
+    }).join('');
+
+    return '<!doctype html><html lang="ar" dir="rtl"><head>' +
+      '<meta charset="UTF-8">' +
+      '<title>بطاقات المعلومات الاستثمارية السياحية</title>' +
+      '<style>' + styles + v8Styles + '</style></head><body>' +
+      sheets + '</body></html>';
+  }
+
+  async function waitForImages(win) {
+    const images = [...win.document.images];
+
+    await Promise.all(images.map(img =>
+      new Promise(resolve => {
+        if (img.complete) return resolve();
+
+        const done = () => resolve();
+        img.addEventListener('load', done, {once:true});
+        img.addEventListener('error', done, {once:true});
+
+        // Do not block printing indefinitely.
+        setTimeout(done, 7000);
+      })
+    ));
+  }
+
+  document.addEventListener('click', event => {
+    const button = event.target.closest('[data-print], #printAll');
+    if (!button) return;
+
+    event.preventDefault();
+    event.stopImmediatePropagation();
+
+    const cards = button.matches('[data-print]')
+      ? [button.closest('.card')].filter(Boolean)
+      : [...document.querySelectorAll('#cards .card')];
+
+    if (!cards.length) return;
+
+    // Open immediately to avoid popup blockers.
+    const win = window.open('', '_blank', 'width=950,height=850');
+
+    if (!win) {
+      alert('يرجى السماح بفتح نافذة الطباعة');
+      return;
+    }
+
+    win.document.write(
+      '<html lang="ar" dir="rtl"><body>جار إعداد البطاقة...</body></html>'
+    );
+    win.document.close();
+
+    (async () => {
+      const [geo, photos] = await loadData();
+
+      win.document.open();
+      win.document.write(makeDocument(cards, geo, photos));
+      win.document.close();
+
+      await waitForImages(win);
+
+      win.focus();
+      win.print();
+    })().catch(error => {
+      win.document.body.textContent =
+        'تعذر إعداد البطاقة: ' + error.message;
+    });
+  }, true);
+
+  console.log('LTIP_PRINT_V8 ACTIVE');
+})();
+</script>
+</body>
+</html>

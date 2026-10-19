@@ -10,3 +10,9 @@ dist/
 *.zip
 .DS_Store
 Thumbs.db
+
+# Local redesign evidence and source backups are not release assets.
+*_backup
+*.syntax_backup
+docs/hero-acceptance/
+docs/print-acceptance/

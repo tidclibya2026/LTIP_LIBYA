@@ -1,0 +1,84 @@
+.header,
+.footer.footer {
+  --navy: #102f50;
+  --royal: #174a76;
+  --gold: #d3a85c;
+  --white: #fff;
+  background: var(--navy);
+  color: var(--white);
+}
+
+.header { border-block-end: 2px solid var(--gold); }
+.identity {
+  max-width: 1600px;
+  margin-inline: auto;
+  padding: 10px 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(230px, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+}
+.governmentText,
+.ministryText { display: flex; flex-direction: column; gap: 3px; line-height: 1.6; }
+.government strong,
+.ministryText strong { color: var(--gold); font-size: 14px; }
+.government span,
+.ministryText span { font-size: 12px; }
+.platform { text-align: center; }
+.wordmark { color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; }
+.platform h1 { margin: 2px 0; font-size: clamp(16px, 1.5vw, 21px); line-height: 1.5; }
+.platform p { margin: 0; font-size: 12px; }
+.ministry { display: flex; justify-content: flex-end; align-items: center; gap: 12px; }
+.government { display: flex; align-items: center; gap: 12px; }
+.governmentText, .ministryText, .platform { min-width: 0; }
+.logo {
+  flex: 0 0 auto;
+  width: 136px;
+  height: 72px;
+  object-fit: contain;
+}
+.navigation { background: var(--royal); }
+.navigationInner { max-width: 1600px; margin-inline: auto; padding-inline: 16px; display: flex; flex-wrap: wrap; gap: 0 8px; }
+.navigation a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 8px 12px;
+  color: var(--white);
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.navigation a:hover { background: var(--navy); }
+.navigation a:focus-visible,
+.skipLink:focus-visible { outline: 2px solid var(--white); outline-offset: -4px; }
+.cardsLink.cardsLink { margin-inline-start: auto; color: var(--gold); font-weight: 700; }
+.skipLink { position: absolute; inset-inline-start: 12px; top: 0; transform: translateY(-150%); padding: 12px; background: var(--royal); color: var(--white); z-index: 1100; }
+.skipLink:focus { transform: translateY(0); }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.footer.footer { border-block-start: 2px solid var(--gold); padding: 14px 20px; text-align: center; font-size: 12px; line-height: 1.7; }
+.footer p { margin: 3px 0; }
+
+@media (max-width: 1100px) {
+  .identity { padding-inline: 16px; gap: 12px; }
+  .ministry, .government { flex-direction: column; gap: 4px; text-align: center; }
+  .logo { width: 112px; height: 64px; }
+  .ministryText strong, .government strong { font-size: 12px; }
+}
+@media (max-width: 767px) {
+  .identity { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 1fr); padding: 8px; gap: 6px; }
+  .government { grid-column: 1; grid-row: 1; }
+  .ministry { grid-column: 3; grid-row: 1; }
+  .ministryText strong, .government strong { font-size: 10px; }
+  .ministryText span, .government span { font-size: 10px; }
+  .logo { width: 88px; max-width: 100%; height: 58px; }
+  .platform { grid-column: 2; grid-row: 1; }
+  .platform h1 { font-size: 13px; }
+  .platform p { font-size: 10px; }
+  .wordmark { font-size: 10px; }
+  .navigationInner { padding-inline: 8px; gap: 0; }
+  .navigation a { flex: 1 1 50%; padding-inline: 6px; font-size: 12px; }
+  .cardsLink.cardsLink { margin-inline-start: 0; }
+}
