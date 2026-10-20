@@ -8,7 +8,7 @@
   color: var(--white);
 }
 
-.header { border-block-end: 2px solid var(--gold); }
+.header { border-block-end: 2px solid var(--gold); box-shadow: 0 4px 18px #102f5015; }
 .identity {
   max-width: 1600px;
   margin-inline: auto;
@@ -51,7 +51,7 @@
   text-decoration: none;
   border-radius: 4px;
 }
-.navigation a:hover { background: var(--navy); }
+.navigation a:hover { background: var(--navy); color: #f2d49d; }
 .navigation a:focus-visible,
 .skipLink:focus-visible { outline: 2px solid var(--white); outline-offset: -4px; }
 .cardsLink.cardsLink { margin-inline-start: auto; color: var(--gold); font-weight: 700; }

@@ -41,3 +41,7 @@
   transform: translateY(-50%);
 }
 .enter:focus-visible { outline: 3px solid white; outline-offset: 3px; box-shadow: 0 0 0 6px #102f50; }
+.enter:hover { box-shadow: 0 0 0 2px #d3a85c, 0 0 24px #d3a85c60; }
+@media (prefers-reduced-motion: no-preference) {
+  .enter { transition: box-shadow 180ms ease; }
+}

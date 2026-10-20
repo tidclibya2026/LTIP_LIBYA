@@ -9,7 +9,8 @@
     body { margin: 0; font-family: Tahoma, Arial, sans-serif; color: #102f50; background: #f4f7fa; }
     #status { margin: 0; padding: 12px; text-align: center; background: #102f50; color: white; border-bottom: 2px solid #d3a85c; }
     iframe { display: block; width: 100%; height: calc(100vh - 52px); height: calc(100dvh - 52px); border: 0; }
-    iframe[hidden] { display: none; }
+    iframe[hidden], #status[hidden] { display: none; }
+    #status[hidden] + iframe { height: 100vh; height: 100dvh; }
   </style>
 </head>
 <body>

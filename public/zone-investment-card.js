@@ -35,10 +35,13 @@ async function openCard() {
       observer.disconnect(); clearTimeout(timeout);
       if (!selected) { status.textContent = 'تعذر العثور على بطاقة المنطقة.'; return; }
       items.forEach(card => { if (card !== selected) card.remove(); });
+      const counter = doc.getElementById('counter');
+      if (counter) counter.textContent = 'المعروض: ' + cards.querySelectorAll('.card').length;
       // Hide filters to prevent a re-render restoring the complete card list.
       const controls = doc.getElementById('search')?.closest('section');
       if (controls) controls.hidden = true;
-      status.textContent = `بطاقة المنطقة رقم ${zoneId} — استخدم زر «طباعة البطاقة» أدناه`;
+      status.textContent = '';
+      status.hidden = true;
       frame.hidden = false;
     }
     observer.observe(cards, { childList: true, subtree: true });

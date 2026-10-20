@@ -14,12 +14,12 @@
 .header {
   flex: 0 0 auto;
   padding: 10px 12px;
-  background: #fffaf0;
-  border-block-end: 1px solid #d6b16a;
+  background: #f4f7fa;
+  border-block-end: 2px solid #d3a85c;
 }
-.header h4 { margin: 5px 0; overflow-wrap: anywhere; }
+.header h4 { margin: 5px 0; overflow-wrap: anywhere; font-size: 21px; color: #102f50; }
 .identifier { margin: 0; color: #102f50; font-size: 12px; }
-.body { flex: 1 1 0; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0 12px 12px; scrollbar-gutter: stable; }
+.body { flex: 1 1 0; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0 12px 12px; scrollbar-gutter: stable; background: white; }
 .body dl { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.3fr); gap: 0 12px; direction: rtl; }
 .body dt, .body dd { min-width: 0; padding-block: 9px; border-block-end: 1px solid #e4d7ba; line-height: 1.8; overflow-wrap: anywhere; text-align: start; }
 .body dd { unicode-bidi: plaintext; }
