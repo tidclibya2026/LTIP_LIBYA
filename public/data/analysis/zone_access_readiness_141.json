@@ -1,0 +1,5970 @@
+{
+  "metadata": {
+    "title": "LTIP Geographic Access and Operational Readiness",
+    "generated_at": "2026-10-19T10:27:22.054Z",
+    "zone_count": 141,
+    "counts": {
+      "مرتفع": 103,
+      "متوسط": 35,
+      "منخفض": 3
+    },
+    "weights": {
+      "road": 0.65,
+      "airport": 0.35
+    },
+    "maritime": "Separate indicator; requires relevance assessment",
+    "operational_policy": "Unknown until independently verified",
+    "note": "Geographic distances are not travel times or network distances",
+    "classification_levels": 3,
+    "manual_overrides": [
+      "5",
+      "6",
+      "7",
+      "65",
+      "105",
+      "133"
+    ]
+  },
+  "zones": {
+    "1": {
+      "zone_id": "1",
+      "zone_name": "أبوزاهية",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002050",
+          "distance_km": 0.765,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-028",
+          "name": "مطار سرت",
+          "facility_type": "AIRPORT",
+          "distance_km": 21.316,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-017",
+          "name": "ميناء سرت",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 12.12,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "2": {
+      "zone_id": "2",
+      "zone_name": "زعفران",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000926",
+          "distance_km": 0.367,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-028",
+          "name": "مطار سرت",
+          "facility_type": "AIRPORT",
+          "distance_km": 22.616,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-017",
+          "name": "ميناء سرت",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 16.631,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "3": {
+      "zone_id": "3",
+      "zone_name": "القبيبة",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000926",
+          "distance_km": 0.023,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-028",
+          "name": "مطار سرت",
+          "facility_type": "AIRPORT",
+          "distance_km": 27.636,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-017",
+          "name": "ميناء سرت",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 23.065,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "4": {
+      "zone_id": "4",
+      "zone_name": "سلطان",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003050",
+          "distance_km": 0.409,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-028",
+          "name": "مطار سرت",
+          "facility_type": "AIRPORT",
+          "distance_km": 49.504,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-017",
+          "name": "ميناء سرت",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 48.333,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "5": {
+      "zone_id": "5",
+      "zone_name": "النقازة",
+      "geographic_access": {
+        "score": 64.5,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005546",
+          "distance_km": 1.475,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 78.728,
+          "score": 45,
+          "grade": "منخفض"
+        },
+        "maritime": {
+          "id": "PORT-007",
+          "name": "الخمس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 11.934,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        },
+        "model_grade": "منخفض",
+        "classification_source": "MANUAL_ADMINISTRATIVE_OVERRIDE",
+        "override_note": "Administrative classification; calculated score unchanged"
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "6": {
+      "zone_id": "6",
+      "zone_name": "غنيمة",
+      "geographic_access": {
+        "score": 64.5,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005539",
+          "distance_km": 2.139,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 75.091,
+          "score": 45,
+          "grade": "منخفض"
+        },
+        "maritime": {
+          "id": "PORT-007",
+          "name": "الخمس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 15.974,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        },
+        "model_grade": "منخفض",
+        "classification_source": "MANUAL_ADMINISTRATIVE_OVERRIDE",
+        "override_note": "Administrative classification; calculated score unchanged"
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "7": {
+      "zone_id": "7",
+      "zone_name": "فلفول",
+      "geographic_access": {
+        "score": 64.5,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005539",
+          "distance_km": 2.154,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 76.58,
+          "score": 45,
+          "grade": "منخفض"
+        },
+        "maritime": {
+          "id": "PORT-007",
+          "name": "الخمس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 14.684,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        },
+        "model_grade": "منخفض",
+        "classification_source": "MANUAL_ADMINISTRATIVE_OVERRIDE",
+        "override_note": "Administrative classification; calculated score unchanged"
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "8": {
+      "zone_id": "8",
+      "zone_name": "فيللا سيلين",
+      "geographic_access": {
+        "score": 80.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005548",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 82.992,
+          "score": 45,
+          "grade": "منخفض"
+        },
+        "maritime": {
+          "id": "PORT-007",
+          "name": "الخمس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 6.738,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "9": {
+      "zone_id": "9",
+      "zone_name": "قريم",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002943",
+          "distance_km": 0.685,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 69.709,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-007",
+          "name": "الخمس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 21.835,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "10": {
+      "zone_id": "10",
+      "zone_name": "الطويبية",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003150",
+          "distance_km": 1.418,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-006",
+          "name": "مهبط مصراته",
+          "facility_type": "RUNWAY",
+          "distance_km": 58.966,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-011",
+          "name": "ميناء الخمس للصيد البحري",
+          "port_type": "FISHING_PORT",
+          "tourism_role": "LOCAL_COASTAL",
+          "distance_km": 12.485,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "11": {
+      "zone_id": "11",
+      "zone_name": "هانيبال",
+      "geographic_access": {
+        "score": 80.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005516",
+          "distance_km": 0.007,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-006",
+          "name": "مهبط مصراته",
+          "facility_type": "RUNWAY",
+          "distance_km": 77.507,
+          "score": 45,
+          "grade": "منخفض"
+        },
+        "maritime": {
+          "id": "PORT-011",
+          "name": "ميناء الخمس للصيد البحري",
+          "port_type": "FISHING_PORT",
+          "tourism_role": "LOCAL_COASTAL",
+          "distance_km": 5.13,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "12": {
+      "zone_id": "12",
+      "zone_name": "ماتشوك",
+      "geographic_access": {
+        "score": 83.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005427",
+          "distance_km": 3.189,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-003",
+          "name": "مهبط زواره",
+          "facility_type": "RUNWAY",
+          "distance_km": 2.031,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-010",
+          "name": "زواره",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 8.75,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "13": {
+      "zone_id": "13",
+      "zone_name": "ملليتة-2",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003811",
+          "distance_km": 1.826,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-003",
+          "name": "مهبط زواره",
+          "facility_type": "RUNWAY",
+          "distance_km": 33.258,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-003",
+          "name": "مليته",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 10.093,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "14": {
+      "zone_id": "14",
+      "zone_name": "ملليتة-1",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-004709",
+          "distance_km": 0.032,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-003",
+          "name": "مهبط زواره",
+          "facility_type": "RUNWAY",
+          "distance_km": 32.14,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-003",
+          "name": "مليته",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 8.974,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "15": {
+      "zone_id": "15",
+      "zone_name": "تلليل-غرب",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003811",
+          "distance_km": 1.115,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-003",
+          "name": "مهبط زواره",
+          "facility_type": "RUNWAY",
+          "distance_km": 34.76,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-003",
+          "name": "مليته",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 11.6,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "16": {
+      "zone_id": "16",
+      "zone_name": "تلليل-شرق",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-004896",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-003",
+          "name": "مهبط زواره",
+          "facility_type": "RUNWAY",
+          "distance_km": 37.82,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-003",
+          "name": "مليته",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 14.685,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "17": {
+      "zone_id": "17",
+      "zone_name": "الجرف",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-001809",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-003",
+          "name": "مهبط زواره",
+          "facility_type": "RUNWAY",
+          "distance_km": 38.885,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-003",
+          "name": "مليته",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 15.763,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "18": {
+      "zone_id": "18",
+      "zone_name": "صرمان",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003378",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-003",
+          "name": "مهبط زواره",
+          "facility_type": "RUNWAY",
+          "distance_km": 53.792,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-006",
+          "name": "الزاوية",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 9.621,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "19": {
+      "zone_id": "19",
+      "zone_name": "المطرد",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-004602",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 49.531,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-006",
+          "name": "الزاوية",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 3.32,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "20": {
+      "zone_id": "20",
+      "zone_name": "السياحية",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005782",
+          "distance_km": 0.726,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 23.07,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 4.578,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "21": {
+      "zone_id": "21",
+      "zone_name": "أوياء",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002847",
+          "distance_km": 0.014,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 22.73,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 5.618,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "22": {
+      "zone_id": "22",
+      "zone_name": "جنزور-1",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-001534",
+          "distance_km": 0.69,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 23.236,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 4.266,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "23": {
+      "zone_id": "23",
+      "zone_name": "جنزور-2",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-001534",
+          "distance_km": 0.688,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 23.344,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 3.904,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "24": {
+      "zone_id": "24",
+      "zone_name": "جنزور-3",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-001539",
+          "distance_km": 0.604,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 23.465,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 3.562,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "25": {
+      "zone_id": "25",
+      "zone_name": "سيدي عبدالجليل-1",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005391",
+          "distance_km": 0.011,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 22.712,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 7.836,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "26": {
+      "zone_id": "26",
+      "zone_name": "سيدي عبدالجليل-2",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005391",
+          "distance_km": 0,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 22.754,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 7.762,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "27": {
+      "zone_id": "27",
+      "zone_name": "سيدي عبدالجليل-3",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002557",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 22.757,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 7.609,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "28": {
+      "zone_id": "28",
+      "zone_name": "سيدي عبدالجليل-4",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005391",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 22.783,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 7.244,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "29": {
+      "zone_id": "29",
+      "zone_name": "سيدي عبدالجليل-5",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002551",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 22.742,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 6.987,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "30": {
+      "zone_id": "30",
+      "zone_name": "سيدي عبدالجليل-6",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002551",
+          "distance_km": 0.016,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 22.66,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 6.729,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "31": {
+      "zone_id": "31",
+      "zone_name": "محطة غرب طرابلس",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-006130",
+          "distance_km": 0.532,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 23.693,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 2.327,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "32": {
+      "zone_id": "32",
+      "zone_name": "مصيف جربة",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-001539",
+          "distance_km": 0.604,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 23.501,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 3.121,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "33": {
+      "zone_id": "33",
+      "zone_name": "مصيف جنزور-1",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002551",
+          "distance_km": 0.022,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 22.633,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 6.599,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "34": {
+      "zone_id": "34",
+      "zone_name": "مصيف جنزور-2",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002847",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 22.644,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 6.364,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "35": {
+      "zone_id": "35",
+      "zone_name": "الغيران",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005391",
+          "distance_km": 0.001,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-005",
+          "name": "مطار طرابلس العالمي",
+          "facility_type": "AIRPORT",
+          "distance_km": 21.521,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-001",
+          "name": "الغيران",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 8.819,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "36": {
+      "zone_id": "36",
+      "zone_name": "حي الأندلس-2",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003255",
+          "distance_km": 0.115,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 12.986,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-004",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 5.529,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "37": {
+      "zone_id": "37",
+      "zone_name": "حي الأندلس-1",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003255",
+          "distance_km": 0.013,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 12.547,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-004",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 5.115,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "38": {
+      "zone_id": "38",
+      "zone_name": "الدلفين",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-006077",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 1.784,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 3.777,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "39": {
+      "zone_id": "39",
+      "zone_name": "النادي البحري",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-006011",
+          "distance_km": 0.013,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 4.685,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 0.126,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "40": {
+      "zone_id": "40",
+      "zone_name": "شاطيء النخيل",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-006011",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 4.07,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 0.633,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "41": {
+      "zone_id": "41",
+      "zone_name": "الدخلة الشمالية",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-001206",
+          "distance_km": 0.12,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 9.543,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 14.395,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "42": {
+      "zone_id": "42",
+      "zone_name": "الدخلة الجنوبية",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002487",
+          "distance_km": 0.347,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 9.956,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 14.864,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "43": {
+      "zone_id": "43",
+      "zone_name": "الفوار",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-006078",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 2.077,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 6.816,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "44": {
+      "zone_id": "44",
+      "zone_name": "الجولف",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-001622",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 3.222,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 8.188,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "45": {
+      "zone_id": "45",
+      "zone_name": "الحرية",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003199",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 4.699,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 9.601,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "46": {
+      "zone_id": "46",
+      "zone_name": "المنارة",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005973",
+          "distance_km": 0.004,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 8.765,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 13.64,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "47": {
+      "zone_id": "47",
+      "zone_name": "الحميدية",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003593",
+          "distance_km": 0.077,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 10.162,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 15.103,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "48": {
+      "zone_id": "48",
+      "zone_name": "مصيف تاجوراء",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003593",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 11.263,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 16.307,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "49": {
+      "zone_id": "49",
+      "zone_name": "النصر",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-004907",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 14.18,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 19.263,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "50": {
+      "zone_id": "50",
+      "zone_name": "الأندلسي",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005973",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 6.529,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 11.437,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "51": {
+      "zone_id": "51",
+      "zone_name": "النشيع",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002749",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 25.855,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 30.949,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "52": {
+      "zone_id": "52",
+      "zone_name": "غوط الرمان",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-004705",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 20.653,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 25.747,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "53": {
+      "zone_id": "53",
+      "zone_name": "السليسلة",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-004704",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 27.825,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 32.92,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "54": {
+      "zone_id": "54",
+      "zone_name": "العطايا",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003952",
+          "distance_km": 1.853,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 40.09,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 45.155,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "55": {
+      "zone_id": "55",
+      "zone_name": "الكراوة-3",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002582",
+          "distance_km": 0.696,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 41.271,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 46.326,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "56": {
+      "zone_id": "56",
+      "zone_name": "الكراوة-1",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-001913",
+          "distance_km": 1.05,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 48.974,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-007",
+          "name": "الخمس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 40.49,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "57": {
+      "zone_id": "57",
+      "zone_name": "الكراوة-2",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002582",
+          "distance_km": 1.111,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 45.091,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-007",
+          "name": "الخمس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 42.376,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "58": {
+      "zone_id": "58",
+      "zone_name": "سيدي عمير-1",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-001913",
+          "distance_km": 2.089,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 51.546,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-007",
+          "name": "الخمس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 37.697,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "59": {
+      "zone_id": "59",
+      "zone_name": "سيدي عمير-2",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002746",
+          "distance_km": 1.343,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 54.471,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-007",
+          "name": "الخمس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 30.152,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "60": {
+      "zone_id": "60",
+      "zone_name": "المثلث الرملي",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002582",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 42.986,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-007",
+          "name": "الخمس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 46.473,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "61": {
+      "zone_id": "61",
+      "zone_name": "الشعاب",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-001647",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 6.572,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-004",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 0.715,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "62": {
+      "zone_id": "62",
+      "zone_name": "أبيار السبابيل",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-004907",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-004",
+          "name": "مطار إمعيتيقه",
+          "facility_type": "AIRPORT",
+          "distance_km": 16.943,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-005",
+          "name": "طرابلس",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 22.035,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "63": {
+      "zone_id": "63",
+      "zone_name": "ملليتة 3",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-004709",
+          "distance_km": 2.667,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-003",
+          "name": "مهبط زواره",
+          "facility_type": "RUNWAY",
+          "distance_km": 30.6,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-003",
+          "name": "مليته",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 7.435,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "64": {
+      "zone_id": "64",
+      "zone_name": "البريقاء",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005427",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-003",
+          "name": "مهبط زواره",
+          "facility_type": "RUNWAY",
+          "distance_km": 38.952,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-002",
+          "name": "أبوكماش",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 9.637,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "65": {
+      "zone_id": "65",
+      "zone_name": "أبوكشفة",
+      "geographic_access": {
+        "score": 64.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-005427",
+          "distance_km": 8.393,
+          "intersects_zone": false,
+          "score": 45,
+          "grade": "منخفض"
+        },
+        "airport": {
+          "id": "AIR-003",
+          "name": "مهبط زواره",
+          "facility_type": "RUNWAY",
+          "distance_km": 9.206,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-010",
+          "name": "زواره",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 18.596,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        },
+        "model_grade": "منخفض",
+        "classification_source": "MANUAL_ADMINISTRATIVE_OVERRIDE",
+        "override_note": "Administrative classification; calculated score unchanged"
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "66": {
+      "zone_id": "66",
+      "zone_name": "مصيف بياض",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000075",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-018",
+          "name": "مطار طبرق",
+          "facility_type": "AIRPORT",
+          "distance_km": 17.029,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-021",
+          "name": "ميناء الحريقة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 2.698,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "67": {
+      "zone_id": "67",
+      "zone_name": "البردي-1",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000069",
+          "distance_km": 0.092,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-008",
+          "name": "مهبط  قصر الجدى",
+          "facility_type": "RUNWAY",
+          "distance_km": 31.944,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-020",
+          "name": "ميناء برديه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0.093,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "68": {
+      "zone_id": "68",
+      "zone_name": "العزلية",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000175",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-012",
+          "name": "مهبط درنة",
+          "facility_type": "RUNWAY",
+          "distance_km": 34.007,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-025",
+          "name": "ميناء رأس الهلال",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 3.451,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "69": {
+      "zone_id": "69",
+      "zone_name": "دليس",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000175",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-012",
+          "name": "مهبط درنة",
+          "facility_type": "RUNWAY",
+          "distance_km": 7.912,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-019",
+          "name": "ميناء درنة",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 11.979,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "70": {
+      "zone_id": "70",
+      "zone_name": "راس التين",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000471",
+          "distance_km": 0.901,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-016",
+          "name": "مطار بمبا",
+          "facility_type": "AIRPORT",
+          "distance_km": 3.9,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-024",
+          "name": "ميناء التميمي",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 2.768,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "71": {
+      "zone_id": "71",
+      "zone_name": "الاترون",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000175",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-012",
+          "name": "مهبط درنة",
+          "facility_type": "RUNWAY",
+          "distance_km": 24.842,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-025",
+          "name": "ميناء رأس الهلال",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 12.093,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "72": {
+      "zone_id": "72",
+      "zone_name": "قاريونس",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000019",
+          "distance_km": 0.003,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-013",
+          "name": "مهبط قرية الكرمل",
+          "facility_type": "RUNWAY",
+          "distance_km": 9.913,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-018",
+          "name": "ميناء بنغازي",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 3.846,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "73": {
+      "zone_id": "73",
+      "zone_name": "عين زيانة",
+      "geographic_access": {
+        "score": 83.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000016",
+          "distance_km": 1.037,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-014",
+          "name": "مطار بنينه",
+          "facility_type": "AIRPORT",
+          "distance_km": 17.357,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-018",
+          "name": "ميناء بنغازي",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 14.633,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "74": {
+      "zone_id": "74",
+      "zone_name": "سيدي خليفة",
+      "geographic_access": {
+        "score": 83.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000016",
+          "distance_km": 1.028,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-014",
+          "name": "مطار بنينه",
+          "facility_type": "AIRPORT",
+          "distance_km": 17.866,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-031",
+          "name": "ميناء دريانه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 7.641,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "75": {
+      "zone_id": "75",
+      "zone_name": "أبوترابة",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000322",
+          "distance_km": 0.04,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-014",
+          "name": "مطار بنينه",
+          "facility_type": "AIRPORT",
+          "distance_km": 74.162,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-029",
+          "name": "ميناء طلميثه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 19.609,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "76": {
+      "zone_id": "76",
+      "zone_name": "مصيف طلميثة",
+      "geographic_access": {
+        "score": 80.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000391",
+          "distance_km": 0.073,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-019",
+          "name": "مطار البيضاء",
+          "facility_type": "AIRPORT",
+          "distance_km": 76.097,
+          "score": 45,
+          "grade": "منخفض"
+        },
+        "maritime": {
+          "id": "PORT-029",
+          "name": "ميناء طلميثه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0.494,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "77": {
+      "zone_id": "77",
+      "zone_name": "طلميثة",
+      "geographic_access": {
+        "score": 80.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000322",
+          "distance_km": 0.282,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-019",
+          "name": "مطار البيضاء",
+          "facility_type": "AIRPORT",
+          "distance_km": 79.701,
+          "score": 45,
+          "grade": "منخفض"
+        },
+        "maritime": {
+          "id": "PORT-029",
+          "name": "ميناء طلميثه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 3.364,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "78": {
+      "zone_id": "78",
+      "zone_name": "جرجارامه",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000391",
+          "distance_km": 0.069,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-019",
+          "name": "مطار البيضاء",
+          "facility_type": "AIRPORT",
+          "distance_km": 27.505,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-028",
+          "name": "ميناء الحنيه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 3.556,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "79": {
+      "zone_id": "79",
+      "zone_name": "مويلح",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000193",
+          "distance_km": 0.416,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-019",
+          "name": "مطار البيضاء",
+          "facility_type": "AIRPORT",
+          "distance_km": 23.435,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-028",
+          "name": "ميناء الحنيه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 1.887,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "80": {
+      "zone_id": "80",
+      "zone_name": "الحمامة",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000348",
+          "distance_km": 0.064,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-019",
+          "name": "مطار البيضاء",
+          "facility_type": "AIRPORT",
+          "distance_km": 21.786,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-027",
+          "name": "ميناء الحمامة",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "81": {
+      "zone_id": "81",
+      "zone_name": "أبوشيبة",
+      "geographic_access": {
+        "score": 83.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000019",
+          "distance_km": 2.95,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-013",
+          "name": "مهبط قرية الكرمل",
+          "facility_type": "RUNWAY",
+          "distance_km": 6.877,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-018",
+          "name": "ميناء بنغازي",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 17.662,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "82": {
+      "zone_id": "82",
+      "zone_name": "المريسة",
+      "geographic_access": {
+        "score": 83.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000019",
+          "distance_km": 2.332,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-013",
+          "name": "مهبط قرية الكرمل",
+          "facility_type": "RUNWAY",
+          "distance_km": 7.578,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-018",
+          "name": "ميناء بنغازي",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 19.392,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "83": {
+      "zone_id": "83",
+      "zone_name": "ترية",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000138",
+          "distance_km": 0.699,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-013",
+          "name": "مهبط قرية الكرمل",
+          "facility_type": "RUNWAY",
+          "distance_km": 15.618,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-032",
+          "name": "ميناء قمينس",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 20.939,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "84": {
+      "zone_id": "84",
+      "zone_name": "قمينس",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000084",
+          "distance_km": 0.078,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-013",
+          "name": "مهبط قرية الكرمل",
+          "facility_type": "RUNWAY",
+          "distance_km": 31.253,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-032",
+          "name": "ميناء قمينس",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "85": {
+      "zone_id": "85",
+      "zone_name": "جاروتة",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000137",
+          "distance_km": 0.032,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-013",
+          "name": "مهبط قرية الكرمل",
+          "facility_type": "RUNWAY",
+          "distance_km": 19.688,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-032",
+          "name": "ميناء قمينس",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 17.904,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "86": {
+      "zone_id": "86",
+      "zone_name": "الساحل الغربي",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000082",
+          "distance_km": 1.063,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-054",
+          "name": "مهبط الزويتينة",
+          "facility_type": "RUNWAY",
+          "distance_km": 36.777,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-033",
+          "name": "ميناء كركوره",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 19.847,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "87": {
+      "zone_id": "87",
+      "zone_name": "حبيب",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000346",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-013",
+          "name": "مهبط قرية الكرمل",
+          "facility_type": "RUNWAY",
+          "distance_km": 42.721,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-033",
+          "name": "ميناء كركوره",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "88": {
+      "zone_id": "88",
+      "zone_name": "كركورة",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000084",
+          "distance_km": 1.79,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-013",
+          "name": "مهبط قرية الكرمل",
+          "facility_type": "RUNWAY",
+          "distance_km": 38.374,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-032",
+          "name": "ميناء قمينس",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 1.796,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "89": {
+      "zone_id": "89",
+      "zone_name": "الحليسي",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000019",
+          "distance_km": 0.752,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-013",
+          "name": "مهبط قرية الكرمل",
+          "facility_type": "RUNWAY",
+          "distance_km": 7.779,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-018",
+          "name": "ميناء بنغازي",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 21.353,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "90": {
+      "zone_id": "90",
+      "zone_name": "سيدي علي",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000009",
+          "distance_km": 0.866,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-014",
+          "name": "مطار بنينه",
+          "facility_type": "AIRPORT",
+          "distance_km": 22.9,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-031",
+          "name": "ميناء دريانه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 2.807,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "91": {
+      "zone_id": "91",
+      "zone_name": "دريانة",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000281",
+          "distance_km": 0.759,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-014",
+          "name": "مطار بنينه",
+          "facility_type": "AIRPORT",
+          "distance_km": 25.962,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-031",
+          "name": "ميناء دريانه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "92": {
+      "zone_id": "92",
+      "zone_name": "مبنى",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000009",
+          "distance_km": 2.271,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-014",
+          "name": "مطار بنينه",
+          "facility_type": "AIRPORT",
+          "distance_km": 34.7,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-031",
+          "name": "ميناء دريانه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 7.932,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "93": {
+      "zone_id": "93",
+      "zone_name": "البرسس",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000015",
+          "distance_km": 1.826,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-014",
+          "name": "مطار بنينه",
+          "facility_type": "AIRPORT",
+          "distance_km": 43.972,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-030",
+          "name": "ميناء توكره",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 9.448,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "94": {
+      "zone_id": "94",
+      "zone_name": "العقورية",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000322",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-014",
+          "name": "مطار بنينه",
+          "facility_type": "AIRPORT",
+          "distance_km": 47.987,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-030",
+          "name": "ميناء توكره",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "95": {
+      "zone_id": "95",
+      "zone_name": "بابا طلميثة",
+      "geographic_access": {
+        "score": 80.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000391",
+          "distance_km": 0.411,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-019",
+          "name": "مطار البيضاء",
+          "facility_type": "AIRPORT",
+          "distance_km": 77.101,
+          "score": 45,
+          "grade": "منخفض"
+        },
+        "maritime": {
+          "id": "PORT-029",
+          "name": "ميناء طلميثه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0.177,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "96": {
+      "zone_id": "96",
+      "zone_name": "عقلة",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000391",
+          "distance_km": 0.095,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-019",
+          "name": "مطار البيضاء",
+          "facility_type": "AIRPORT",
+          "distance_km": 38.277,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-028",
+          "name": "ميناء الحنيه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 15.912,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "97": {
+      "zone_id": "97",
+      "zone_name": "نوطة سوسة",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000350",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-019",
+          "name": "مطار البيضاء",
+          "facility_type": "AIRPORT",
+          "distance_km": 17.08,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-026",
+          "name": "ميناء سوسه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 10.86,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "98": {
+      "zone_id": "98",
+      "zone_name": "مهبول",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000175",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-019",
+          "name": "مطار البيضاء",
+          "facility_type": "AIRPORT",
+          "distance_km": 35.11,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-025",
+          "name": "ميناء رأس الهلال",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0.483,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "99": {
+      "zone_id": "99",
+      "zone_name": "بركة ناصر",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000175",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-019",
+          "name": "مطار البيضاء",
+          "facility_type": "AIRPORT",
+          "distance_km": 40.683,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-025",
+          "name": "ميناء رأس الهلال",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0.69,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "100": {
+      "zone_id": "100",
+      "zone_name": "كرسة",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000175",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-012",
+          "name": "مهبط درنة",
+          "facility_type": "RUNWAY",
+          "distance_km": 11.927,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-019",
+          "name": "ميناء درنة",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 16.022,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "101": {
+      "zone_id": "101",
+      "zone_name": "الناقة",
+      "geographic_access": {
+        "score": 83.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000175",
+          "distance_km": 1.016,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-012",
+          "name": "مهبط درنة",
+          "facility_type": "RUNWAY",
+          "distance_km": 5.302,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-019",
+          "name": "ميناء درنة",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 9.232,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "102": {
+      "zone_id": "102",
+      "zone_name": "بومسافر",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000175",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-012",
+          "name": "مهبط درنة",
+          "facility_type": "RUNWAY",
+          "distance_km": 3.943,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-019",
+          "name": "ميناء درنة",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 8.064,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "103": {
+      "zone_id": "103",
+      "zone_name": "الشاطيء",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000175",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-012",
+          "name": "مهبط درنة",
+          "facility_type": "RUNWAY",
+          "distance_km": 0.408,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-019",
+          "name": "ميناء درنة",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 2.69,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "104": {
+      "zone_id": "104",
+      "zone_name": "غير مسمى",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000095",
+          "distance_km": 0.004,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-017",
+          "name": "مطار مرتوبة",
+          "facility_type": "AIRPORT",
+          "distance_km": 21.1,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-019",
+          "name": "ميناء درنة",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 27.639,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "105": {
+      "zone_id": "105",
+      "zone_name": "المقرون",
+      "geographic_access": {
+        "score": 55.5,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000082",
+          "distance_km": 6.53,
+          "intersects_zone": false,
+          "score": 45,
+          "grade": "منخفض"
+        },
+        "airport": {
+          "id": "AIR-054",
+          "name": "مهبط الزويتينة",
+          "facility_type": "RUNWAY",
+          "distance_km": 50.038,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-033",
+          "name": "ميناء كركوره",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 14.237,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        },
+        "model_grade": "منخفض",
+        "classification_source": "MANUAL_ADMINISTRATIVE_OVERRIDE",
+        "override_note": "Administrative classification; calculated score unchanged"
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "106": {
+      "zone_id": "106",
+      "zone_name": "البردي-3",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000069",
+          "distance_km": 0.726,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-008",
+          "name": "مهبط  قصر الجدى",
+          "facility_type": "RUNWAY",
+          "distance_km": 32.036,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-020",
+          "name": "ميناء برديه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0.947,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "107": {
+      "zone_id": "107",
+      "zone_name": "البردي-2",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000069",
+          "distance_km": 0.102,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-008",
+          "name": "مهبط  قصر الجدى",
+          "facility_type": "RUNWAY",
+          "distance_km": 25.727,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-020",
+          "name": "ميناء برديه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0.299,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "108": {
+      "zone_id": "108",
+      "zone_name": "عزاز",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000091",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-008",
+          "name": "مهبط  قصر الجدى",
+          "facility_type": "RUNWAY",
+          "distance_km": 26.59,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-020",
+          "name": "ميناء برديه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 20.685,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "109": {
+      "zone_id": "109",
+      "zone_name": "الجدي",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000074",
+          "distance_km": 0.651,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-008",
+          "name": "مهبط  قصر الجدى",
+          "facility_type": "RUNWAY",
+          "distance_km": 22.499,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-020",
+          "name": "ميناء برديه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 25.514,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "110": {
+      "zone_id": "110",
+      "zone_name": "شويمر",
+      "geographic_access": {
+        "score": 83.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000067",
+          "distance_km": 1.455,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-008",
+          "name": "مهبط  قصر الجدى",
+          "facility_type": "RUNWAY",
+          "distance_km": 20.956,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-020",
+          "name": "ميناء برديه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 29.913,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "111": {
+      "zone_id": "111",
+      "zone_name": "مرسة دفنة",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000067",
+          "distance_km": 0.621,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-008",
+          "name": "مهبط  قصر الجدى",
+          "facility_type": "RUNWAY",
+          "distance_km": 21.004,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-020",
+          "name": "ميناء برديه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 37.99,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "112": {
+      "zone_id": "112",
+      "zone_name": "بئرالأشهب",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000068",
+          "distance_km": 0.436,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-008",
+          "name": "مهبط  قصر الجدى",
+          "facility_type": "RUNWAY",
+          "distance_km": 24.529,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-020",
+          "name": "ميناء برديه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 51.77,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "113": {
+      "zone_id": "113",
+      "zone_name": "قابس",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000068",
+          "distance_km": 0.233,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-008",
+          "name": "مهبط  قصر الجدى",
+          "facility_type": "RUNWAY",
+          "distance_km": 24.896,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-020",
+          "name": "ميناء برديه",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 52.73,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "114": {
+      "zone_id": "114",
+      "zone_name": "كمبوت",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000068",
+          "distance_km": 0.664,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-008",
+          "name": "مهبط  قصر الجدى",
+          "facility_type": "RUNWAY",
+          "distance_km": 26.653,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-021",
+          "name": "ميناء الحريقة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 51.099,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "115": {
+      "zone_id": "115",
+      "zone_name": "العقلة",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000061",
+          "distance_km": 0.366,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-015",
+          "name": "مطار جمال عبدالناصر",
+          "facility_type": "AIRPORT",
+          "distance_km": 35.025,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-021",
+          "name": "ميناء الحريقة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 24.979,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "116": {
+      "zone_id": "116",
+      "zone_name": "العودا",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000148",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-018",
+          "name": "مطار طبرق",
+          "facility_type": "AIRPORT",
+          "distance_km": 3.396,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-022",
+          "name": "ميناء طبرق",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 5.424,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "117": {
+      "zone_id": "117",
+      "zone_name": "المرصص",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000166",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-018",
+          "name": "مطار طبرق",
+          "facility_type": "AIRPORT",
+          "distance_km": 4.562,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-022",
+          "name": "ميناء طبرق",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 15.876,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "118": {
+      "zone_id": "118",
+      "zone_name": "بلخاتر",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000344",
+          "distance_km": 3.05,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-018",
+          "name": "مطار طبرق",
+          "facility_type": "AIRPORT",
+          "distance_km": 28.01,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-023",
+          "name": "ميناء عين الغزالة",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 17.456,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "119": {
+      "zone_id": "119",
+      "zone_name": "عين الغزال",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000152",
+          "distance_km": 0.779,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-016",
+          "name": "مطار بمبا",
+          "facility_type": "AIRPORT",
+          "distance_km": 30.404,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-023",
+          "name": "ميناء عين الغزالة",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 5.52,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "120": {
+      "zone_id": "120",
+      "zone_name": "التميمي",
+      "geographic_access": {
+        "score": 83.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000152",
+          "distance_km": 1.479,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-016",
+          "name": "مطار بمبا",
+          "facility_type": "AIRPORT",
+          "distance_km": 23.217,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-023",
+          "name": "ميناء عين الغزالة",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 10.593,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "121": {
+      "zone_id": "121",
+      "zone_name": "بالقردان",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000152",
+          "distance_km": 0.875,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-016",
+          "name": "مطار بمبا",
+          "facility_type": "AIRPORT",
+          "distance_km": 8.543,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-024",
+          "name": "ميناء التميمي",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 0,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "122": {
+      "zone_id": "122",
+      "zone_name": "راس التين-2",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000056",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-016",
+          "name": "مطار بمبا",
+          "facility_type": "AIRPORT",
+          "distance_km": 1.927,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-024",
+          "name": "ميناء التميمي",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 5.55,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "123": {
+      "zone_id": "123",
+      "zone_name": "خبطة",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000114",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-016",
+          "name": "مطار بمبا",
+          "facility_type": "AIRPORT",
+          "distance_km": 20.796,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-024",
+          "name": "ميناء التميمي",
+          "port_type": "UNCLASSIFIED",
+          "tourism_role": "REVIEW",
+          "distance_km": 30.492,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "124": {
+      "zone_id": "124",
+      "zone_name": "بوهريشيمة",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002278",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-054",
+          "name": "مهبط الزويتينة",
+          "facility_type": "RUNWAY",
+          "distance_km": 18.663,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-016",
+          "name": "ميناء الزويتينة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 15.924,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "125": {
+      "zone_id": "125",
+      "zone_name": "الزويتينة الشمالي",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002277",
+          "distance_km": 0.975,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-054",
+          "name": "مهبط الزويتينة",
+          "facility_type": "RUNWAY",
+          "distance_km": 11.035,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-016",
+          "name": "ميناء الزويتينة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 8.304,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "126": {
+      "zone_id": "126",
+      "zone_name": "الزويتينة الجنوبي",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002277",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-054",
+          "name": "مهبط الزويتينة",
+          "facility_type": "RUNWAY",
+          "distance_km": 6.65,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-016",
+          "name": "ميناء الزويتينة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 3.912,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "127": {
+      "zone_id": "127",
+      "zone_name": "مرير قابس",
+      "geographic_access": {
+        "score": 36,
+        "grade": "منخفض",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003050",
+          "distance_km": 17.408,
+          "intersects_zone": false,
+          "score": 15,
+          "grade": "منخفض جدًا"
+        },
+        "airport": {
+          "id": "AIR-054",
+          "name": "مهبط الزويتينة",
+          "facility_type": "RUNWAY",
+          "distance_km": 25.938,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-016",
+          "name": "ميناء الزويتينة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 28.553,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "128": {
+      "zone_id": "128",
+      "zone_name": "بشر",
+      "geographic_access": {
+        "score": 83.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003050",
+          "distance_km": 2.503,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-044",
+          "name": "مطار  البريقة",
+          "facility_type": "AIRPORT",
+          "distance_km": 8.801,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-015",
+          "name": "ميناء البريقة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 10.446,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "129": {
+      "zone_id": "129",
+      "zone_name": "العقيلة",
+      "geographic_access": {
+        "score": 91.25,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003050",
+          "distance_km": 0.736,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-044",
+          "name": "مطار  البريقة",
+          "facility_type": "AIRPORT",
+          "distance_km": 29.516,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-015",
+          "name": "ميناء البريقة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 31.429,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "130": {
+      "zone_id": "130",
+      "zone_name": "راس لانوف",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-000923",
+          "distance_km": 0.928,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-032",
+          "name": "مطار رأس لانوف",
+          "facility_type": "AIRPORT",
+          "distance_km": 5.694,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-013",
+          "name": "ميناء رأس لانوف",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 8.203,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "131": {
+      "zone_id": "131",
+      "zone_name": "السدرة",
+      "geographic_access": {
+        "score": 83.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003050",
+          "distance_km": 1.106,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-032",
+          "name": "مطار رأس لانوف",
+          "facility_type": "AIRPORT",
+          "distance_km": 11.324,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-014",
+          "name": "ميناء السدرة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 8.469,
+          "score": 100,
+          "grade": "مرتفع",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "132": {
+      "zone_id": "132",
+      "zone_name": "بن جواد",
+      "geographic_access": {
+        "score": 83.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003050",
+          "distance_km": 2.076,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-033",
+          "name": "مهبط السدرة",
+          "facility_type": "RUNWAY",
+          "distance_km": 17.271,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-014",
+          "name": "ميناء السدرة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 20.622,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "133": {
+      "zone_id": "133",
+      "zone_name": "عسيلة الغربي",
+      "geographic_access": {
+        "score": 64.5,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003050",
+          "distance_km": 2.715,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-028",
+          "name": "مطار سرت",
+          "facility_type": "AIRPORT",
+          "distance_km": 78.408,
+          "score": 45,
+          "grade": "منخفض"
+        },
+        "maritime": {
+          "id": "PORT-017",
+          "name": "ميناء سرت",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 78.991,
+          "score": 15,
+          "grade": "منخفض جدًا",
+          "included_in_base_score": false
+        },
+        "model_grade": "منخفض",
+        "classification_source": "MANUAL_ADMINISTRATIVE_OVERRIDE",
+        "override_note": "Administrative classification; calculated score unchanged"
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "134": {
+      "zone_id": "134",
+      "zone_name": "هراوة",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003050",
+          "distance_km": 3.276,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-028",
+          "name": "مطار سرت",
+          "facility_type": "AIRPORT",
+          "distance_km": 64.315,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-017",
+          "name": "ميناء سرت",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 64.204,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "135": {
+      "zone_id": "135",
+      "zone_name": "السميدة",
+      "geographic_access": {
+        "score": 36,
+        "grade": "منخفض",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002417",
+          "distance_km": 20.433,
+          "intersects_zone": false,
+          "score": 15,
+          "grade": "منخفض جدًا"
+        },
+        "airport": {
+          "id": "AIR-006",
+          "name": "مهبط مصراته",
+          "facility_type": "RUNWAY",
+          "distance_km": 43.558,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-009",
+          "name": "قصر أحمد",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 32.782,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "136": {
+      "zone_id": "136",
+      "zone_name": "قصر أحمد",
+      "geographic_access": {
+        "score": 36,
+        "grade": "منخفض",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-002395",
+          "distance_km": 17.76,
+          "intersects_zone": false,
+          "score": 15,
+          "grade": "منخفض جدًا"
+        },
+        "airport": {
+          "id": "AIR-006",
+          "name": "مهبط مصراته",
+          "facility_type": "RUNWAY",
+          "distance_km": 30.534,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-009",
+          "name": "قصر أحمد",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 15.411,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "137": {
+      "zone_id": "137",
+      "zone_name": "الدافنية",
+      "geographic_access": {
+        "score": 100,
+        "grade": "مرتفع",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-001629",
+          "distance_km": 0,
+          "intersects_zone": true,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-006",
+          "name": "مهبط مصراته",
+          "facility_type": "RUNWAY",
+          "distance_km": 9.306,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-008",
+          "name": "مصراته\t",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 22.578,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "138": {
+      "zone_id": "138",
+      "zone_name": "العويجة",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003050",
+          "distance_km": 3.953,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-033",
+          "name": "مهبط السدرة",
+          "facility_type": "RUNWAY",
+          "distance_km": 50.42,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-014",
+          "name": "ميناء السدرة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 54.276,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "139": {
+      "zone_id": "139",
+      "zone_name": "أم الخنفس",
+      "geographic_access": {
+        "score": 75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003050",
+          "distance_km": 3.933,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-033",
+          "name": "مهبط السدرة",
+          "facility_type": "RUNWAY",
+          "distance_km": 62.904,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "maritime": {
+          "id": "PORT-014",
+          "name": "ميناء السدرة",
+          "port_type": "OIL_PORT",
+          "tourism_role": "NO_DIRECT_TOURISM_ROLE",
+          "distance_km": 66.784,
+          "score": 45,
+          "grade": "منخفض",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "140": {
+      "zone_id": "140",
+      "zone_name": "عسيلة الشرقي",
+      "geographic_access": {
+        "score": 80.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003050",
+          "distance_km": 0.991,
+          "intersects_zone": false,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "airport": {
+          "id": "AIR-028",
+          "name": "مطار سرت",
+          "facility_type": "AIRPORT",
+          "distance_km": 84.97,
+          "score": 45,
+          "grade": "منخفض"
+        },
+        "maritime": {
+          "id": "PORT-017",
+          "name": "ميناء سرت",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 86.199,
+          "score": 15,
+          "grade": "منخفض جدًا",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    },
+    "141": {
+      "zone_id": "141",
+      "zone_name": "القرضابية",
+      "geographic_access": {
+        "score": 83.75,
+        "grade": "متوسط",
+        "model": "ROAD_65_AIR_35",
+        "road": {
+          "id": "ROAD-003050",
+          "distance_km": 1.045,
+          "intersects_zone": false,
+          "score": 75,
+          "grade": "متوسط"
+        },
+        "airport": {
+          "id": "AIR-028",
+          "name": "مطار سرت",
+          "facility_type": "AIRPORT",
+          "distance_km": 24.435,
+          "score": 100,
+          "grade": "مرتفع"
+        },
+        "maritime": {
+          "id": "PORT-017",
+          "name": "ميناء سرت",
+          "port_type": "COMMERCIAL_PORT",
+          "tourism_role": "POTENTIAL_TOURISM_GATEWAY",
+          "distance_km": 18.139,
+          "score": 75,
+          "grade": "متوسط",
+          "included_in_base_score": false
+        }
+      },
+      "operational_readiness": {
+        "overall_status": "NOT_VERIFIED",
+        "road_status": "NOT_VERIFIED",
+        "airport_status": "UNKNOWN",
+        "port_status": "UNKNOWN",
+        "evidence_required": true,
+        "investment_ready": null
+      }
+    }
+  }
+}

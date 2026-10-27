@@ -1,0 +1,4589 @@
+{
+  "schema_version": 2,
+  "metadata": {
+    "join": "zone_id = zones_141.geojson features[].properties.id",
+    "historical_targets": {
+      "MAPPED": 95,
+      "CLASSIFIED": 39,
+      "UNVERIFIED": 7
+    },
+    "historical_classified_description": "محدد لغرض التخريط",
+    "matching_status": "PARTIAL",
+    "note": "المواقع التاريخية الـ134 ضمن الـ141. الأعداد أهداف مطابقة وليست توزيعًا مثبتًا. اكتملت مطابقة الموقع 19 بثلاث سمات مستقلة وسجل ربط مصدرّي معتمد سابقًا؛ بقية المواقع تحتاج توثيقًا.",
+    "study_document_types": [
+      "FEASIBILITY_STUDY",
+      "MASTER_PLAN",
+      "DETAILED_PLAN",
+      "OTHER_STUDY"
+    ],
+    "historical_match_summary": {
+      "CONFIRMED": 1,
+      "CANDIDATE": 56,
+      "CONFLICT": 30,
+      "UNMATCHED": 8
+    },
+    "historical_link_policy": "Only CONFIRMED historical records are attached. Other zone statuses describe review leads, not established links. Historical mapping does not establish current readiness."
+  },
+  "zones": {
+    "1": {
+      "zone_id": 1,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "2": {
+      "zone_id": 2,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "3": {
+      "zone_id": 3,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "4": {
+      "zone_id": 4,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "5": {
+      "zone_id": 5,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "6": {
+      "zone_id": 6,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "7": {
+      "zone_id": 7,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "8": {
+      "zone_id": 8,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "9": {
+      "zone_id": 9,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "10": {
+      "zone_id": 10,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "11": {
+      "zone_id": 11,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "12": {
+      "zone_id": 12,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "13": {
+      "zone_id": 13,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "14": {
+      "zone_id": 14,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "15": {
+      "zone_id": 15,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "16": {
+      "zone_id": 16,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "17": {
+      "zone_id": 17,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "18": {
+      "zone_id": 18,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "19": {
+      "zone_id": 19,
+      "planning_category": "MAPPED",
+      "planning_category_evidence": {
+        "verification_status": "VERIFIED",
+        "source_document": "المواقع الاسثتمارية المخرطة.docx",
+        "locator": "الجدول 1، الصف 15؛ الرقم التاريخي 13؛ مجموعة مدينة الزاوية",
+        "match_basis": "مطابقة الاسم «المطرد» والمساحة المصدرية 89 هكتارًا ومجموعة الزاوية مع سجل الإثراء المعتمد للمعرف 19؛ المصدر الداعم الزاوية/المطرد/Site-Characteristics.ppt، الشريحة 1. الرقم التاريخي 13 ليس معرف GIS. لا استخدام للمساحة الجيوديسية لإثبات المطابقة.",
+        "source_sha256": "64ed5a2089d2738f9a1dc0dd1cd6e54735267bc50cbf4932ab2967645cda29c7",
+        "historical_description": "ثم تخريط",
+        "supporting_source": {
+          "filename": "Site-Characteristics.ppt",
+          "source_relative_path": "الزاوية\\المطرد\\Site-Characteristics.ppt",
+          "sha256": "5bc6f0ab45f83ebf24c7d18b3a46ae5d0e6c208fe6bd4e58ded97ab800ab4ce4",
+          "title": "موقع المطرد : موقعه وخصائصه",
+          "slides": 2
+        }
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFIRMED",
+      "historical_record_id": "HIST-MAPPED-013",
+      "historical_number": 13,
+      "site_name_raw": "موقع المطرد",
+      "historical_group_raw": "الزاوية",
+      "area_raw": "89 هكتار",
+      "area_ha_source": 89.0,
+      "mapping_status_raw": "ثم تخريط",
+      "decision_raw": "203/-7-11-2005",
+      "decision_number_from_register": "203",
+      "decision_date_raw": "7-11-2005",
+      "decision_verification": "REGISTER_REFERENCE_ONLY",
+      "review_notes": "تنسيق تاريخ القرار غير منتظم في المصدر؛ مطابقة سابقة معتمدة للمطرد zone_id=19 وفق سجل الإثراء؛ لا يعني التحقق من القرار",
+      "historical_match_evidence": {
+        "references": [
+          "docs/planning-status/matching-audit.json",
+          "docs/planning-status/historical-source-extract.json",
+          "public/data/investment_site_enrichment.json#zones.19"
+        ],
+        "source_table_row": 15,
+        "basis": "مطابقة الاسم «المطرد» والمساحة المصدرية 89 هكتارًا ومجموعة الزاوية مع سجل الإثراء المعتمد للمعرف 19؛ المصدر الداعم الزاوية/المطرد/Site-Characteristics.ppt، الشريحة 1. الرقم التاريخي 13 ليس معرف GIS. لا استخدام للمساحة الجيوديسية لإثبات المطابقة.",
+        "review_notes": [
+          "تنسيق تاريخ القرار غير منتظم في المصدر؛ مطابقة سابقة معتمدة للمطرد zone_id=19 وفق سجل الإثراء؛ لا يعني التحقق من القرار",
+          "اعتماد مطابقة تاريخية موثقة سابقًا: HIST-MAPPED-013 إلى zone_id=19؛ لا استخدام للرقم 13 كمعرف GIS.",
+          "بصمة المصدر المعلنة في staging محفوظة كما هي؛ تختلف عن النسخة المحلية. لا يُعتمد أن النسختين متطابقتان. تأكيد المطرد يعتمد سلسلة الأدلة السابقة للنسخة المحلية لا البصمة المعلنة."
+        ],
+        "source_sha256_verified_previously": "64ed5a2089d2738f9a1dc0dd1cd6e54735267bc50cbf4932ab2967645cda29c7"
+      },
+      "area_aggregation_eligible": false
+    },
+    "20": {
+      "zone_id": 20,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "21": {
+      "zone_id": 21,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "22": {
+      "zone_id": 22,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "23": {
+      "zone_id": 23,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "24": {
+      "zone_id": 24,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "25": {
+      "zone_id": 25,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "26": {
+      "zone_id": 26,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "27": {
+      "zone_id": 27,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "28": {
+      "zone_id": 28,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "29": {
+      "zone_id": 29,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "30": {
+      "zone_id": 30,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "31": {
+      "zone_id": 31,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "32": {
+      "zone_id": 32,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "33": {
+      "zone_id": 33,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "34": {
+      "zone_id": 34,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "35": {
+      "zone_id": 35,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "36": {
+      "zone_id": 36,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "37": {
+      "zone_id": 37,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "38": {
+      "zone_id": 38,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "39": {
+      "zone_id": 39,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "40": {
+      "zone_id": 40,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "41": {
+      "zone_id": 41,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "42": {
+      "zone_id": 42,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "43": {
+      "zone_id": 43,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "44": {
+      "zone_id": 44,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "45": {
+      "zone_id": 45,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "46": {
+      "zone_id": 46,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "47": {
+      "zone_id": 47,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "48": {
+      "zone_id": 48,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "49": {
+      "zone_id": 49,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "50": {
+      "zone_id": 50,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "51": {
+      "zone_id": 51,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "52": {
+      "zone_id": 52,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "53": {
+      "zone_id": 53,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "54": {
+      "zone_id": 54,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "55": {
+      "zone_id": 55,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "56": {
+      "zone_id": 56,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "57": {
+      "zone_id": 57,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "58": {
+      "zone_id": 58,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "59": {
+      "zone_id": 59,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "60": {
+      "zone_id": 60,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "61": {
+      "zone_id": 61,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "62": {
+      "zone_id": 62,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "63": {
+      "zone_id": 63,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "64": {
+      "zone_id": 64,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "65": {
+      "zone_id": 65,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "66": {
+      "zone_id": 66,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "67": {
+      "zone_id": 67,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "68": {
+      "zone_id": 68,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "69": {
+      "zone_id": 69,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "70": {
+      "zone_id": 70,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "71": {
+      "zone_id": 71,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "72": {
+      "zone_id": 72,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "73": {
+      "zone_id": 73,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "74": {
+      "zone_id": 74,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "75": {
+      "zone_id": 75,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "76": {
+      "zone_id": 76,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "77": {
+      "zone_id": 77,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "78": {
+      "zone_id": 78,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "79": {
+      "zone_id": 79,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "80": {
+      "zone_id": 80,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "81": {
+      "zone_id": 81,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "82": {
+      "zone_id": 82,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "83": {
+      "zone_id": 83,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "84": {
+      "zone_id": 84,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "85": {
+      "zone_id": 85,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "86": {
+      "zone_id": 86,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "87": {
+      "zone_id": 87,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "88": {
+      "zone_id": 88,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "89": {
+      "zone_id": 89,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "90": {
+      "zone_id": 90,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "91": {
+      "zone_id": 91,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "92": {
+      "zone_id": 92,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "93": {
+      "zone_id": 93,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "94": {
+      "zone_id": 94,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "95": {
+      "zone_id": 95,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "96": {
+      "zone_id": 96,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "97": {
+      "zone_id": 97,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "98": {
+      "zone_id": 98,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "99": {
+      "zone_id": 99,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "100": {
+      "zone_id": 100,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "101": {
+      "zone_id": 101,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "102": {
+      "zone_id": 102,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "103": {
+      "zone_id": 103,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "104": {
+      "zone_id": 104,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "105": {
+      "zone_id": 105,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "106": {
+      "zone_id": 106,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "107": {
+      "zone_id": 107,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "108": {
+      "zone_id": 108,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "109": {
+      "zone_id": 109,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "110": {
+      "zone_id": 110,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "111": {
+      "zone_id": 111,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "112": {
+      "zone_id": 112,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "113": {
+      "zone_id": 113,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "114": {
+      "zone_id": 114,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "115": {
+      "zone_id": 115,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "116": {
+      "zone_id": 116,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "117": {
+      "zone_id": 117,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "118": {
+      "zone_id": 118,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "119": {
+      "zone_id": 119,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "120": {
+      "zone_id": 120,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "121": {
+      "zone_id": 121,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "122": {
+      "zone_id": 122,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "123": {
+      "zone_id": 123,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "124": {
+      "zone_id": 124,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "125": {
+      "zone_id": 125,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "126": {
+      "zone_id": 126,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "127": {
+      "zone_id": 127,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "128": {
+      "zone_id": 128,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "129": {
+      "zone_id": 129,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "130": {
+      "zone_id": 130,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "131": {
+      "zone_id": 131,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "132": {
+      "zone_id": 132,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "133": {
+      "zone_id": 133,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "134": {
+      "zone_id": 134,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "135": {
+      "zone_id": 135,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CANDIDATE"
+    },
+    "136": {
+      "zone_id": 136,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "137": {
+      "zone_id": 137,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "CONFLICT"
+    },
+    "138": {
+      "zone_id": 138,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "139": {
+      "zone_id": 139,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "140": {
+      "zone_id": 140,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    },
+    "141": {
+      "zone_id": 141,
+      "planning_category": "UNVERIFIED",
+      "planning_category_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "tourism_designation_decision": {
+        "decision_number": null,
+        "decision_date": null,
+        "issuing_authority": null,
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "in_tourism_master_plan": "UNVERIFIED",
+      "tourism_master_plan_evidence": {
+        "verification_status": "UNVERIFIED",
+        "source_document": null,
+        "locator": null,
+        "match_basis": null
+      },
+      "studies_and_plans_status": "UNVERIFIED",
+      "study_names": [],
+      "plan_names": [],
+      "document_references": [],
+      "verification_status": "UNVERIFIED",
+      "gis_match_status": "UNMATCHED"
+    }
+  },
+  "source_document": "المواقع الاسثتمارية المخرطة.docx",
+  "source_sha256": "fcfd6362ae0ac483e45f230a5beda1f6a2ce2a989e9bb634a3b66c48882b33b9",
+  "generated_at": "2026-10-21T08:25:57.382205+00:00",
+  "source_provenance": {
+    "staging_path": "public/data/historical/LTIP_historical_mapped_95_staging.json",
+    "staging_sha256": "395129d8bbd067730abd35b5358cb65683c12048fd48e17aa3eda063a7044727",
+    "declared_source_sha256": "fcfd6362ae0ac483e45f230a5beda1f6a2ce2a989e9bb634a3b66c48882b33b9",
+    "local_document_sha256": "64ed5a2089d2738f9a1dc0dd1cd6e54735267bc50cbf4932ab2967645cda29c7",
+    "source_checksum_status": "MISMATCH",
+    "note": "بصمة المصدر المعلنة في staging محفوظة كما هي؛ تختلف عن النسخة المحلية. لا يُعتمد أن النسختين متطابقتان. تأكيد المطرد يعتمد سلسلة الأدلة السابقة للنسخة المحلية لا البصمة المعلنة."
+  }
+}

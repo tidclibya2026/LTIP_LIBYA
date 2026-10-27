@@ -1,0 +1,2410 @@
+{
+  "metadata": {
+    "zone_count": 141,
+    "result_count": 141,
+    "port_feature_count": 33,
+    "road_feature_count": 6272,
+    "method": "Approximate minimum straight-line distance from polygon to port point or road line; not driving distance",
+    "generated_at": "2026-10-19T10:13:38.090Z",
+    "errors": []
+  },
+  "zones": {
+    "1": {
+      "zone_id": "1",
+      "zone_name": "أبوزاهية",
+      "nearest_port": {
+        "id": "PORT-017",
+        "name": "ميناء سرت",
+        "distance_km": 12.12,
+        "source_index": 17
+      },
+      "nearest_road": {
+        "id": "ROAD-002050",
+        "name": "معلم 2049",
+        "distance_km": 0.765,
+        "intersects_zone": false,
+        "source_index": 2049
+      }
+    },
+    "2": {
+      "zone_id": "2",
+      "zone_name": "زعفران",
+      "nearest_port": {
+        "id": "PORT-017",
+        "name": "ميناء سرت",
+        "distance_km": 16.631,
+        "source_index": 17
+      },
+      "nearest_road": {
+        "id": "ROAD-000926",
+        "name": "معلم 926",
+        "distance_km": 0.367,
+        "intersects_zone": false,
+        "source_index": 926
+      }
+    },
+    "3": {
+      "zone_id": "3",
+      "zone_name": "القبيبة",
+      "nearest_port": {
+        "id": "PORT-017",
+        "name": "ميناء سرت",
+        "distance_km": 23.065,
+        "source_index": 17
+      },
+      "nearest_road": {
+        "id": "ROAD-000926",
+        "name": "معلم 926",
+        "distance_km": 0.023,
+        "intersects_zone": false,
+        "source_index": 926
+      }
+    },
+    "4": {
+      "zone_id": "4",
+      "zone_name": "سلطان",
+      "nearest_port": {
+        "id": "PORT-017",
+        "name": "ميناء سرت",
+        "distance_km": 48.333,
+        "source_index": 17
+      },
+      "nearest_road": {
+        "id": "ROAD-003050",
+        "name": "معلم 3049",
+        "distance_km": 0.409,
+        "intersects_zone": false,
+        "source_index": 3049
+      }
+    },
+    "5": {
+      "zone_id": "5",
+      "zone_name": "النقازة",
+      "nearest_port": {
+        "id": "PORT-007",
+        "name": "الخمس",
+        "distance_km": 11.934,
+        "source_index": 7
+      },
+      "nearest_road": {
+        "id": "ROAD-005546",
+        "name": "معلم 5545",
+        "distance_km": 1.475,
+        "intersects_zone": false,
+        "source_index": 5545
+      }
+    },
+    "6": {
+      "zone_id": "6",
+      "zone_name": "غنيمة",
+      "nearest_port": {
+        "id": "PORT-007",
+        "name": "الخمس",
+        "distance_km": 15.974,
+        "source_index": 7
+      },
+      "nearest_road": {
+        "id": "ROAD-005539",
+        "name": "معلم 5538",
+        "distance_km": 2.139,
+        "intersects_zone": false,
+        "source_index": 5538
+      }
+    },
+    "7": {
+      "zone_id": "7",
+      "zone_name": "فلفول",
+      "nearest_port": {
+        "id": "PORT-007",
+        "name": "الخمس",
+        "distance_km": 14.684,
+        "source_index": 7
+      },
+      "nearest_road": {
+        "id": "ROAD-005539",
+        "name": "معلم 5538",
+        "distance_km": 2.154,
+        "intersects_zone": false,
+        "source_index": 5538
+      }
+    },
+    "8": {
+      "zone_id": "8",
+      "zone_name": "فيللا سيلين",
+      "nearest_port": {
+        "id": "PORT-007",
+        "name": "الخمس",
+        "distance_km": 6.738,
+        "source_index": 7
+      },
+      "nearest_road": {
+        "id": "ROAD-005548",
+        "name": "معلم 5547",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 5547
+      }
+    },
+    "9": {
+      "zone_id": "9",
+      "zone_name": "قريم",
+      "nearest_port": {
+        "id": "PORT-007",
+        "name": "الخمس",
+        "distance_km": 21.835,
+        "source_index": 7
+      },
+      "nearest_road": {
+        "id": "ROAD-002943",
+        "name": "معلم 2942",
+        "distance_km": 0.685,
+        "intersects_zone": false,
+        "source_index": 2942
+      }
+    },
+    "10": {
+      "zone_id": "10",
+      "zone_name": "الطويبية",
+      "nearest_port": {
+        "id": "PORT-011",
+        "name": "ميناء الخمس للصيد البحري",
+        "distance_km": 12.485,
+        "source_index": 11
+      },
+      "nearest_road": {
+        "id": "ROAD-003150",
+        "name": "معلم 3149",
+        "distance_km": 1.418,
+        "intersects_zone": false,
+        "source_index": 3149
+      }
+    },
+    "11": {
+      "zone_id": "11",
+      "zone_name": "هانيبال",
+      "nearest_port": {
+        "id": "PORT-011",
+        "name": "ميناء الخمس للصيد البحري",
+        "distance_km": 5.13,
+        "source_index": 11
+      },
+      "nearest_road": {
+        "id": "ROAD-005516",
+        "name": "معلم 5515",
+        "distance_km": 0.007,
+        "intersects_zone": false,
+        "source_index": 5515
+      }
+    },
+    "12": {
+      "zone_id": "12",
+      "zone_name": "ماتشوك",
+      "nearest_port": {
+        "id": "PORT-010",
+        "name": "زواره",
+        "distance_km": 8.75,
+        "source_index": 10
+      },
+      "nearest_road": {
+        "id": "ROAD-005427",
+        "name": "معلم 5426",
+        "distance_km": 3.189,
+        "intersects_zone": false,
+        "source_index": 5426
+      }
+    },
+    "13": {
+      "zone_id": "13",
+      "zone_name": "ملليتة-2",
+      "nearest_port": {
+        "id": "PORT-003",
+        "name": "مليته",
+        "distance_km": 10.093,
+        "source_index": 3
+      },
+      "nearest_road": {
+        "id": "ROAD-003811",
+        "name": "معلم 3810",
+        "distance_km": 1.826,
+        "intersects_zone": false,
+        "source_index": 3810
+      }
+    },
+    "14": {
+      "zone_id": "14",
+      "zone_name": "ملليتة-1",
+      "nearest_port": {
+        "id": "PORT-003",
+        "name": "مليته",
+        "distance_km": 8.974,
+        "source_index": 3
+      },
+      "nearest_road": {
+        "id": "ROAD-004709",
+        "name": "معلم 4708",
+        "distance_km": 0.032,
+        "intersects_zone": false,
+        "source_index": 4708
+      }
+    },
+    "15": {
+      "zone_id": "15",
+      "zone_name": "تلليل-غرب",
+      "nearest_port": {
+        "id": "PORT-003",
+        "name": "مليته",
+        "distance_km": 11.6,
+        "source_index": 3
+      },
+      "nearest_road": {
+        "id": "ROAD-003811",
+        "name": "معلم 3810",
+        "distance_km": 1.115,
+        "intersects_zone": false,
+        "source_index": 3810
+      }
+    },
+    "16": {
+      "zone_id": "16",
+      "zone_name": "تلليل-شرق",
+      "nearest_port": {
+        "id": "PORT-003",
+        "name": "مليته",
+        "distance_km": 14.685,
+        "source_index": 3
+      },
+      "nearest_road": {
+        "id": "ROAD-004896",
+        "name": "معلم 4895",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 4895
+      }
+    },
+    "17": {
+      "zone_id": "17",
+      "zone_name": "الجرف",
+      "nearest_port": {
+        "id": "PORT-003",
+        "name": "مليته",
+        "distance_km": 15.763,
+        "source_index": 3
+      },
+      "nearest_road": {
+        "id": "ROAD-001809",
+        "name": "معلم 1808",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 1808
+      }
+    },
+    "18": {
+      "zone_id": "18",
+      "zone_name": "صرمان",
+      "nearest_port": {
+        "id": "PORT-006",
+        "name": "الزاوية",
+        "distance_km": 9.621,
+        "source_index": 6
+      },
+      "nearest_road": {
+        "id": "ROAD-003378",
+        "name": "معلم 3377",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 3377
+      }
+    },
+    "19": {
+      "zone_id": "19",
+      "zone_name": "المطرد",
+      "nearest_port": {
+        "id": "PORT-006",
+        "name": "الزاوية",
+        "distance_km": 3.32,
+        "source_index": 6
+      },
+      "nearest_road": {
+        "id": "ROAD-004602",
+        "name": "معلم 4601",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 4601
+      }
+    },
+    "20": {
+      "zone_id": "20",
+      "zone_name": "السياحية",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 4.578,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-005782",
+        "name": "معلم 5780",
+        "distance_km": 0.726,
+        "intersects_zone": false,
+        "source_index": 5780
+      }
+    },
+    "21": {
+      "zone_id": "21",
+      "zone_name": "أوياء",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 5.618,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-002847",
+        "name": "معلم 2846",
+        "distance_km": 0.014,
+        "intersects_zone": false,
+        "source_index": 2846
+      }
+    },
+    "22": {
+      "zone_id": "22",
+      "zone_name": "جنزور-1",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 4.266,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-001534",
+        "name": "معلم 1534",
+        "distance_km": 0.69,
+        "intersects_zone": false,
+        "source_index": 1534
+      }
+    },
+    "23": {
+      "zone_id": "23",
+      "zone_name": "جنزور-2",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 3.904,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-001534",
+        "name": "معلم 1534",
+        "distance_km": 0.688,
+        "intersects_zone": false,
+        "source_index": 1534
+      }
+    },
+    "24": {
+      "zone_id": "24",
+      "zone_name": "جنزور-3",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 3.562,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-001539",
+        "name": "معلم 1539",
+        "distance_km": 0.604,
+        "intersects_zone": false,
+        "source_index": 1539
+      }
+    },
+    "25": {
+      "zone_id": "25",
+      "zone_name": "سيدي عبدالجليل-1",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 7.836,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-005391",
+        "name": "معلم 5390",
+        "distance_km": 0.011,
+        "intersects_zone": false,
+        "source_index": 5390
+      }
+    },
+    "26": {
+      "zone_id": "26",
+      "zone_name": "سيدي عبدالجليل-2",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 7.762,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-005391",
+        "name": "معلم 5390",
+        "distance_km": 0,
+        "intersects_zone": false,
+        "source_index": 5390
+      }
+    },
+    "27": {
+      "zone_id": "27",
+      "zone_name": "سيدي عبدالجليل-3",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 7.609,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-002557",
+        "name": "معلم 2556",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 2556
+      }
+    },
+    "28": {
+      "zone_id": "28",
+      "zone_name": "سيدي عبدالجليل-4",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 7.244,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-005391",
+        "name": "معلم 5390",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 5390
+      }
+    },
+    "29": {
+      "zone_id": "29",
+      "zone_name": "سيدي عبدالجليل-5",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 6.987,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-002551",
+        "name": "معلم 2550",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 2550
+      }
+    },
+    "30": {
+      "zone_id": "30",
+      "zone_name": "سيدي عبدالجليل-6",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 6.729,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-002551",
+        "name": "معلم 2550",
+        "distance_km": 0.016,
+        "intersects_zone": false,
+        "source_index": 2550
+      }
+    },
+    "31": {
+      "zone_id": "31",
+      "zone_name": "محطة غرب طرابلس",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 2.327,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-006130",
+        "name": "معلم 6128",
+        "distance_km": 0.532,
+        "intersects_zone": false,
+        "source_index": 6128
+      }
+    },
+    "32": {
+      "zone_id": "32",
+      "zone_name": "مصيف جربة",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 3.121,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-001539",
+        "name": "معلم 1539",
+        "distance_km": 0.604,
+        "intersects_zone": false,
+        "source_index": 1539
+      }
+    },
+    "33": {
+      "zone_id": "33",
+      "zone_name": "مصيف جنزور-1",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 6.599,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-002551",
+        "name": "معلم 2550",
+        "distance_km": 0.022,
+        "intersects_zone": false,
+        "source_index": 2550
+      }
+    },
+    "34": {
+      "zone_id": "34",
+      "zone_name": "مصيف جنزور-2",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 6.364,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-002847",
+        "name": "معلم 2846",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 2846
+      }
+    },
+    "35": {
+      "zone_id": "35",
+      "zone_name": "الغيران",
+      "nearest_port": {
+        "id": "PORT-001",
+        "name": "الغيران",
+        "distance_km": 8.819,
+        "source_index": 1
+      },
+      "nearest_road": {
+        "id": "ROAD-005391",
+        "name": "معلم 5390",
+        "distance_km": 0.001,
+        "intersects_zone": false,
+        "source_index": 5390
+      }
+    },
+    "36": {
+      "zone_id": "36",
+      "zone_name": "حي الأندلس-2",
+      "nearest_port": {
+        "id": "PORT-004",
+        "name": "طرابلس",
+        "distance_km": 5.529,
+        "source_index": 4
+      },
+      "nearest_road": {
+        "id": "ROAD-003255",
+        "name": "معلم 3254",
+        "distance_km": 0.115,
+        "intersects_zone": false,
+        "source_index": 3254
+      }
+    },
+    "37": {
+      "zone_id": "37",
+      "zone_name": "حي الأندلس-1",
+      "nearest_port": {
+        "id": "PORT-004",
+        "name": "طرابلس",
+        "distance_km": 5.115,
+        "source_index": 4
+      },
+      "nearest_road": {
+        "id": "ROAD-003255",
+        "name": "معلم 3254",
+        "distance_km": 0.013,
+        "intersects_zone": false,
+        "source_index": 3254
+      }
+    },
+    "38": {
+      "zone_id": "38",
+      "zone_name": "الدلفين",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 3.777,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-006077",
+        "name": "معلم 6075",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 6075
+      }
+    },
+    "39": {
+      "zone_id": "39",
+      "zone_name": "النادي البحري",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 0.126,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-006011",
+        "name": "معلم 6009",
+        "distance_km": 0.013,
+        "intersects_zone": false,
+        "source_index": 6009
+      }
+    },
+    "40": {
+      "zone_id": "40",
+      "zone_name": "شاطيء النخيل",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 0.633,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-006011",
+        "name": "معلم 6009",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 6009
+      }
+    },
+    "41": {
+      "zone_id": "41",
+      "zone_name": "الدخلة الشمالية",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 14.395,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-001206",
+        "name": "معلم 1206",
+        "distance_km": 0.12,
+        "intersects_zone": false,
+        "source_index": 1206
+      }
+    },
+    "42": {
+      "zone_id": "42",
+      "zone_name": "الدخلة الجنوبية",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 14.864,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-002487",
+        "name": "معلم 2486",
+        "distance_km": 0.347,
+        "intersects_zone": false,
+        "source_index": 2486
+      }
+    },
+    "43": {
+      "zone_id": "43",
+      "zone_name": "الفوار",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 6.816,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-006078",
+        "name": "معلم 6076",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 6076
+      }
+    },
+    "44": {
+      "zone_id": "44",
+      "zone_name": "الجولف",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 8.188,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-001622",
+        "name": "معلم 1621",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 1621
+      }
+    },
+    "45": {
+      "zone_id": "45",
+      "zone_name": "الحرية",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 9.601,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-003199",
+        "name": "معلم 3198",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 3198
+      }
+    },
+    "46": {
+      "zone_id": "46",
+      "zone_name": "المنارة",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 13.64,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-005973",
+        "name": "معلم 5971",
+        "distance_km": 0.004,
+        "intersects_zone": false,
+        "source_index": 5971
+      }
+    },
+    "47": {
+      "zone_id": "47",
+      "zone_name": "الحميدية",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 15.103,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-003593",
+        "name": "معلم 3592",
+        "distance_km": 0.077,
+        "intersects_zone": false,
+        "source_index": 3592
+      }
+    },
+    "48": {
+      "zone_id": "48",
+      "zone_name": "مصيف تاجوراء",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 16.307,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-003593",
+        "name": "معلم 3592",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 3592
+      }
+    },
+    "49": {
+      "zone_id": "49",
+      "zone_name": "النصر",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 19.263,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-004907",
+        "name": "معلم 4906",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 4906
+      }
+    },
+    "50": {
+      "zone_id": "50",
+      "zone_name": "الأندلسي",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 11.437,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-005973",
+        "name": "معلم 5971",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 5971
+      }
+    },
+    "51": {
+      "zone_id": "51",
+      "zone_name": "النشيع",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 30.949,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-002749",
+        "name": "معلم 2748",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 2748
+      }
+    },
+    "52": {
+      "zone_id": "52",
+      "zone_name": "غوط الرمان",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 25.747,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-004705",
+        "name": "معلم 4704",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 4704
+      }
+    },
+    "53": {
+      "zone_id": "53",
+      "zone_name": "السليسلة",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 32.92,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-004704",
+        "name": "معلم 4703",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 4703
+      }
+    },
+    "54": {
+      "zone_id": "54",
+      "zone_name": "العطايا",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 45.155,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-003952",
+        "name": "معلم 3951",
+        "distance_km": 1.853,
+        "intersects_zone": false,
+        "source_index": 3951
+      }
+    },
+    "55": {
+      "zone_id": "55",
+      "zone_name": "الكراوة-3",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 46.326,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-002582",
+        "name": "معلم 2581",
+        "distance_km": 0.696,
+        "intersects_zone": false,
+        "source_index": 2581
+      }
+    },
+    "56": {
+      "zone_id": "56",
+      "zone_name": "الكراوة-1",
+      "nearest_port": {
+        "id": "PORT-007",
+        "name": "الخمس",
+        "distance_km": 40.49,
+        "source_index": 7
+      },
+      "nearest_road": {
+        "id": "ROAD-001913",
+        "name": "معلم 1912",
+        "distance_km": 1.05,
+        "intersects_zone": false,
+        "source_index": 1912
+      }
+    },
+    "57": {
+      "zone_id": "57",
+      "zone_name": "الكراوة-2",
+      "nearest_port": {
+        "id": "PORT-007",
+        "name": "الخمس",
+        "distance_km": 42.376,
+        "source_index": 7
+      },
+      "nearest_road": {
+        "id": "ROAD-002582",
+        "name": "معلم 2581",
+        "distance_km": 1.111,
+        "intersects_zone": false,
+        "source_index": 2581
+      }
+    },
+    "58": {
+      "zone_id": "58",
+      "zone_name": "سيدي عمير-1",
+      "nearest_port": {
+        "id": "PORT-007",
+        "name": "الخمس",
+        "distance_km": 37.697,
+        "source_index": 7
+      },
+      "nearest_road": {
+        "id": "ROAD-001913",
+        "name": "معلم 1912",
+        "distance_km": 2.089,
+        "intersects_zone": false,
+        "source_index": 1912
+      }
+    },
+    "59": {
+      "zone_id": "59",
+      "zone_name": "سيدي عمير-2",
+      "nearest_port": {
+        "id": "PORT-007",
+        "name": "الخمس",
+        "distance_km": 30.152,
+        "source_index": 7
+      },
+      "nearest_road": {
+        "id": "ROAD-002746",
+        "name": "معلم 2745",
+        "distance_km": 1.343,
+        "intersects_zone": false,
+        "source_index": 2745
+      }
+    },
+    "60": {
+      "zone_id": "60",
+      "zone_name": "المثلث الرملي",
+      "nearest_port": {
+        "id": "PORT-007",
+        "name": "الخمس",
+        "distance_km": 46.473,
+        "source_index": 7
+      },
+      "nearest_road": {
+        "id": "ROAD-002582",
+        "name": "معلم 2581",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 2581
+      }
+    },
+    "61": {
+      "zone_id": "61",
+      "zone_name": "الشعاب",
+      "nearest_port": {
+        "id": "PORT-004",
+        "name": "طرابلس",
+        "distance_km": 0.715,
+        "source_index": 4
+      },
+      "nearest_road": {
+        "id": "ROAD-001647",
+        "name": "معلم 1646",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 1646
+      }
+    },
+    "62": {
+      "zone_id": "62",
+      "zone_name": "أبيار السبابيل",
+      "nearest_port": {
+        "id": "PORT-005",
+        "name": "طرابلس",
+        "distance_km": 22.035,
+        "source_index": 5
+      },
+      "nearest_road": {
+        "id": "ROAD-004907",
+        "name": "معلم 4906",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 4906
+      }
+    },
+    "63": {
+      "zone_id": "63",
+      "zone_name": "ملليتة 3",
+      "nearest_port": {
+        "id": "PORT-003",
+        "name": "مليته",
+        "distance_km": 7.435,
+        "source_index": 3
+      },
+      "nearest_road": {
+        "id": "ROAD-004709",
+        "name": "معلم 4708",
+        "distance_km": 2.667,
+        "intersects_zone": false,
+        "source_index": 4708
+      }
+    },
+    "64": {
+      "zone_id": "64",
+      "zone_name": "البريقاء",
+      "nearest_port": {
+        "id": "PORT-002",
+        "name": "أبوكماش",
+        "distance_km": 9.637,
+        "source_index": 2
+      },
+      "nearest_road": {
+        "id": "ROAD-005427",
+        "name": "معلم 5426",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 5426
+      }
+    },
+    "65": {
+      "zone_id": "65",
+      "zone_name": "أبوكشفة",
+      "nearest_port": {
+        "id": "PORT-010",
+        "name": "زواره",
+        "distance_km": 18.596,
+        "source_index": 10
+      },
+      "nearest_road": {
+        "id": "ROAD-005427",
+        "name": "معلم 5426",
+        "distance_km": 8.393,
+        "intersects_zone": false,
+        "source_index": 5426
+      }
+    },
+    "66": {
+      "zone_id": "66",
+      "zone_name": "مصيف بياض",
+      "nearest_port": {
+        "id": "PORT-021",
+        "name": "ميناء الحريقة",
+        "distance_km": 2.698,
+        "source_index": 21
+      },
+      "nearest_road": {
+        "id": "ROAD-000075",
+        "name": "معلم 75",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 75
+      }
+    },
+    "67": {
+      "zone_id": "67",
+      "zone_name": "البردي-1",
+      "nearest_port": {
+        "id": "PORT-020",
+        "name": "ميناء برديه",
+        "distance_km": 0.093,
+        "source_index": 20
+      },
+      "nearest_road": {
+        "id": "ROAD-000069",
+        "name": "معلم 69",
+        "distance_km": 0.092,
+        "intersects_zone": false,
+        "source_index": 69
+      }
+    },
+    "68": {
+      "zone_id": "68",
+      "zone_name": "العزلية",
+      "nearest_port": {
+        "id": "PORT-025",
+        "name": "ميناء رأس الهلال",
+        "distance_km": 3.451,
+        "source_index": 25
+      },
+      "nearest_road": {
+        "id": "ROAD-000175",
+        "name": "معلم 175",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 175
+      }
+    },
+    "69": {
+      "zone_id": "69",
+      "zone_name": "دليس",
+      "nearest_port": {
+        "id": "PORT-019",
+        "name": "ميناء درنة",
+        "distance_km": 11.979,
+        "source_index": 19
+      },
+      "nearest_road": {
+        "id": "ROAD-000175",
+        "name": "معلم 175",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 175
+      }
+    },
+    "70": {
+      "zone_id": "70",
+      "zone_name": "راس التين",
+      "nearest_port": {
+        "id": "PORT-024",
+        "name": "ميناء التميمي",
+        "distance_km": 2.768,
+        "source_index": 24
+      },
+      "nearest_road": {
+        "id": "ROAD-000471",
+        "name": "معلم 471",
+        "distance_km": 0.901,
+        "intersects_zone": false,
+        "source_index": 471
+      }
+    },
+    "71": {
+      "zone_id": "71",
+      "zone_name": "الاترون",
+      "nearest_port": {
+        "id": "PORT-025",
+        "name": "ميناء رأس الهلال",
+        "distance_km": 12.093,
+        "source_index": 25
+      },
+      "nearest_road": {
+        "id": "ROAD-000175",
+        "name": "معلم 175",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 175
+      }
+    },
+    "72": {
+      "zone_id": "72",
+      "zone_name": "قاريونس",
+      "nearest_port": {
+        "id": "PORT-018",
+        "name": "ميناء بنغازي",
+        "distance_km": 3.846,
+        "source_index": 18
+      },
+      "nearest_road": {
+        "id": "ROAD-000019",
+        "name": "معلم 19",
+        "distance_km": 0.003,
+        "intersects_zone": false,
+        "source_index": 19
+      }
+    },
+    "73": {
+      "zone_id": "73",
+      "zone_name": "عين زيانة",
+      "nearest_port": {
+        "id": "PORT-018",
+        "name": "ميناء بنغازي",
+        "distance_km": 14.633,
+        "source_index": 18
+      },
+      "nearest_road": {
+        "id": "ROAD-000016",
+        "name": "معلم 16",
+        "distance_km": 1.037,
+        "intersects_zone": false,
+        "source_index": 16
+      }
+    },
+    "74": {
+      "zone_id": "74",
+      "zone_name": "سيدي خليفة",
+      "nearest_port": {
+        "id": "PORT-031",
+        "name": "ميناء دريانه",
+        "distance_km": 7.641,
+        "source_index": 31
+      },
+      "nearest_road": {
+        "id": "ROAD-000016",
+        "name": "معلم 16",
+        "distance_km": 1.028,
+        "intersects_zone": false,
+        "source_index": 16
+      }
+    },
+    "75": {
+      "zone_id": "75",
+      "zone_name": "أبوترابة",
+      "nearest_port": {
+        "id": "PORT-029",
+        "name": "ميناء طلميثه",
+        "distance_km": 19.609,
+        "source_index": 29
+      },
+      "nearest_road": {
+        "id": "ROAD-000322",
+        "name": "معلم 322",
+        "distance_km": 0.04,
+        "intersects_zone": false,
+        "source_index": 322
+      }
+    },
+    "76": {
+      "zone_id": "76",
+      "zone_name": "مصيف طلميثة",
+      "nearest_port": {
+        "id": "PORT-029",
+        "name": "ميناء طلميثه",
+        "distance_km": 0.494,
+        "source_index": 29
+      },
+      "nearest_road": {
+        "id": "ROAD-000391",
+        "name": "معلم 391",
+        "distance_km": 0.073,
+        "intersects_zone": false,
+        "source_index": 391
+      }
+    },
+    "77": {
+      "zone_id": "77",
+      "zone_name": "طلميثة",
+      "nearest_port": {
+        "id": "PORT-029",
+        "name": "ميناء طلميثه",
+        "distance_km": 3.364,
+        "source_index": 29
+      },
+      "nearest_road": {
+        "id": "ROAD-000322",
+        "name": "معلم 322",
+        "distance_km": 0.282,
+        "intersects_zone": false,
+        "source_index": 322
+      }
+    },
+    "78": {
+      "zone_id": "78",
+      "zone_name": "جرجارامه",
+      "nearest_port": {
+        "id": "PORT-028",
+        "name": "ميناء الحنيه",
+        "distance_km": 3.556,
+        "source_index": 28
+      },
+      "nearest_road": {
+        "id": "ROAD-000391",
+        "name": "معلم 391",
+        "distance_km": 0.069,
+        "intersects_zone": false,
+        "source_index": 391
+      }
+    },
+    "79": {
+      "zone_id": "79",
+      "zone_name": "مويلح",
+      "nearest_port": {
+        "id": "PORT-028",
+        "name": "ميناء الحنيه",
+        "distance_km": 1.887,
+        "source_index": 28
+      },
+      "nearest_road": {
+        "id": "ROAD-000193",
+        "name": "معلم 193",
+        "distance_km": 0.416,
+        "intersects_zone": false,
+        "source_index": 193
+      }
+    },
+    "80": {
+      "zone_id": "80",
+      "zone_name": "الحمامة",
+      "nearest_port": {
+        "id": "PORT-027",
+        "name": "ميناء الحمامة",
+        "distance_km": 0,
+        "source_index": 27
+      },
+      "nearest_road": {
+        "id": "ROAD-000348",
+        "name": "معلم 348",
+        "distance_km": 0.064,
+        "intersects_zone": false,
+        "source_index": 348
+      }
+    },
+    "81": {
+      "zone_id": "81",
+      "zone_name": "أبوشيبة",
+      "nearest_port": {
+        "id": "PORT-018",
+        "name": "ميناء بنغازي",
+        "distance_km": 17.662,
+        "source_index": 18
+      },
+      "nearest_road": {
+        "id": "ROAD-000019",
+        "name": "معلم 19",
+        "distance_km": 2.95,
+        "intersects_zone": false,
+        "source_index": 19
+      }
+    },
+    "82": {
+      "zone_id": "82",
+      "zone_name": "المريسة",
+      "nearest_port": {
+        "id": "PORT-018",
+        "name": "ميناء بنغازي",
+        "distance_km": 19.392,
+        "source_index": 18
+      },
+      "nearest_road": {
+        "id": "ROAD-000019",
+        "name": "معلم 19",
+        "distance_km": 2.332,
+        "intersects_zone": false,
+        "source_index": 19
+      }
+    },
+    "83": {
+      "zone_id": "83",
+      "zone_name": "ترية",
+      "nearest_port": {
+        "id": "PORT-032",
+        "name": "ميناء قمينس",
+        "distance_km": 20.939,
+        "source_index": 32
+      },
+      "nearest_road": {
+        "id": "ROAD-000138",
+        "name": "معلم 138",
+        "distance_km": 0.699,
+        "intersects_zone": false,
+        "source_index": 138
+      }
+    },
+    "84": {
+      "zone_id": "84",
+      "zone_name": "قمينس",
+      "nearest_port": {
+        "id": "PORT-032",
+        "name": "ميناء قمينس",
+        "distance_km": 0,
+        "source_index": 32
+      },
+      "nearest_road": {
+        "id": "ROAD-000084",
+        "name": "معلم 84",
+        "distance_km": 0.078,
+        "intersects_zone": false,
+        "source_index": 84
+      }
+    },
+    "85": {
+      "zone_id": "85",
+      "zone_name": "جاروتة",
+      "nearest_port": {
+        "id": "PORT-032",
+        "name": "ميناء قمينس",
+        "distance_km": 17.904,
+        "source_index": 32
+      },
+      "nearest_road": {
+        "id": "ROAD-000137",
+        "name": "معلم 137",
+        "distance_km": 0.032,
+        "intersects_zone": false,
+        "source_index": 137
+      }
+    },
+    "86": {
+      "zone_id": "86",
+      "zone_name": "الساحل الغربي",
+      "nearest_port": {
+        "id": "PORT-033",
+        "name": "ميناء كركوره",
+        "distance_km": 19.847,
+        "source_index": 33
+      },
+      "nearest_road": {
+        "id": "ROAD-000082",
+        "name": "معلم 82",
+        "distance_km": 1.063,
+        "intersects_zone": false,
+        "source_index": 82
+      }
+    },
+    "87": {
+      "zone_id": "87",
+      "zone_name": "حبيب",
+      "nearest_port": {
+        "id": "PORT-033",
+        "name": "ميناء كركوره",
+        "distance_km": 0,
+        "source_index": 33
+      },
+      "nearest_road": {
+        "id": "ROAD-000346",
+        "name": "معلم 346",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 346
+      }
+    },
+    "88": {
+      "zone_id": "88",
+      "zone_name": "كركورة",
+      "nearest_port": {
+        "id": "PORT-032",
+        "name": "ميناء قمينس",
+        "distance_km": 1.796,
+        "source_index": 32
+      },
+      "nearest_road": {
+        "id": "ROAD-000084",
+        "name": "معلم 84",
+        "distance_km": 1.79,
+        "intersects_zone": false,
+        "source_index": 84
+      }
+    },
+    "89": {
+      "zone_id": "89",
+      "zone_name": "الحليسي",
+      "nearest_port": {
+        "id": "PORT-018",
+        "name": "ميناء بنغازي",
+        "distance_km": 21.353,
+        "source_index": 18
+      },
+      "nearest_road": {
+        "id": "ROAD-000019",
+        "name": "معلم 19",
+        "distance_km": 0.752,
+        "intersects_zone": false,
+        "source_index": 19
+      }
+    },
+    "90": {
+      "zone_id": "90",
+      "zone_name": "سيدي علي",
+      "nearest_port": {
+        "id": "PORT-031",
+        "name": "ميناء دريانه",
+        "distance_km": 2.807,
+        "source_index": 31
+      },
+      "nearest_road": {
+        "id": "ROAD-000009",
+        "name": "معلم 9",
+        "distance_km": 0.866,
+        "intersects_zone": false,
+        "source_index": 9
+      }
+    },
+    "91": {
+      "zone_id": "91",
+      "zone_name": "دريانة",
+      "nearest_port": {
+        "id": "PORT-031",
+        "name": "ميناء دريانه",
+        "distance_km": 0,
+        "source_index": 31
+      },
+      "nearest_road": {
+        "id": "ROAD-000281",
+        "name": "معلم 281",
+        "distance_km": 0.759,
+        "intersects_zone": false,
+        "source_index": 281
+      }
+    },
+    "92": {
+      "zone_id": "92",
+      "zone_name": "مبنى",
+      "nearest_port": {
+        "id": "PORT-031",
+        "name": "ميناء دريانه",
+        "distance_km": 7.932,
+        "source_index": 31
+      },
+      "nearest_road": {
+        "id": "ROAD-000009",
+        "name": "معلم 9",
+        "distance_km": 2.271,
+        "intersects_zone": false,
+        "source_index": 9
+      }
+    },
+    "93": {
+      "zone_id": "93",
+      "zone_name": "البرسس",
+      "nearest_port": {
+        "id": "PORT-030",
+        "name": "ميناء توكره",
+        "distance_km": 9.448,
+        "source_index": 30
+      },
+      "nearest_road": {
+        "id": "ROAD-000015",
+        "name": "معلم 15",
+        "distance_km": 1.826,
+        "intersects_zone": false,
+        "source_index": 15
+      }
+    },
+    "94": {
+      "zone_id": "94",
+      "zone_name": "العقورية",
+      "nearest_port": {
+        "id": "PORT-030",
+        "name": "ميناء توكره",
+        "distance_km": 0,
+        "source_index": 30
+      },
+      "nearest_road": {
+        "id": "ROAD-000322",
+        "name": "معلم 322",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 322
+      }
+    },
+    "95": {
+      "zone_id": "95",
+      "zone_name": "بابا طلميثة",
+      "nearest_port": {
+        "id": "PORT-029",
+        "name": "ميناء طلميثه",
+        "distance_km": 0.177,
+        "source_index": 29
+      },
+      "nearest_road": {
+        "id": "ROAD-000391",
+        "name": "معلم 391",
+        "distance_km": 0.411,
+        "intersects_zone": false,
+        "source_index": 391
+      }
+    },
+    "96": {
+      "zone_id": "96",
+      "zone_name": "عقلة",
+      "nearest_port": {
+        "id": "PORT-028",
+        "name": "ميناء الحنيه",
+        "distance_km": 15.912,
+        "source_index": 28
+      },
+      "nearest_road": {
+        "id": "ROAD-000391",
+        "name": "معلم 391",
+        "distance_km": 0.095,
+        "intersects_zone": false,
+        "source_index": 391
+      }
+    },
+    "97": {
+      "zone_id": "97",
+      "zone_name": "نوطة سوسة",
+      "nearest_port": {
+        "id": "PORT-026",
+        "name": "ميناء سوسه",
+        "distance_km": 10.86,
+        "source_index": 26
+      },
+      "nearest_road": {
+        "id": "ROAD-000350",
+        "name": "معلم 350",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 350
+      }
+    },
+    "98": {
+      "zone_id": "98",
+      "zone_name": "مهبول",
+      "nearest_port": {
+        "id": "PORT-025",
+        "name": "ميناء رأس الهلال",
+        "distance_km": 0.483,
+        "source_index": 25
+      },
+      "nearest_road": {
+        "id": "ROAD-000175",
+        "name": "معلم 175",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 175
+      }
+    },
+    "99": {
+      "zone_id": "99",
+      "zone_name": "بركة ناصر",
+      "nearest_port": {
+        "id": "PORT-025",
+        "name": "ميناء رأس الهلال",
+        "distance_km": 0.69,
+        "source_index": 25
+      },
+      "nearest_road": {
+        "id": "ROAD-000175",
+        "name": "معلم 175",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 175
+      }
+    },
+    "100": {
+      "zone_id": "100",
+      "zone_name": "كرسة",
+      "nearest_port": {
+        "id": "PORT-019",
+        "name": "ميناء درنة",
+        "distance_km": 16.022,
+        "source_index": 19
+      },
+      "nearest_road": {
+        "id": "ROAD-000175",
+        "name": "معلم 175",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 175
+      }
+    },
+    "101": {
+      "zone_id": "101",
+      "zone_name": "الناقة",
+      "nearest_port": {
+        "id": "PORT-019",
+        "name": "ميناء درنة",
+        "distance_km": 9.232,
+        "source_index": 19
+      },
+      "nearest_road": {
+        "id": "ROAD-000175",
+        "name": "معلم 175",
+        "distance_km": 1.016,
+        "intersects_zone": false,
+        "source_index": 175
+      }
+    },
+    "102": {
+      "zone_id": "102",
+      "zone_name": "بومسافر",
+      "nearest_port": {
+        "id": "PORT-019",
+        "name": "ميناء درنة",
+        "distance_km": 8.064,
+        "source_index": 19
+      },
+      "nearest_road": {
+        "id": "ROAD-000175",
+        "name": "معلم 175",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 175
+      }
+    },
+    "103": {
+      "zone_id": "103",
+      "zone_name": "الشاطيء",
+      "nearest_port": {
+        "id": "PORT-019",
+        "name": "ميناء درنة",
+        "distance_km": 2.69,
+        "source_index": 19
+      },
+      "nearest_road": {
+        "id": "ROAD-000175",
+        "name": "معلم 175",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 175
+      }
+    },
+    "104": {
+      "zone_id": "104",
+      "zone_name": "غير مسمى",
+      "nearest_port": {
+        "id": "PORT-019",
+        "name": "ميناء درنة",
+        "distance_km": 27.639,
+        "source_index": 19
+      },
+      "nearest_road": {
+        "id": "ROAD-000095",
+        "name": "معلم 95",
+        "distance_km": 0.004,
+        "intersects_zone": false,
+        "source_index": 95
+      }
+    },
+    "105": {
+      "zone_id": "105",
+      "zone_name": "المقرون",
+      "nearest_port": {
+        "id": "PORT-033",
+        "name": "ميناء كركوره",
+        "distance_km": 14.237,
+        "source_index": 33
+      },
+      "nearest_road": {
+        "id": "ROAD-000082",
+        "name": "معلم 82",
+        "distance_km": 6.53,
+        "intersects_zone": false,
+        "source_index": 82
+      }
+    },
+    "106": {
+      "zone_id": "106",
+      "zone_name": "البردي-3",
+      "nearest_port": {
+        "id": "PORT-020",
+        "name": "ميناء برديه",
+        "distance_km": 0.947,
+        "source_index": 20
+      },
+      "nearest_road": {
+        "id": "ROAD-000069",
+        "name": "معلم 69",
+        "distance_km": 0.726,
+        "intersects_zone": false,
+        "source_index": 69
+      }
+    },
+    "107": {
+      "zone_id": "107",
+      "zone_name": "البردي-2",
+      "nearest_port": {
+        "id": "PORT-020",
+        "name": "ميناء برديه",
+        "distance_km": 0.299,
+        "source_index": 20
+      },
+      "nearest_road": {
+        "id": "ROAD-000069",
+        "name": "معلم 69",
+        "distance_km": 0.102,
+        "intersects_zone": false,
+        "source_index": 69
+      }
+    },
+    "108": {
+      "zone_id": "108",
+      "zone_name": "عزاز",
+      "nearest_port": {
+        "id": "PORT-020",
+        "name": "ميناء برديه",
+        "distance_km": 20.685,
+        "source_index": 20
+      },
+      "nearest_road": {
+        "id": "ROAD-000091",
+        "name": "معلم 91",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 91
+      }
+    },
+    "109": {
+      "zone_id": "109",
+      "zone_name": "الجدي",
+      "nearest_port": {
+        "id": "PORT-020",
+        "name": "ميناء برديه",
+        "distance_km": 25.514,
+        "source_index": 20
+      },
+      "nearest_road": {
+        "id": "ROAD-000074",
+        "name": "معلم 74",
+        "distance_km": 0.651,
+        "intersects_zone": false,
+        "source_index": 74
+      }
+    },
+    "110": {
+      "zone_id": "110",
+      "zone_name": "شويمر",
+      "nearest_port": {
+        "id": "PORT-020",
+        "name": "ميناء برديه",
+        "distance_km": 29.913,
+        "source_index": 20
+      },
+      "nearest_road": {
+        "id": "ROAD-000067",
+        "name": "معلم 67",
+        "distance_km": 1.455,
+        "intersects_zone": false,
+        "source_index": 67
+      }
+    },
+    "111": {
+      "zone_id": "111",
+      "zone_name": "مرسة دفنة",
+      "nearest_port": {
+        "id": "PORT-020",
+        "name": "ميناء برديه",
+        "distance_km": 37.99,
+        "source_index": 20
+      },
+      "nearest_road": {
+        "id": "ROAD-000067",
+        "name": "معلم 67",
+        "distance_km": 0.621,
+        "intersects_zone": false,
+        "source_index": 67
+      }
+    },
+    "112": {
+      "zone_id": "112",
+      "zone_name": "بئرالأشهب",
+      "nearest_port": {
+        "id": "PORT-020",
+        "name": "ميناء برديه",
+        "distance_km": 51.77,
+        "source_index": 20
+      },
+      "nearest_road": {
+        "id": "ROAD-000068",
+        "name": "معلم 68",
+        "distance_km": 0.436,
+        "intersects_zone": false,
+        "source_index": 68
+      }
+    },
+    "113": {
+      "zone_id": "113",
+      "zone_name": "قابس",
+      "nearest_port": {
+        "id": "PORT-020",
+        "name": "ميناء برديه",
+        "distance_km": 52.73,
+        "source_index": 20
+      },
+      "nearest_road": {
+        "id": "ROAD-000068",
+        "name": "معلم 68",
+        "distance_km": 0.233,
+        "intersects_zone": false,
+        "source_index": 68
+      }
+    },
+    "114": {
+      "zone_id": "114",
+      "zone_name": "كمبوت",
+      "nearest_port": {
+        "id": "PORT-021",
+        "name": "ميناء الحريقة",
+        "distance_km": 51.099,
+        "source_index": 21
+      },
+      "nearest_road": {
+        "id": "ROAD-000068",
+        "name": "معلم 68",
+        "distance_km": 0.664,
+        "intersects_zone": false,
+        "source_index": 68
+      }
+    },
+    "115": {
+      "zone_id": "115",
+      "zone_name": "العقلة",
+      "nearest_port": {
+        "id": "PORT-021",
+        "name": "ميناء الحريقة",
+        "distance_km": 24.979,
+        "source_index": 21
+      },
+      "nearest_road": {
+        "id": "ROAD-000061",
+        "name": "معلم 61",
+        "distance_km": 0.366,
+        "intersects_zone": false,
+        "source_index": 61
+      }
+    },
+    "116": {
+      "zone_id": "116",
+      "zone_name": "العودا",
+      "nearest_port": {
+        "id": "PORT-022",
+        "name": "ميناء طبرق",
+        "distance_km": 5.424,
+        "source_index": 22
+      },
+      "nearest_road": {
+        "id": "ROAD-000148",
+        "name": "معلم 148",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 148
+      }
+    },
+    "117": {
+      "zone_id": "117",
+      "zone_name": "المرصص",
+      "nearest_port": {
+        "id": "PORT-022",
+        "name": "ميناء طبرق",
+        "distance_km": 15.876,
+        "source_index": 22
+      },
+      "nearest_road": {
+        "id": "ROAD-000166",
+        "name": "معلم 166",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 166
+      }
+    },
+    "118": {
+      "zone_id": "118",
+      "zone_name": "بلخاتر",
+      "nearest_port": {
+        "id": "PORT-023",
+        "name": "ميناء عين الغزالة",
+        "distance_km": 17.456,
+        "source_index": 23
+      },
+      "nearest_road": {
+        "id": "ROAD-000344",
+        "name": "معلم 344",
+        "distance_km": 3.05,
+        "intersects_zone": false,
+        "source_index": 344
+      }
+    },
+    "119": {
+      "zone_id": "119",
+      "zone_name": "عين الغزال",
+      "nearest_port": {
+        "id": "PORT-023",
+        "name": "ميناء عين الغزالة",
+        "distance_km": 5.52,
+        "source_index": 23
+      },
+      "nearest_road": {
+        "id": "ROAD-000152",
+        "name": "معلم 152",
+        "distance_km": 0.779,
+        "intersects_zone": false,
+        "source_index": 152
+      }
+    },
+    "120": {
+      "zone_id": "120",
+      "zone_name": "التميمي",
+      "nearest_port": {
+        "id": "PORT-023",
+        "name": "ميناء عين الغزالة",
+        "distance_km": 10.593,
+        "source_index": 23
+      },
+      "nearest_road": {
+        "id": "ROAD-000152",
+        "name": "معلم 152",
+        "distance_km": 1.479,
+        "intersects_zone": false,
+        "source_index": 152
+      }
+    },
+    "121": {
+      "zone_id": "121",
+      "zone_name": "بالقردان",
+      "nearest_port": {
+        "id": "PORT-024",
+        "name": "ميناء التميمي",
+        "distance_km": 0,
+        "source_index": 24
+      },
+      "nearest_road": {
+        "id": "ROAD-000152",
+        "name": "معلم 152",
+        "distance_km": 0.875,
+        "intersects_zone": false,
+        "source_index": 152
+      }
+    },
+    "122": {
+      "zone_id": "122",
+      "zone_name": "راس التين-2",
+      "nearest_port": {
+        "id": "PORT-024",
+        "name": "ميناء التميمي",
+        "distance_km": 5.55,
+        "source_index": 24
+      },
+      "nearest_road": {
+        "id": "ROAD-000056",
+        "name": "معلم 56",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 56
+      }
+    },
+    "123": {
+      "zone_id": "123",
+      "zone_name": "خبطة",
+      "nearest_port": {
+        "id": "PORT-024",
+        "name": "ميناء التميمي",
+        "distance_km": 30.492,
+        "source_index": 24
+      },
+      "nearest_road": {
+        "id": "ROAD-000114",
+        "name": "معلم 114",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 114
+      }
+    },
+    "124": {
+      "zone_id": "124",
+      "zone_name": "بوهريشيمة",
+      "nearest_port": {
+        "id": "PORT-016",
+        "name": "ميناء الزويتينة",
+        "distance_km": 15.924,
+        "source_index": 16
+      },
+      "nearest_road": {
+        "id": "ROAD-002278",
+        "name": "معلم 2277",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 2277
+      }
+    },
+    "125": {
+      "zone_id": "125",
+      "zone_name": "الزويتينة الشمالي",
+      "nearest_port": {
+        "id": "PORT-016",
+        "name": "ميناء الزويتينة",
+        "distance_km": 8.304,
+        "source_index": 16
+      },
+      "nearest_road": {
+        "id": "ROAD-002277",
+        "name": "معلم 2276",
+        "distance_km": 0.975,
+        "intersects_zone": false,
+        "source_index": 2276
+      }
+    },
+    "126": {
+      "zone_id": "126",
+      "zone_name": "الزويتينة الجنوبي",
+      "nearest_port": {
+        "id": "PORT-016",
+        "name": "ميناء الزويتينة",
+        "distance_km": 3.912,
+        "source_index": 16
+      },
+      "nearest_road": {
+        "id": "ROAD-002277",
+        "name": "معلم 2276",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 2276
+      }
+    },
+    "127": {
+      "zone_id": "127",
+      "zone_name": "مرير قابس",
+      "nearest_port": {
+        "id": "PORT-016",
+        "name": "ميناء الزويتينة",
+        "distance_km": 28.553,
+        "source_index": 16
+      },
+      "nearest_road": {
+        "id": "ROAD-003050",
+        "name": "معلم 3049",
+        "distance_km": 17.408,
+        "intersects_zone": false,
+        "source_index": 3049
+      }
+    },
+    "128": {
+      "zone_id": "128",
+      "zone_name": "بشر",
+      "nearest_port": {
+        "id": "PORT-015",
+        "name": "ميناء البريقة",
+        "distance_km": 10.446,
+        "source_index": 15
+      },
+      "nearest_road": {
+        "id": "ROAD-003050",
+        "name": "معلم 3049",
+        "distance_km": 2.503,
+        "intersects_zone": false,
+        "source_index": 3049
+      }
+    },
+    "129": {
+      "zone_id": "129",
+      "zone_name": "العقيلة",
+      "nearest_port": {
+        "id": "PORT-015",
+        "name": "ميناء البريقة",
+        "distance_km": 31.429,
+        "source_index": 15
+      },
+      "nearest_road": {
+        "id": "ROAD-003050",
+        "name": "معلم 3049",
+        "distance_km": 0.736,
+        "intersects_zone": false,
+        "source_index": 3049
+      }
+    },
+    "130": {
+      "zone_id": "130",
+      "zone_name": "راس لانوف",
+      "nearest_port": {
+        "id": "PORT-013",
+        "name": "ميناء رأس لانوف",
+        "distance_km": 8.203,
+        "source_index": 13
+      },
+      "nearest_road": {
+        "id": "ROAD-000923",
+        "name": "معلم 923",
+        "distance_km": 0.928,
+        "intersects_zone": false,
+        "source_index": 923
+      }
+    },
+    "131": {
+      "zone_id": "131",
+      "zone_name": "السدرة",
+      "nearest_port": {
+        "id": "PORT-014",
+        "name": "ميناء السدرة",
+        "distance_km": 8.469,
+        "source_index": 14
+      },
+      "nearest_road": {
+        "id": "ROAD-003050",
+        "name": "معلم 3049",
+        "distance_km": 1.106,
+        "intersects_zone": false,
+        "source_index": 3049
+      }
+    },
+    "132": {
+      "zone_id": "132",
+      "zone_name": "بن جواد",
+      "nearest_port": {
+        "id": "PORT-014",
+        "name": "ميناء السدرة",
+        "distance_km": 20.622,
+        "source_index": 14
+      },
+      "nearest_road": {
+        "id": "ROAD-003050",
+        "name": "معلم 3049",
+        "distance_km": 2.076,
+        "intersects_zone": false,
+        "source_index": 3049
+      }
+    },
+    "133": {
+      "zone_id": "133",
+      "zone_name": "عسيلة الغربي",
+      "nearest_port": {
+        "id": "PORT-017",
+        "name": "ميناء سرت",
+        "distance_km": 78.991,
+        "source_index": 17
+      },
+      "nearest_road": {
+        "id": "ROAD-003050",
+        "name": "معلم 3049",
+        "distance_km": 2.715,
+        "intersects_zone": false,
+        "source_index": 3049
+      }
+    },
+    "134": {
+      "zone_id": "134",
+      "zone_name": "هراوة",
+      "nearest_port": {
+        "id": "PORT-017",
+        "name": "ميناء سرت",
+        "distance_km": 64.204,
+        "source_index": 17
+      },
+      "nearest_road": {
+        "id": "ROAD-003050",
+        "name": "معلم 3049",
+        "distance_km": 3.276,
+        "intersects_zone": false,
+        "source_index": 3049
+      }
+    },
+    "135": {
+      "zone_id": "135",
+      "zone_name": "السميدة",
+      "nearest_port": {
+        "id": "PORT-009",
+        "name": "قصر أحمد",
+        "distance_km": 32.782,
+        "source_index": 9
+      },
+      "nearest_road": {
+        "id": "ROAD-002417",
+        "name": "معلم 2416",
+        "distance_km": 20.433,
+        "intersects_zone": false,
+        "source_index": 2416
+      }
+    },
+    "136": {
+      "zone_id": "136",
+      "zone_name": "قصر أحمد",
+      "nearest_port": {
+        "id": "PORT-009",
+        "name": "قصر أحمد",
+        "distance_km": 15.411,
+        "source_index": 9
+      },
+      "nearest_road": {
+        "id": "ROAD-002395",
+        "name": "معلم 2394",
+        "distance_km": 17.76,
+        "intersects_zone": false,
+        "source_index": 2394
+      }
+    },
+    "137": {
+      "zone_id": "137",
+      "zone_name": "الدافنية",
+      "nearest_port": {
+        "id": "PORT-008",
+        "name": "مصراته\t",
+        "distance_km": 22.578,
+        "source_index": 8
+      },
+      "nearest_road": {
+        "id": "ROAD-001629",
+        "name": "معلم 1628",
+        "distance_km": 0,
+        "intersects_zone": true,
+        "source_index": 1628
+      }
+    },
+    "138": {
+      "zone_id": "138",
+      "zone_name": "العويجة",
+      "nearest_port": {
+        "id": "PORT-014",
+        "name": "ميناء السدرة",
+        "distance_km": 54.276,
+        "source_index": 14
+      },
+      "nearest_road": {
+        "id": "ROAD-003050",
+        "name": "معلم 3049",
+        "distance_km": 3.953,
+        "intersects_zone": false,
+        "source_index": 3049
+      }
+    },
+    "139": {
+      "zone_id": "139",
+      "zone_name": "أم الخنفس",
+      "nearest_port": {
+        "id": "PORT-014",
+        "name": "ميناء السدرة",
+        "distance_km": 66.784,
+        "source_index": 14
+      },
+      "nearest_road": {
+        "id": "ROAD-003050",
+        "name": "معلم 3049",
+        "distance_km": 3.933,
+        "intersects_zone": false,
+        "source_index": 3049
+      }
+    },
+    "140": {
+      "zone_id": "140",
+      "zone_name": "عسيلة الشرقي",
+      "nearest_port": {
+        "id": "PORT-017",
+        "name": "ميناء سرت",
+        "distance_km": 86.199,
+        "source_index": 17
+      },
+      "nearest_road": {
+        "id": "ROAD-003050",
+        "name": "معلم 3049",
+        "distance_km": 0.991,
+        "intersects_zone": false,
+        "source_index": 3049
+      }
+    },
+    "141": {
+      "zone_id": "141",
+      "zone_name": "القرضابية",
+      "nearest_port": {
+        "id": "PORT-017",
+        "name": "ميناء سرت",
+        "distance_km": 18.139,
+        "source_index": 17
+      },
+      "nearest_road": {
+        "id": "ROAD-003050",
+        "name": "معلم 3049",
+        "distance_km": 1.045,
+        "intersects_zone": false,
+        "source_index": 3049
+      }
+    }
+  }
+}

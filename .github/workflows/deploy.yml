@@ -1,0 +1,33 @@
+name: Validate LTIP Phase 31 clean release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ltip-release-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout reviewed release
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Build approved artifact
+        run: npm run build
+      - name: Validate models, preservation and public projections
+        run: npm run test:admin && npm run test:preservation && npm run test:parks-public && npm run test:release && node scripts/test-admin-demo.mjs && npm run test:phase31:model
+      - name: Verify sealed artifact
+        run: node scripts/release-policy.mjs dist

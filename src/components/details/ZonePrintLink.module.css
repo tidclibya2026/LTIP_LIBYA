@@ -1,0 +1,4 @@
+.link { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 7px; margin-block-start: 12px; padding: 10px; min-height: 44px; border-radius: 8px; background: #174a76; color: #fff; text-decoration: none; font-size: 13px; }
+.link:hover { background: #102f50; }
+.link:focus-visible { outline: 3px solid #102f50; outline-offset: 3px; }
+.hint { font-size: 10px; width: 100%; text-align: center; }

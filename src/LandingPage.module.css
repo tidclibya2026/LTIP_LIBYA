@@ -1,0 +1,47 @@
+.landing.landing {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  padding: 0;
+  background: #102f50;
+}
+.panorama {
+  position: relative;
+  width: min(100%, calc(100vh * 1672 / 941));
+  width: min(100%, calc(100svh * 1672 / 941));
+  aspect-ratio: 1672 / 941;
+}
+.image { display: block; width: 100%; height: auto; }
+.enter {
+  /* Original artwork: button bounds x=640..1033, y=573..646. */
+  position: absolute;
+  inset-inline-start: auto;
+  left: 38.2775%;
+  top: 60.8927%;
+  width: 23.5048%;
+  height: 7.7577%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.enter::after {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  top: 50%;
+  height: max(100%, 44px);
+  transform: translateY(-50%);
+}
+.enter:focus-visible { outline: 3px solid white; outline-offset: 3px; box-shadow: 0 0 0 6px #102f50; }
+.enter:hover { box-shadow: 0 0 0 2px #d3a85c, 0 0 24px #d3a85c60; }
+@media (prefers-reduced-motion: no-preference) {
+  .enter { transition: box-shadow 180ms ease; }
+}

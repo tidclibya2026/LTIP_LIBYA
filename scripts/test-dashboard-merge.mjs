@@ -1,0 +1,17 @@
+﻿import assert from 'node:assert/strict';
+import {mkdtemp,mkdir,readFile,writeFile} from 'node:fs/promises';
+import {tmpdir} from 'node:os';import {join} from 'node:path';
+import {createRecord} from '../public/admin-dashboard-model.js';
+import {mergeAdminPackage} from './merge-admin-package.mjs';
+const root=await mkdtemp(join(tmpdir(),'ltip-dashboard-merge-'));await mkdir(join(root,'public/data'),{recursive:true});const geo=await readFile('public/data/zones_141.geojson');await writeFile(join(root,'public/data/zones_141.geojson'),geo);
+const ids=JSON.parse(geo).features.map(f=>f.properties.id);
+const rows=Object.keys({sites:1,opportunities:1,parks:1,gardens:1}).map(type=>{const r=createRecord(type,{id:ids[0]});r.data.name='Test';r.evidence.name={source:'Test source',verification:'VERIFIED'};r.status='APPROVED';r.public_clearance=true;r.reviewer='Reviewer';r.review_notes='Reviewed';if(type==='parks'){for(const k of ['official_source','legal_basis']){r.data[k]='Official test fixture';r.evidence[k]={source:'Fixture',verification:'VERIFIED'};}}if(type==='opportunities')r.zone_ids=[ids[0]];return r;});
+const bundle={kind:'LTIP_ADMIN_PACKAGE',schema_version:1,records:rows,files:[]},path=join(root,'package.json');await writeFile(path,JSON.stringify(bundle));
+assert.equal((await mergeAdminPackage(path,{root})).mode,'dry-run');
+await assert.rejects(()=>readFile(join(root,'public/data/admin-approved-records.json')),/ENOENT/);
+await assert.rejects(()=>mergeAdminPackage(path,{root,apply:true}),/public-reviewed/);
+assert.equal((await mergeAdminPackage(path,{root,apply:true,publicReviewed:true})).records,4);
+await mergeAdminPackage(path,{root,apply:true,publicReviewed:true});assert.equal(JSON.parse(await readFile(join(root,'public/data/admin-approved-records.json'))).records.length,4);
+rows[0].status='DRAFT';await writeFile(path,JSON.stringify(bundle));await assert.rejects(()=>mergeAdminPackage(path,{root,apply:true,publicReviewed:true}));
+assert.deepEqual(await readFile(join(root,'public/data/zones_141.geojson')),geo);
+console.log('PASS merger: four independent approved registries, dry run, explicit publication gate, atomic merge, no duplicate on repeat, draft rejection, GIS unchanged.');

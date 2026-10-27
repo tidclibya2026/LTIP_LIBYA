@@ -1,0 +1,31 @@
+{
+  "name": "ltip-libya-investment-platform",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node scripts/release-policy.mjs dist",
+    "preview": "vite preview --host 127.0.0.1",
+    "test:admin": "node scripts/test-dashboard-merge.mjs && node scripts/test-site-admin.mjs && node scripts/test-site-library.mjs",
+    "test:admin:browser": "node scripts/test-dashboard-browser.mjs && node scripts/test-site-admin-browser.mjs",
+    "test:site-editor": "node scripts/test-site-editor-browser.mjs",
+    "test:release": "node scripts/release-test-policy.mjs",
+    "test:preservation": "node scripts/test-preservation-integrity.mjs",
+    "test:parks-public": "node scripts/test-parks-public.mjs",
+    "test:release:browser": "node scripts/release-browser.mjs --production",
+    "test:phase31:model": "node phase31-model-tests.mjs",
+    "test:phase31:browser": "node phase31-browser.mjs --production"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^5.0.0",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {
+    "vite": "7.3.7",
+    "@vitejs/plugin-react": "^5.0.0"
+  }
+}
