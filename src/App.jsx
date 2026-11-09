@@ -1,6 +1,8 @@
 import { Fragment, useEffect, useMemo, useState } from 'react';
-import { MapContainer, TileLayer, GeoJSON, CircleMarker, Tooltip, useMap } from 'react-leaflet';
-import { Search, Layers3, Building2, Plane, Ship, Route, Info } from 'lucide-react';
+import { MapContainer, GeoJSON, CircleMarker, Tooltip, useMap } from 'react-leaflet';
+import L from 'leaflet';
+import Basemap from './maps/Basemap.jsx';
+import { Search, Layers3, Building2, Plane, Ship, Route, Info, TreePine, Flower2, FerrisWheel } from 'lucide-react';
 import 'leaflet/dist/leaflet.css';
 import './App.css';
 import OfficialHeader from './components/layout/OfficialHeader.jsx';
@@ -8,18 +10,21 @@ import OfficialFooter from './components/layout/OfficialFooter.jsx';
 import ZonePrintLink from './components/details/ZonePrintLink.jsx';
 import useInvestmentSiteEnrichment from './hooks/useInvestmentSiteEnrichment.js';
 import InvestmentSiteDetails from './components/details/InvestmentSiteDetails.jsx';
-import InvestmentSiteGallery from './components/details/InvestmentSiteGallery.jsx';
+import ZonePlanningStatus from './components/details/ZonePlanningStatus.jsx';
+import SiteDocumentLibrary from './components/details/SiteDocumentLibrary.jsx';
+import useSiteLibrarySources from './hooks/useSiteLibrarySources.js';
+import useZonePlanningStatus from './hooks/useZonePlanningStatus.js';
+import { planningCategory, PLANNING_CATEGORIES } from '../public/planning-status.js';
 import ui from './Workspace.module.css';
 import detailStyles from './components/details/InvestmentDetails.module.css';
+import reviewedPublicFiles from '../release/public-files.json';
 
 function FitZone({ feature }) {
   const map = useMap();
   useEffect(() => {
     if (!feature) return;
-    import('leaflet').then(({ default: L }) => {
-      const layer = L.geoJSON(feature);
-      if (layer.getBounds().isValid()) map.fitBounds(layer.getBounds(), { padding: [28, 28], maxZoom: 12 });
-    });
+    const layer = L.geoJSON(feature);
+    if (layer.getBounds().isValid()) map.fitBounds(layer.getBounds(), { padding: [28, 28], maxZoom: 12 });
   }, [feature, map]);
   return null;
 }
@@ -91,20 +96,21 @@ function accessId(feature) {
   return p.AIRPORT_ID || p.PORT_ID || p.NTG_ID || p.SITE_ID || p.TIDC_ENTITY_ID || 'غير متوفر';
 }
 const PARK_LAYERS = [
-  { id: 'national', title: 'المنتزهات الوطنية', url: import.meta.env.BASE_URL + 'data/parks/FD_PARK_NATIONAL_33.geojson', color: '#21836e' },
-  { id: 'public', title: 'الحدائق والمنتزهات العامة', url: import.meta.env.BASE_URL + 'data/parks/FD_PARK_PUBLIC_185.geojson', color: '#3a8cb5' },
-  { id: 'theme', title: 'المنتزهات الترفيهية', url: import.meta.env.BASE_URL + 'data/parks/FD_THEME_PARK_1.geojson', color: '#a36fb5' },
-];
+  { id: 'national', title: 'المنتزهات الوطنية', icon: TreePine, url: import.meta.env.BASE_URL + 'data/parks/public/national-parks.geojson', color: '#18734b' },
+  { id: 'public', title: 'الحدائق العامة', icon: Flower2, url: import.meta.env.BASE_URL + 'data/parks/public/public-gardens.geojson', color: '#1769aa' },
+  { id: 'theme', title: 'المنتزهات الترفيهية', icon: FerrisWheel, url: import.meta.env.BASE_URL + 'data/parks/FD_THEME_PARK_1.geojson', color: '#9253a8' },
+].filter(layer => reviewedPublicFiles.includes('public/' + layer.url.slice(import.meta.env.BASE_URL.length)));
 function parkTitle(feature, index) {
   const p = feature?.properties || {};
-  return p.PARK_NAME || p.NAME_AR || p.name_ar || p.NAME || p.Name || p.name ||
-    `مضلع غير مسمى ${index + 1}`;
+  return p.PARK_NAME || p.NAME_AR || p.NAME_ORIG || p.NAME_EN || p.name_ar || p.NAME || p.Name || p.name ||
+    (p.PARK_ID ? `منتزه وطني — ${p.PARK_ID}` : `حديقة عامة — ${p.NTG_ID || index + 1}`);
 }
 function label(f, index) {
   const p = f.properties || {};
   return p.name_ar || p.name || p.Name || p.NAME || p.zone_name || p.site_name || `منطقة استثمارية ${index + 1}`;
 }
 export default function App() {
+  const librarySources = useSiteLibrarySources();
   const [zones, setZones] = useState([]);
   const [accessData, setAccessData] = useState({});
   const [accessErrors, setAccessErrors] = useState({});
@@ -128,7 +134,7 @@ export default function App() {
   const [selectedCity, setSelectedCity] = useState(null);
   const [parkData, setParkData] = useState({});
   const [parkErrors, setParkErrors] = useState({});
-  const [visibleParks, setVisibleParks] = useState({ national: true, public: false, theme: false });
+  const [visibleParks, setVisibleParks] = useState({ national: true, public: true, theme: false });
   const [selectedPark, setSelectedPark] = useState(null);
   const [showZones, setShowZones] = useState(true);
   const [sidebarMode, setSidebarMode] = useState('zones');
@@ -137,6 +143,8 @@ export default function App() {
   const [query, setQuery] = useState('');
   const [selected, setSelected] = useState(null);
   const siteEnrichment = useInvestmentSiteEnrichment();
+  const planning = useZonePlanningStatus();
+  const [planningFilter, setPlanningFilter] = useState('all');
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + 'data/analysis/zone_ports_roads_nearest.json')
       .then(r => {
@@ -243,7 +251,7 @@ export default function App() {
     const items = PARK_LAYERS.flatMap(layer => (parkData[layer.id]?.features || []).map((feature, index) => ({
       layerId: layer.id, index, feature, layerTitle: layer.title,
       title: parkTitle(feature, index),
-      id: String(feature.properties?.PART_ID || feature.properties?.SOURCE_KEY || feature.properties?.PARK_ID || feature.properties?.id || '')
+      id: String(feature.properties?.PART_ID || feature.properties?.NTG_ID || feature.properties?.PARK_ID || feature.properties?.id || '')
     })));
     return needle ? items.filter(item => `${item.title} ${item.id} ${item.feature.properties?.PARK_ID || ''}`.toLocaleLowerCase().includes(needle)) : items;
   }, [parkData, parkQuery]);
@@ -256,18 +264,20 @@ export default function App() {
         `${x.name} ${x.f.properties?.id ?? x.i + 1}`.toLowerCase().includes(query.trim().toLowerCase()) &&
         (readinessFilter === 'all' ||
           accessReadiness[String(x.f?.properties?.id ?? x.i + 1)]
-            ?.geographic_access?.grade === readinessFilter)
+            ?.geographic_access?.grade === readinessFilter) &&
+        (planningFilter === 'all' || planningCategory(planning.zones[String(x.f.properties.id)]) === planningFilter)
       ),
-    [zones, query, readinessFilter, accessReadiness]
+    [zones, query, readinessFilter, accessReadiness, planningFilter, planning.zones]
   );
 
   const mapZones = useMemo(() =>
     zones.filter((f, i) =>
-      readinessFilter === 'all' ||
+      (readinessFilter === 'all' ||
       accessReadiness[String(f?.properties?.id ?? i + 1)]
-        ?.geographic_access?.grade === readinessFilter
+        ?.geographic_access?.grade === readinessFilter) &&
+      (planningFilter === 'all' || planningCategory(planning.zones[String(f.properties.id)]) === planningFilter)
     ),
-    [zones, readinessFilter, accessReadiness]
+    [zones, readinessFilter, accessReadiness, planningFilter, planning.zones]
   );
 
   const readinessColors = {
@@ -317,6 +327,7 @@ export default function App() {
   const selectedParkProps = selectedParkFeature?.properties || {};
   const selectedParkLayer = PARK_LAYERS.find(layer => layer.id === selectedPark?.layerId);
   const parkCount = PARK_LAYERS.reduce((sum, layer) => sum + (parkData[layer.id]?.features?.length || 0), 0);
+  const nationalParkCount = new Set((parkData.national?.features || []).map(f => f.properties.PARK_ID)).size;
   return <div className={`app ${ui.platform}`} dir="rtl">
     <OfficialHeader />
     <main><section className="intro"><div><span className="eyebrow">ليبيا… أرض الفرص وآفاق الاستثمار</span><h2>خارطة فرص التنمية والاستثمار السياحي في ليبيا</h2><p>اكتشف فرصًا استثمارية واعدة عبر وجهات ليبيا السياحية المتنوعة.</p></div><div className="big-count"><strong>{zones.length || '—'}</strong><span>منطقة استثمارية</span></div></section>
@@ -336,16 +347,17 @@ export default function App() {
         </label>
         <label className="park-toggle"><input type="checkbox" checked={showCities} onChange={e => setShowCities(e.target.checked)}/><span className="park-swatch" style={{background:'#c65d35'}}/><span>المدن</span><b>{cities.length || '—'}</b></label>
         <label className="park-toggle"><input type="checkbox" checked={showZones} onChange={e=>setShowZones(e.target.checked)}/><span className="park-swatch" style={{background:'#b9914b'}}/><span>مناطق الاستثمار السياحي</span><b>{zones.length || '—'}</b></label>
-        {PARK_LAYERS.map(layer => <label key={layer.id} className="park-toggle">
-          <input type="checkbox" checked={visibleParks[layer.id]} onChange={e=>setVisibleParks(prev=>({...prev,[layer.id]:e.target.checked}))}/>
-          <span className="park-swatch" style={{background:layer.color}}/><span>{layer.title}</span><b>{parkData[layer.id]?.features?.length ?? '—'}</b>
+        {PARK_LAYERS.map(layer => <label key={layer.id} className="park-toggle" data-park-toggle={layer.id}>
+          <input type="checkbox" aria-label={layer.title} checked={visibleParks[layer.id]} onChange={e=>{setVisibleParks(prev=>({...prev,[layer.id]:e.target.checked}));if(!e.target.checked && selectedPark?.layerId===layer.id)setSelectedPark(null);}}/>
+          <layer.icon size={18} color={layer.color} aria-hidden="true"/><span>{layer.title}</span><b>{parkData[layer.id]?.features?.length ?? '—'}</b>
         </label>)}
       </div>
-      <div className="manager-summary">{zones.length} منطقة استثمارية · {parkCount} مضلع منتزهات وحدائق محمّل · إخفاء الطبقة لا يحذف بياناتها</div>
+      <div className="manager-summary">{zones.length} منطقة استثمارية · {parkCount} عنصر منتزهات وحدائق محمّل · إخفاء الطبقة لا يحذف بياناتها</div>
+      {!!nationalParkCount && <p data-national-count className="manager-summary">{nationalParkCount} منتزهًا وطنيًا معرفًا في السجل · {parkData.national.features.length} عنصرًا مكانيًا</p>}
       {Object.keys(accessErrors).length > 0 && <div className="park-error">{Object.entries(accessErrors).map(([id,msg]) => <div key={id}>تعذر تحميل {id}: {msg}</div>)}</div>}
       {cityError && <div className="park-error">{cityError}</div>}{roadError && <div className="park-error">{roadError}</div>}
       {Object.keys(parkErrors).length > 0 && <div className="park-error">{PARK_LAYERS.filter(layer=>parkErrors[layer.id]).map(layer=><div key={layer.id}>تعذر تحميل {layer.title}: {parkErrors[layer.id]}</div>)}</div>}
-    </details><section className={`workspace ${detailStyles.workspace}`}><aside id="ltip-explorer" tabIndex={-1} className={`sidebar ${detailStyles.sidebar} ${sidebarMode==='zones' && selectedFeature ? detailStyles.selectedSidebar : ''}`}><div className="sidebar-tabs"><button type="button" className={sidebarMode==='zones'?'active':''} onClick={()=>setSidebarMode('zones')}>مناطق الاستثمار ({zones.length})</button><button type="button" className={sidebarMode==='parks'?'active':''} onClick={()=>setSidebarMode('parks')}>المنتزهات والحدائق ({parkCount})</button><button type="button" className={sidebarMode==='cities'?'active':''} onClick={()=>setSidebarMode('cities')}>المدن ({cities.length})</button><button type="button" className={sidebarMode==='access'?'active':''} onClick={()=>setSidebarMode('access')}>المطارات والموانئ والآثار</button></div><div className="search"><Search size={18}/>{sidebarMode==='zones' ? <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="ابحث باسم المنطقة أو رقمها..." aria-label="البحث عن منطقة"/> : sidebarMode==='parks' ? <input value={parkQuery} onChange={e=>setParkQuery(e.target.value)} placeholder="ابحث باسم المنتزه أو معرفه..." aria-label="البحث عن منتزه بالاسم أو المعرف"/> : sidebarMode==='cities' ? <input value={cityQuery} onChange={e=>setCityQuery(e.target.value)} placeholder="ابحث باسم المدينة..." aria-label="البحث عن مدينة"/> : <input value={accessQuery} onChange={e=>setAccessQuery(e.target.value)} placeholder="ابحث عن مطار أو ميناء أو موقع أثري..." aria-label="البحث عن مطار أو موقع أثري"/>}</div><div className={ui.searchStatus}><span role="status">{sidebarMode === 'zones' ? `${filtered.length} من ${zones.length} منطقة${readinessFilter !== 'all' ? ` · قرب ${readinessFilter}` : ''}` : 'البحث ضمن المعالم'}</span><button type="button" onClick={() => { setQuery(''); setParkQuery(''); setCityQuery(''); setAccessQuery(''); setReadinessFilter('all'); }}>إعادة ضبط البحث والفلاتر</button></div>{sidebarMode==='zones' && selectedFeature && <div className={`zone-detail ${detailStyles.card}`}><div className={detailStyles.header}><div className="detail-title"><strong>بطاقة المنطقة الاستثمارية</strong><button type="button" onClick={()=>setSelected(null)} aria-label="إغلاق البطاقة">×</button></div><h4>{selectedName}</h4><p className={detailStyles.identifier}>الرقم التعريفي: <bdi>{zoneId}</bdi></p><ZonePrintLink zoneId={zoneId} /></div><div className={detailStyles.body} tabIndex={0} role="region" aria-label="تفاصيل المنطقة الاستثمارية"><dl>{Object.entries(selectedFeature.properties || {}).filter(([key, value]) => ['municipality', 'municipality_ar', 'location', 'location_ar'].includes(key) && value).map(([key, value]) => <Fragment key={key}><dt>{key.startsWith('municipality') ? 'البلدية' : 'الموقع'}</dt><dd>{String(value)}</dd></Fragment>)}<dt>المساحة المحسوبة</dt><dd>{typeof selectedArea === 'number' ? `${selectedArea.toLocaleString('ar-LY')} هكتار` : 'قيد الحساب'}</dd><dt>حالة التحقق</dt><dd>{selectedFeature.properties?.status || 'غير مدقق'}</dd><dt>أقرب مدينة من قاعدة GIS</dt><dd>{nearestCity ? <button type="button" className="city-link" onClick={() => chooseCity(nearestCity.index)}>{nearestCity.name} — {nearestCity.distanceKm.toFixed(2)} كم ↗</button> : 'قيد تحميل بيانات المدن'}</dd>{accessLink('airports','أقرب مطار (بصرف النظر عن حالة التشغيل)')}{accessLink('archPoints','أقرب موقع أثري نقطي')}{accessLink('archPolygons','أقرب موقع أثري مضلعي')}{accessLink('unesco','أقرب نقطة مرجعية للتراث العالمي')}<dt>مؤشر القرب الجغرافي</dt>
+    </details><section className={`workspace ${detailStyles.workspace}`}><aside id="ltip-explorer" tabIndex={-1} className={`sidebar ${detailStyles.sidebar} ${sidebarMode==='zones' && selectedFeature ? detailStyles.selectedSidebar : ''}`}><div className="sidebar-tabs"><button type="button" className={sidebarMode==='zones'?'active':''} onClick={()=>setSidebarMode('zones')}>مناطق الاستثمار ({zones.length})</button><button type="button" className={sidebarMode==='parks'?'active':''} onClick={()=>setSidebarMode('parks')}>المنتزهات والحدائق ({parkCount})</button><button type="button" className={sidebarMode==='cities'?'active':''} onClick={()=>setSidebarMode('cities')}>المدن ({cities.length})</button><button type="button" className={sidebarMode==='access'?'active':''} onClick={()=>setSidebarMode('access')}>المطارات والموانئ والآثار</button></div><div className="search"><Search size={18}/>{sidebarMode==='zones' ? <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="ابحث باسم المنطقة أو رقمها..." aria-label="البحث عن منطقة"/> : sidebarMode==='parks' ? <input value={parkQuery} onChange={e=>setParkQuery(e.target.value)} placeholder="ابحث باسم المنتزه أو معرفه..." aria-label="البحث عن منتزه بالاسم أو المعرف"/> : sidebarMode==='cities' ? <input value={cityQuery} onChange={e=>setCityQuery(e.target.value)} placeholder="ابحث باسم المدينة..." aria-label="البحث عن مدينة"/> : <input value={accessQuery} onChange={e=>setAccessQuery(e.target.value)} placeholder="ابحث عن مطار أو ميناء أو موقع أثري..." aria-label="البحث عن مطار أو موقع أثري"/>}</div><div className={ui.searchStatus}><span role="status">{sidebarMode === 'zones' ? `${filtered.length} من ${zones.length} منطقة${readinessFilter !== 'all' ? ` · قرب ${readinessFilter}` : ''}` : 'البحث ضمن المعالم'}</span><button type="button" onClick={() => { setQuery(''); setParkQuery(''); setCityQuery(''); setAccessQuery(''); setReadinessFilter('all'); setPlanningFilter('all'); }}>إعادة ضبط البحث والفلاتر</button></div>{sidebarMode==='zones' && selectedFeature && <div className={`zone-detail ${detailStyles.card}`}><div className={detailStyles.header}><div className="detail-title"><strong>بطاقة المنطقة الاستثمارية</strong><button type="button" onClick={()=>setSelected(null)} aria-label="إغلاق البطاقة">×</button></div><h4>{selectedName}</h4><p className={detailStyles.identifier}>الرقم التعريفي: <bdi>{zoneId}</bdi></p><ZonePrintLink zoneId={zoneId} /></div><div className={detailStyles.body} tabIndex={0} role="region" aria-label="تفاصيل المنطقة الاستثمارية"><dl>{Object.entries(selectedFeature.properties || {}).filter(([key, value]) => ['municipality', 'municipality_ar', 'location', 'location_ar'].includes(key) && value).map(([key, value]) => <Fragment key={key}><dt>{key.startsWith('municipality') ? 'البلدية' : 'الموقع'}</dt><dd>{String(value)}</dd></Fragment>)}<dt>المساحة المحسوبة</dt><dd>{typeof selectedArea === 'number' ? `${selectedArea.toLocaleString('ar-LY')} هكتار` : 'قيد الحساب'}</dd><dt>حالة التحقق</dt><dd>{selectedFeature.properties?.status || 'غير مدقق'}</dd><dt>أقرب مدينة من قاعدة GIS</dt><dd>{nearestCity ? <button type="button" className="city-link" onClick={() => chooseCity(nearestCity.index)}>{nearestCity.name} — {nearestCity.distanceKm.toFixed(2)} كم ↗</button> : 'قيد تحميل بيانات المدن'}</dd>{accessLink('airports','أقرب مطار (بصرف النظر عن حالة التشغيل)')}{accessLink('archPoints','أقرب موقع أثري نقطي')}{accessLink('archPolygons','أقرب موقع أثري مضلعي')}{accessLink('unesco','أقرب نقطة مرجعية للتراث العالمي')}<dt>مؤشر القرب الجغرافي</dt>
   <dd>{selectedReadiness?.geographic_access
     ? `${selectedReadiness.geographic_access.score} / 100 — ${selectedReadiness.geographic_access.grade}`
     : 'قيد تحميل التصنيف'}</dd>
@@ -368,23 +380,18 @@ export default function App() {
   ? transportResult.nearest_road.intersects_zone
     ? '0 كم — يتقاطع مع المنطقة'
     : `${transportResult.nearest_road.distance_km.toLocaleString('ar-LY')} كم`
-  : 'غير متوفر'}</dd></dl><small>المساحة جيوديسية تقريبية، وليست مساحة قانونية معتمدة.</small><InvestmentSiteDetails site={investmentSite} loading={siteEnrichment.loading} error={siteEnrichment.error} /></div></div>}{sidebarMode==='parks' && selectedParkFeature && <div className="zone-detail park-detail">
+    : 'غير متوفر'}</dd></dl><small>المساحة جيوديسية تقريبية، وليست مساحة قانونية معتمدة.</small><ZonePlanningStatus record={planning.zones[String(selectedZoneKey)]} loading={planning.loading} error={planning.error} /><InvestmentSiteDetails site={investmentSite} loading={siteEnrichment.loading} error={siteEnrichment.error} /></div></div>}{sidebarMode==='parks' && selectedParkFeature && <div className="zone-detail park-detail" data-park-card={selectedPark.layerId} style={{borderInlineStart:`4px solid ${selectedParkLayer.color}`}}>
       <div className="detail-title"><strong>بطاقة المنتزه / الحديقة</strong>
         <button type="button" onClick={() => setSelectedPark(null)} aria-label="إغلاق بطاقة المنتزه">×</button>
       </div>
       <h4>{parkTitle(selectedParkFeature, selectedPark.index)}</h4>
       <dl>
         <dt>نوع الطبقة</dt><dd>{selectedParkLayer?.title}</dd>
-        <dt>معرف المضلع</dt><dd>{selectedParkProps.PART_ID || selectedParkProps.SOURCE_KEY || selectedParkProps.id || 'قيد الاستكمال'}</dd>
-        <dt>معرف المنتزه</dt><dd>{selectedParkProps.PARK_ID || 'قيد الاستكمال'}</dd>
-        <dt>المساحة الجيوديسية</dt><dd>{Number.isFinite(Number(selectedParkProps.AREA_HA_CALCULATED))
-          && selectedParkProps.AREA_HA_CALCULATED != null
-          ? `${Number(selectedParkProps.AREA_HA_CALCULATED).toLocaleString('ar-LY', {maximumFractionDigits: 4})} هكتار`
-          : 'قيد الاستكمال'}</dd>
-        <dt>حالة التحقق</dt><dd>{selectedParkProps.VERIFICATION || 'غير متحقق ميدانيًا'}</dd>
-        <dt>البيانات الوصفية</dt><dd>{selectedParkProps.PARK_NAME || selectedParkProps.NAME_AR || selectedParkProps.name_ar || selectedParkProps.NAME || selectedParkProps.name ? 'اسم متوفر' : 'غير مكتملة — المضلع محفوظ'}</dd>
+        <dt>{selectedParkProps.PART_ID ? 'معرف الجزء المكاني' : 'معرف الموقع'}</dt><dd dir="ltr">{selectedParkProps.PART_ID || selectedParkProps.NTG_ID || selectedParkProps.id || 'غير متوفر'}</dd>
+        {selectedParkProps.PARK_ID && <><dt>معرف المنتزه الوطني</dt><dd dir="ltr">{selectedParkProps.PARK_ID}</dd><dt>الجزء المكاني</dt><dd>{selectedParkProps.PART_NO} من {selectedParkProps.PARTS_COUNT}</dd><dt>جهة الإشراف</dt><dd>جهاز المنتزهات الوطنية</dd></>}
+        {selectedPark.layerId==='theme' && selectedParkProps.AREA_HA_CALCULATED!=null && <><dt>المساحة المحسوبة</dt><dd>{Number(selectedParkProps.AREA_HA_CALCULATED).toLocaleString('ar-LY')} هكتار</dd></>}
       </dl>
-      <small>الهندسة الجغرافية هي الأساس. المساحة غير معتمدة قانونيًا أو مساحيًا.</small>
+      <small>بيانات تعريفية للخريطة؛ لا تمثل شهادة ملكية أو اعتمادًا مساحيًا أو تخطيطيًا.</small>
     </div>}
     {sidebarMode==='cities' && selectedCityFeature && <div className="zone-detail city-detail"><div className="detail-title"><strong>بطاقة المدينة</strong><button type="button" onClick={() => setSelectedCity(null)} aria-label="إغلاق بطاقة المدينة">×</button></div><h4>{cityName(selectedCityFeature, selectedCity)}</h4><dl><dt>الاسم الإنجليزي</dt><dd>{selectedCityFeature.properties?.NAME_EN || selectedCityFeature.properties?.EN_Name || 'غير متوفر'}</dd><dt>الإحداثيات</dt><dd dir="ltr">{selectedCityFeature.geometry.coordinates.slice(0,2).map(v => Number(v).toFixed(5)).join(', ')}</dd><dt>حالة التحقق</dt><dd>{selectedCityFeature.properties?.VERIFICATION || 'غير محددة'}</dd></dl><small>موقع المدينة يمثل نقطة مرجعية في قاعدة GIS، وليس حدودها الإدارية.</small></div>}
     {sidebarMode==='access' && selectedAccessFeature && <div className="zone-detail access-detail">
@@ -406,6 +413,12 @@ export default function App() {
     <span>WGS 84 · EPSG:4326</span>
   </div>
   <div className={ui.mapToolbar}>
+    <label htmlFor="planning-category">تصنيف الموقع:</label>
+    <select id="planning-category" value={planningFilter} onChange={e => setPlanningFilter(e.target.value)}>
+      <option value="all">جميع التصنيفات</option>
+      {Object.entries(PLANNING_CATEGORIES).map(([value, title]) => <option key={value} value={value}>{title}</option>)}
+    </select>
+    {planning.error && <span role="alert">{planning.error}</span>}
     <a href={import.meta.env.BASE_URL + "investment-cards.html"} target="_blank" rel="noopener noreferrer" style={{padding:"9px 13px",background:"#17476d",color:"white",borderRadius:8,textDecoration:"none",fontWeight:700}}>بطاقات الاستثمار (141) ↗</a>
     <label htmlFor="access-grade">تصنيف القرب الجغرافي:</label>
     <select id="access-grade"
@@ -429,13 +442,13 @@ export default function App() {
     {readinessError &&
       <span role="alert">خطأ تحميل التصنيف: {readinessError}</span>}
     <small>التصنيف جغرافي ولا يثبت الجاهزية التشغيلية.</small>
-  </div>{error && <div className="error">{error}</div>}<MapContainer center={[27.3, 17.0]} zoom={5} className="map" scrollWheelZoom={true}><TileLayer attribution='&copy; OpenStreetMap contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>{showZones && zones.length > 0 && <GeoJSON key={`access-${readinessFilter}-${Object.keys(accessReadiness).length}`}
+  </div><div className="park-map-legend" role="list" aria-label="مفتاح المنتزهات والحدائق">{PARK_LAYERS.map(layer=><span key={layer.id} role="listitem" data-visible={visibleParks[layer.id]}><layer.icon size={18} color={layer.color} aria-hidden="true"/>{layer.title} · {parkData[layer.id]?.features.length ?? '—'} عنصرًا{!visibleParks[layer.id] && ' · مخفاة'}</span>)}</div>{error && <div className="error">{error}</div>}<MapContainer center={[27.3, 17.0]} zoom={5} className="map" scrollWheelZoom={true}><Basemap fitCountry/>{showZones && zones.length > 0 && <GeoJSON key={`access-${readinessFilter}-${Object.keys(accessReadiness).length}-${planningFilter}-${Object.keys(planning.zones).length}`}
     data={{type:'FeatureCollection',features:mapZones}}
     style={f=>{
       const grade=accessReadiness[String(f.properties?.id)]
         ?.geographic_access?.grade;
       return {
-        color:'#6d7885',
+        className:'investment-zone-shape',color:'#6d7885',
         weight:1.5,
         fillColor:readinessColors[grade] || '#183e69',
         fillOpacity:.48
@@ -470,19 +483,20 @@ export default function App() {
 {selectedCityFeature && <FitCity coordinates={selectedCityFeature.geometry.coordinates}/>}
 {PARK_LAYERS.map(layer => visibleParks[layer.id] && parkData[layer.id] &&
   <GeoJSON key={`park-${layer.id}`} data={parkData[layer.id]}
-    style={{color:layer.color,weight:2,fillColor:layer.color,fillOpacity:.24}}
+    style={{className:`park-shape-${layer.id}`,color:layer.color,weight:2,fillColor:layer.color,fillOpacity:.24}}
     onEachFeature={(feature, leafletLayer) => {
       const index = parkData[layer.id].features.findIndex(candidate => candidate === feature || (
         candidate.properties?.SOURCE_KEY && candidate.properties.SOURCE_KEY === feature.properties?.SOURCE_KEY));
       leafletLayer.on('click', () => { if(index >= 0) choosePark(layer.id, index); });
-      leafletLayer.bindTooltip(parkTitle(feature, index), {sticky:true, direction:'top'});
+      const tooltip=document.createElement('span');tooltip.textContent=parkTitle(feature,index);
+      leafletLayer.bindTooltip(tooltip, {sticky:true, direction:'top'});
     }}/>
 )}
 {selectedParkFeature && <><GeoJSON key={`park-selected-${selectedPark.layerId}-${selectedPark.index}`}
   data={selectedParkFeature}
   style={{color:'#e3a02d',weight:4,fillColor:'#f1c26a',fillOpacity:.46}}/>
   <FitZone feature={selectedParkFeature}/></>}
-{showZones && selectedFeature && <><GeoJSON key={`selected-${selected}`} data={selectedFeature} style={{color:'#d69c36',weight:4,fillColor:'#e7b95a',fillOpacity:.45}} eventHandlers={{click:()=>setSelected(selected)}} /><FitZone feature={selectedFeature}/></>}</MapContainer>{selectedFeature && investmentSite && <InvestmentSiteGallery key={zoneId} site={investmentSite} />}<div className="map-foot"><Info size={16}/> الحدود مستوردة من ملف GIS، ولم تُعتمد مساحيًا أو قانونيًا بعد. تتطلب الخلفية الخرائطية اتصالًا بالإنترنت.</div></div></section>
+{showZones && selectedFeature && <><GeoJSON key={`selected-${selected}`} data={selectedFeature} style={{color:'#d69c36',weight:4,fillColor:'#e7b95a',fillOpacity:.45}} eventHandlers={{click:()=>setSelected(selected)}} /><FitZone feature={selectedFeature}/></>}</MapContainer>{selectedFeature && <SiteDocumentLibrary key={zoneId} zoneId={zoneId} zoneName={selectedFeature.properties.name_ar} site={investmentSite} planning={planning.zones[String(zoneId)]} sources={librarySources} />}<div className="map-foot"><Info size={16}/> الحدود مستوردة من ملف GIS، ولم تُعتمد مساحيًا أو قانونيًا بعد. تتطلب الخلفية الخرائطية اتصالًا بالإنترنت.</div></div></section>
     </main><OfficialFooter />
   </div>;
 }

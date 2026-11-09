@@ -2,12 +2,12 @@
 
 ## التثبيت في Windows
 1. أوقف خادم التطوير القديم باستخدام Ctrl+C.
-2. احتفظ بنسخة احتياطية من مجلد `D:\LTIP_LIBYA_2026\05_PLATFORM\ltip-web` الحالي قبل استبداله.
-3. فك ضغط الحزمة وانسخ **محتويات** `LTIP_React_Complete_v1` إلى `D:\LTIP_LIBYA_2026\05_PLATFORM\ltip-web` (لا تضع المجلد داخل نفسه).
+2. احتفظ بنسخة احتياطية من مجلد `<PROJECT_ROOT>\05_PLATFORM\ltip-web` الحالي قبل استبداله.
+3. فك ضغط الحزمة وانسخ **محتويات** `LTIP_React_Complete_v1` إلى `<PROJECT_ROOT>\05_PLATFORM\ltip-web` (لا تضع المجلد داخل نفسه).
 4. افتح Terminal داخل مجلد `ltip-web` وشغّل:
 
 ```powershell
-cd D:\LTIP_LIBYA_2026\05_PLATFORM\ltip-web
+cd <PROJECT_ROOT>\05_PLATFORM\ltip-web
 npm.cmd install
 npm.cmd run dev
 ```

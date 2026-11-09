@@ -1,7 +1,9 @@
 import styles from './LandingPage.module.css';
+import PublicPortfolioSummary from './portfolio/PublicPortfolioSummary.jsx';
 
 export default function LandingPage() {
   return <main className={styles.landing} dir="rtl" aria-label="الرئيسية — منصة LTIP LIBYA">
+    <div className={styles.portfolioEntry}><header className={styles.publicHeader}><span>وزارة السياحة والصناعات التقليدية · ليبيا</span><b dir="ltr">LTIP LIBYA</b></header><PublicPortfolioSummary entry/></div>
     <div className={styles.panorama}>
       <img
         className={styles.image}

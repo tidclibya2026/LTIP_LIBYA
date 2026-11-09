@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "default_provider": "local",
+  "providers": [
+    {
+      "id": "local",
+      "label_ar": "خلفية محلية · GIS"
+    },
+    {
+      "id": "osm",
+      "label_ar": "OpenStreetMap",
+      "enabled": false,
+      "policy_reviewed": false,
+      "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap contributors</a>",
+      "maxZoom": 19,
+      "policy": "https://operations.osmfoundation.org/policies/tiles/"
+    }
+  ]
+}

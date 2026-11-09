@@ -169,3 +169,6 @@
     font-size: 12px;
   }
 }
+.park-map-legend { display:flex; flex-wrap:wrap; gap:8px 18px; padding:12px 16px; background:#f4f7fa; border-block:1px solid #dce4ec; font-size:13px; }
+.park-map-legend > span { display:inline-flex; align-items:center; gap:7px; }
+.park-map-legend > span[data-visible="false"] { color:#687481; }

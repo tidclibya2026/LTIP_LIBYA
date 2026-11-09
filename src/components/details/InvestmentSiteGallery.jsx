@@ -27,46 +27,61 @@ function OriginalImage({ image, enlarged = false }) {
 }
 
 export default function InvestmentSiteGallery({ site }) {
-  const images = site.images.slice(0, 4).sort((a, b) => (typeOrder[a.type] ?? 4) - (typeOrder[b.type] ?? 4));
+  const images = [...site.images].sort((a, b) => (typeOrder[a.type] ?? 4) - (typeOrder[b.type] ?? 4));
   const [active, setActive] = useState(0);
   const [expanded, setExpanded] = useState(false);
   const dialog = useRef(null);
   const expandButton = useRef(null);
+  const choices = useRef(null);
   const image = images[active];
   const move = step => setActive(index => (index + step + images.length) % images.length);
 
   useEffect(() => {
     if (expanded) dialog.current?.showModal();
-    else dialog.current?.close();
+    else if (dialog.current?.open) {
+      dialog.current.close();
+      expandButton.current?.focus({ preventScroll: true });
+    }
   }, [expanded]);
-  const close = () => { setExpanded(false); expandButton.current?.focus(); };
+  const close = () => { setExpanded(false); };
   const navigation = <div className={styles.navigation}>
     <button type="button" aria-label="الصورة السابقة" disabled={images.length < 2} onClick={() => move(-1)}><ChevronRight size={18} />السابقة</button>
     <span role="status" aria-live="polite">{active + 1} / {images.length} — {image?.type_label}</span>
     <button type="button" aria-label="الصورة التالية" disabled={images.length < 2} onClick={() => move(1)}>التالية<ChevronLeft size={18} /></button>
   </div>;
   if (!image) return null;
-  return <section className={styles.gallery} aria-label="صور الموقع الأصلية" data-zone-id={site.zone_id}>
-    <div className={styles.galleryHeader}><h3><Images size={20} />صور {site.zone_name}</h3><span>{images.length} صور أصلية</span></div>
+  return <section className={styles.gallery} aria-label="صور الموقع الأصلية" data-zone-id={site.zone_id}
+    onKeyDown={event => {
+      if (event.target.closest('dialog') || event.altKey || event.ctrlKey || event.metaKey) return;
+      let next;
+      if (event.key === 'ArrowLeft') next = (active + 1) % images.length;
+      else if (event.key === 'ArrowRight') next = (active - 1 + images.length) % images.length;
+      else if (event.key === 'Home') next = 0;
+      else if (event.key === 'End') next = images.length - 1;
+      else return;
+      event.preventDefault(); event.stopPropagation(); setActive(next);
+      if (choices.current?.contains(event.target)) requestAnimationFrame(() => choices.current?.children[next]?.focus({ preventScroll: true }));
+    }}>
+    <div className={styles.galleryHeader}><h3><Images size={20} />{site.media_title || `صور ${site.zone_name}`}</h3><span>{images.length} ملفات مصورة</span></div>
+    {navigation}
     <figure className={styles.figure}>
       <button ref={expandButton} className={styles.imageButton} type="button" onClick={() => setExpanded(true)} aria-label="تكبير الصورة الأصلية">
         <OriginalImage key={image.id} image={image} /><span className={styles.zoom}><Maximize2 size={16} />تكبير الصورة</span>
       </button>
       <figcaption><strong>{image.type_label}</strong> — {image.original_filename}<small>{image.source}</small></figcaption>
     </figure>
-    <div className={styles.choices} aria-label="اختيار صورة الموقع">{images.map((item, index) =>
-      <button key={item.id} type="button" aria-pressed={active === index} onClick={() => setActive(index)} aria-label={`عرض الصورة ${index + 1}: ${imageType(item)}`}>
+    <div ref={choices} className={styles.choices} role="group" aria-label="اختيار صورة الموقع">{images.map((item, index) =>
+      <button key={item.id} type="button" aria-pressed={active === index} tabIndex={active === index ? 0 : -1} onClick={() => setActive(index)} aria-label={`عرض الصورة ${index + 1}: ${imageType(item)}`}>
         <img src={assetUrl(item)} alt={item.alt} width={item.width} height={item.height} loading="lazy" decoding="async" />
         <span>{imageType(item)}</span>
       </button>)}</div>
-    {navigation}
-    <p className={styles.note}>المصدر: ملفات المواقع الاستثمارية الأصلية. تاريخ التصوير غير متوفر. الخرائط والصور الحدودية مراجع مصورة.</p>
+    <p className={styles.note}>الأسهم للتنقل بين الصور؛ Home للأولى وEnd للأخيرة. المصدر والتاريخ حسب سجل كل ملف. الخرائط والصور الحدودية مراجع مصورة؛ لا تثبت دقة الإسناد الجغرافي.</p>
     {createPortal(<dialog ref={dialog} className={styles.dialog} dir="rtl" aria-labelledby="investment-image-title"
       onCancel={event => { event.preventDefault(); close(); }} onClose={close}
       onClick={event => { if (event.target === event.currentTarget) close(); }}
       onKeyDown={event => {
-        if (event.key === 'Escape') { event.preventDefault(); close(); }
-        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); move(event.key === 'ArrowLeft' ? 1 : -1); }
+        if (event.key === 'Escape') { event.preventDefault(); event.stopPropagation(); close(); }
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); event.stopPropagation(); move(event.key === 'ArrowLeft' ? 1 : -1); }
       }}>
       {expanded && <><div className={styles.dialogHeader}><h2 id="investment-image-title">{site.zone_name} — {image.type_label}</h2>
         <button type="button" aria-label="إغلاق الصورة المكبرة" onClick={close} autoFocus><X size={22} /></button></div>

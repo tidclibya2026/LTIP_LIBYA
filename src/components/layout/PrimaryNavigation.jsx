@@ -5,6 +5,11 @@ export default function PrimaryNavigation() {
   return <nav className={styles.navigation} aria-label="التنقل الرئيسي">
     <div className={styles.navigationInner}>
       <a href="#/"><Home size={16} aria-hidden="true" />الرئيسية</a>
+      <a href="#/government">مواقع التنمية السياحية</a>
+      <a href="#/portfolio">المحفظة الوطنية</a>
+      <a href="#/admin">إدارة بيانات المواقع</a>
+      <a href="#/workspace">مساحة إدخال البيانات</a>
+      <a href="#/admin-demo">العرض الإداري التجريبي</a>
       <a href="#ltip-map"><MapPinned size={16} aria-hidden="true" />الخارطة</a>
       <a href="#ltip-explorer"><List size={16} aria-hidden="true" />المناطق والمعالم</a>
       <a href="#ltip-layers"><Layers3 size={16} aria-hidden="true" />الطبقات</a>

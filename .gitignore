@@ -10,9 +10,30 @@ dist/
 *.zip
 .DS_Store
 Thumbs.db
+ltip-site-package*.json
+public/data/site_manual_enrichment.json.pending
 
 # Local redesign evidence and source backups are not release assets.
 *_backup
 *.syntax_backup
 docs/hero-acceptance/
 docs/print-acceptance/
+
+# Local backups, clean-install candidates and browser profiles never enter Git.
+.local-release-prep/
+.import-staging/
+**/INTERNAL/**
+**/HOLD/**
+**/*_INTERNAL.*
+**/*_HOLD.*
+# Restricted source layers remain local; the release allowlist also excludes them.
+public/data/parks/FD_PARK_NATIONAL_33.geojson
+public/data/parks/FD_PARK_PUBLIC_185.geojson
+public/data/analysis/PARK_ZONE_INTERSECTIONS.csv
+public/data/analysis/PARK_ZONE_NEAREST.csv
+public/data/historical/
+
+# Selection records are never stored under the public repository.
+.private-presentation/
+selection-working*.json
+private-config*.json

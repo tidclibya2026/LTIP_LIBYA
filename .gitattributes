@@ -1,0 +1,26 @@
+# Repository text is LF on Windows and GitHub Actions; no renormalize is run here.
+* text=auto eol=lf
+
+# GIS source geometry, derived geometry and binary evidence keep their exact bytes.
+*.geojson -text
+*.kml -text
+*.kmz -text
+*.shp -text
+*.shx -text
+*.dbf -text
+*.prj -text
+*.gpkg -text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.gif binary
+*.tif binary
+*.tiff binary
+*.pdf binary
+*.doc binary
+*.docx binary
+*.ppt binary
+*.pptx binary
+*.zip binary

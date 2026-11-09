@@ -1,0 +1,33 @@
+{
+  "purpose": "Historical EOL positions only; unchanged original reference hash must still verify reconstructed historical bytes. No content or binary/GIS equivalence exemption.",
+  "reference_manifest": "docs/reports/site-library-preservation.json",
+  "files": {
+    "public/data/investment_site_enrichment.json": {
+      "original_sha256": "6b98585fdcdc57f1ae406f72d3469d4f28c2040db2dabddcfca41666a88bb4a7",
+      "lf_sha256": "6c4e635c8d8342288ea58d3f29592ece07284705107c507eb2df344b46ed1028",
+      "lf_count": 5627,
+      "layout": "all-crlf"
+    },
+    "public/data/zone_photos.json": {
+      "original_sha256": "ded9acba97c85df192bac6818288fdba9935c6b1ada9dcc4a172751623049290",
+      "lf_sha256": "9dedb54a4c1a24a2ec5a75e9491f6433de1a73cdab5c1d52ae0e0ceb73be9816",
+      "lf_count": 179,
+      "layout": "all-crlf"
+    },
+    "public/investment-cards.html": {
+      "original_sha256": "800b64ff58933ecd4d06f275e0ac55ca1e0a40f938eaf93ce329060d17238546",
+      "lf_sha256": "e2ac6e3ea042c01985f6c458c6ff22a34b8e2efea0ff938dec790f5dde83bfe9",
+      "lf_count": 581,
+      "layout": "all-crlf"
+    },
+    "upgrade_print_v8.mjs": {
+      "original_sha256": "f528ab1d75e57b22501d952b1a17692cd725f84bc0a5da10b1efd7cd90c81a8c",
+      "lf_sha256": "70812ed42ff904eb4c1fdb37969d61894ed59e0c09fc795b1d155c770b6a9346",
+      "lf_count": 251,
+      "layout": "selected-crlf",
+      "crlf_lines": [
+        251
+      ]
+    }
+  }
+}
