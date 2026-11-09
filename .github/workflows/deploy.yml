@@ -1,9 +1,13 @@
 ﻿name: Deploy LTIP Libya
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
+    inputs:
+      publish_approved_release:
+        description: 'Publish reviewed release after owner approval'
+        type: boolean
+        required: true
+        default: false
 
 permissions:
   contents: read
@@ -33,15 +37,24 @@ jobs:
       - name: Build platform
         run: npm run build
 
+      - name: Verify data, models and release policy
+        run: npm run test:admin && npm run test:preservation && npm run test:release && npm run test:parks-public && npm run test:government && npm run test:selection-boundary && npm run test:map && npm run test:portfolio
+
+      - name: Verify exact release files immediately before upload
+        run: node scripts/release-policy.mjs dist
+
       - name: Configure GitHub Pages
+        if: ${{ inputs.publish_approved_release && github.ref == 'refs/heads/main' }}
         uses: actions/configure-pages@v5
 
       - name: Upload build
+        if: ${{ inputs.publish_approved_release && github.ref == 'refs/heads/main' }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
+    if: ${{ inputs.publish_approved_release && github.ref == 'refs/heads/main' }}
     needs: build
     runs-on: ubuntu-latest
     environment:

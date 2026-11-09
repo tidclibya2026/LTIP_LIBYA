@@ -1,15 +1,18 @@
 .landing.landing {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: none;
   min-height: 100vh;
   min-height: 100svh;
   margin: 0;
   padding: 0;
-  background: #102f50;
+  background: #f4f7fa;
 }
+.portfolioEntry{box-sizing:border-box;min-width:0;width:min(100%,1440px);margin:0 auto;padding:20px 28px;font-family:"Segoe UI",Tahoma,Arial,sans-serif}.publicHeader{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:0 0 14px;border-bottom:1px solid #dbe4ed;color:#526b7e;font-size:12px}.publicHeader b{color:#174a76;letter-spacing:1px;font-size:17px}
+@media(max-width:650px){.portfolioEntry{padding:16px 12px}.publicHeader{font-size:10px;gap:8px}.publicHeader b{font-size:13px}}
 .panorama {
+  align-self: center;
   position: relative;
   width: min(100%, calc(100vh * 1672 / 941));
   width: min(100%, calc(100svh * 1672 / 941));

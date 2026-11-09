@@ -184,6 +184,7 @@ body.single .card:not(.target){display:none}
   }
 }
 
+.planning-status{border-top:2px solid #c9a45e;padding:12px 15px}.planning-status h3{font-size:16px}.planning-fields{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}@media(max-width:600px){.planning-fields{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -207,25 +208,31 @@ body.single .card:not(.target){display:none}
 <option value="متوسط">متوسط (35)</option>
 <option value="منخفض">منخفض (3)</option>
 </select>
+<label for="planning-category">تصنيف الموقع:</label><select id="planning-category"><option value="all">جميع التصنيفات</option><option value="MAPPED">مُخرَّط</option><option value="CLASSIFIED">مُصنَّف</option><option value="UNVERIFIED">غير محدد</option></select>
+<span id="planning-error" role="alert"></span>
 <button id="printAll">طباعة البطاقات المعروضة</button>
 <strong id="counter"></strong>
 </section>
 <section id="cards" class="cards"></section>
 <footer>المسافات الجغرافية والمساحات المحسوبة تقديرية. لا يُعد القرب من المرافق إثباتًا لجاهزيتها التشغيلية، ولا يُعد هذا السجل إثباتًا للملكية أو الموافقات الاستثمارية.</footer>
 </main>
-<script>
+<script type="module">
+import { planningCategory, planningFields, PLANNING_TITLE, validatePlanningData } from "./planning-status.js";
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??'غير متوفر').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const num=v=>v==null||!Number.isFinite(Number(v))?'غير متوفر':Number(v).toLocaleString('ar-LY',{maximumFractionDigits:3});
 const km=v=>v==null?'غير متوفر':num(v)+' كم';
 const field=(k,v)=>'<div class="field"><label>'+esc(k)+'</label><strong>'+esc(v)+'</strong></div>';
 let records=[];
+let planningZones={};
+const planningHTML=id=>'<section class="planning-status"><h3>'+PLANNING_TITLE+'</h3><div class="planning-fields">'+planningFields(planningZones[id]).map(([label,value])=>field(label,value)).join('')+'</div><p class="note">صور الحدود لا تثبت وجود مخطط معتمد. بيانات التخطيط لا تثبت الملكية أو الجاهزية التشغيلية.</p></section>';
 
 function render(){
  const q=$('search').value.trim().toLowerCase();
  const g=$('grade').value;
  const visible=records.filter(c=>
    (g==='all'||c.grade===g)&&
+   ($('planning-category').value==='all'||planningCategory(planningZones[c.id])===$('planning-category').value)&&
    (c.name.toLowerCase().includes(q)||c.id.includes(q))
  );
  $('cards').innerHTML=visible.map(c=>{
@@ -250,6 +257,7 @@ function render(){
     field('الجاهزية التشغيلية','غير متحققة ميدانيًا')+
     field('الوضع القانوني والملكية','يتطلب مستندات تحقق')+
     '</div><p class="note">المساحة والمسافات مؤشرات GIS تقريبية وليست قياسات قانونية أو مسافات قيادة. التصنيف الإداري لا يغير الدرجة الحسابية الأصلية.</p>'+
+    planningHTML(c.id)+
     '<div class="actions"><button data-print="'+esc(c.id)+'">طباعة البطاقة</button></div></article>';
  }).join('');
  $('counter').textContent='المعروض: '+visible.length;
@@ -264,6 +272,11 @@ function render(){
 
 async function init(){
  try{
+  try {
+   const response=await fetch('./data/zone_planning_status_141.json');
+   if(!response.ok)throw Error('HTTP '+response.status);
+   planningZones=validatePlanningData(await response.json());
+  } catch { $('planning-error').textContent='تعذر تحميل الوضع التخطيطي؛ البيانات غير متحققة.'; }
   const paths=[
    './data/zones_141.geojson',
    './data/analysis/zone_access_readiness_141.json',
@@ -311,6 +324,7 @@ async function init(){
 }
 $('search').oninput=render;
 $('grade').onchange=render;
+$('planning-category').onchange=render;
 $('printAll').onclick=()=>{
  document.body.classList.remove('single');
  window.print();
@@ -467,6 +481,7 @@ init();
       const heading = card.querySelector('.card-head')?.innerHTML || '';
       const fields = card.querySelector('.fields')?.innerHTML || '';
       const note = card.querySelector('.note')?.innerHTML || '';
+      const planning = card.querySelector('.planning-status')?.innerHTML || '';
 
       return '<section class="sheet">' +
         '<div class="official-head">' +
@@ -485,13 +500,17 @@ init();
         '<div class="fields">' + fields + '</div>' +
         '<div class="note">' + note + '</div>' +
         '<div class="official-foot">مركز المعلومات والتوثيق السياحي</div>' +
-        '</section>';
+        '</section>' +
+        '<section class="sheet planning-sheet"><div class="official-head">دولة ليبيا — وزارة السياحة والصناعات التقليدية</div>' +
+        '<div class="document-title">ملحق الوضع التخطيطي — المنطقة ' + esc(id) + '</div>' +
+        '<div class="card-head">' + heading + '</div>' + planning +
+        '<div class="official-foot">مركز المعلومات والتوثيق السياحي</div></section>';
     }).join('');
 
     return '<!doctype html><html lang="ar" dir="rtl"><head>' +
       '<meta charset="UTF-8">' +
       '<title>بطاقات المعلومات الاستثمارية السياحية</title>' +
-      '<style>' + styles + v8Styles + '</style></head><body>' +
+      '<style>' + styles + v8Styles + '.planning-sheet h3{padding:12px 15px;font-size:16px}.planning-sheet .planning-fields{padding:0 15px}.planning-sheet .field{break-inside:avoid}' + '</style></head><body>' +
       sheets + '</body></html>';
   }
 
